@@ -5,7 +5,7 @@
 
     
       <url>
-        <loc>https://live.support.brightcove.com/index.html</loc>
+        <loc>https://player.support.brightcove.com/index.html</loc>
         <lastmod>2020-12-02</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -13,7 +13,7 @@
       
     
       <url>
-        <loc>https://live.support.brightcove.com/get-started/index.html</loc>
+        <loc>https://player.support.brightcove.com/getting-started/index.html</loc>
         <lastmod>2020-12-02</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -21,7 +21,7 @@
       
         <url>
           
-            <loc>https://live.support.brightcove.com/get-started/brightcove-live-training-videos.html</loc>
+            <loc>https://player.support.brightcove.com/training/developer-basics-videos.html</loc>
           
             <lastmod>2020-12-02</lastmod>
             <changefreq>daily</changefreq>
@@ -31,7 +31,7 @@
       
         <url>
           
-            <loc>https://live.support.brightcove.com/get-started/delivering-live-streams.html</loc>
+            <loc>https://player.support.brightcove.com/getting-started/what-brightcove-player.html</loc>
           
             <lastmod>2020-12-02</lastmod>
             <changefreq>daily</changefreq>
@@ -41,7 +41,7 @@
       
         <url>
           
-            <loc>https://live.support.brightcove.com/get-started/live-module-guidelines-and-best-practices.html</loc>
+            <loc>https://player.support.brightcove.com/getting-started/overview-brightcove-player.html</loc>
           
             <lastmod>2020-12-02</lastmod>
             <changefreq>daily</changefreq>
@@ -51,7 +51,7 @@
       
         <url>
           
-            <loc>https://live.support.brightcove.com/get-started/step-step-using-live-module-open-broadcaster-software-obs.html</loc>
+            <loc>https://player.support.brightcove.com/getting-started/learning-guide-video-advertising.html</loc>
           
             <lastmod>2020-12-02</lastmod>
             <changefreq>daily</changefreq>
@@ -61,25 +61,7 @@
       
         <url>
           
-            <loc>https://live.support.brightcove.com/get-started/step-step-using-live-module-telestream-wirecast.html</loc>
-          
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-    
-      <url>
-        <loc>https://live.support.brightcove.com/general/index.html</loc>
-        <lastmod>2020-12-02</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-      </url>
-      
-        <url>
-          
-            <loc>https://live.support.brightcove.com/general/live-drm.html</loc>
+            <loc>https://player.support.brightcove.com/getting-started/overview-brightcove-player-plugins.html</loc>
           
             <lastmod>2020-12-02</lastmod>
             <changefreq>daily</changefreq>
@@ -89,7 +71,7 @@
       
         <url>
           
-            <loc>https://live.support.brightcove.com/general/live-platforms-comparison-matrix.html</loc>
+            <loc>https://player.support.brightcove.com/training/player-development-training-videos.html</loc>
           
             <lastmod>2020-12-02</lastmod>
             <changefreq>daily</changefreq>
@@ -99,7 +81,7 @@
       
         <url>
           
-            <loc>https://live.support.brightcove.com/general/live-video-glossary.html</loc>
+            <loc>https://player.support.brightcove.com/getting-started/step-step-brightcove-player.html</loc>
           
             <lastmod>2020-12-02</lastmod>
             <changefreq>daily</changefreq>
@@ -109,7 +91,7 @@
       
         <url>
           
-            <loc>https://live.support.brightcove.com/general/reducing-latency-live-streams.html</loc>
+            <loc>https://player.support.brightcove.com/getting-started/step-step-player-customization.html</loc>
           
             <lastmod>2020-12-02</lastmod>
             <changefreq>daily</changefreq>
@@ -119,7 +101,7 @@
       
         <url>
           
-            <loc>https://live.support.brightcove.com/general/supported-encoders-live-events.html</loc>
+            <loc>https://player.support.brightcove.com/training/training-demand-developing-brightcove-player.html</loc>
           
             <lastmod>2020-12-02</lastmod>
             <changefreq>daily</changefreq>
@@ -129,7 +111,7 @@
       
         <url>
           
-            <loc>https://live.support.brightcove.com/general/creating-live-stream-using-akamai-stream-packaging-and-telestream-wirecast.html</loc>
+            <loc>https://player.support.brightcove.com/getting-started/learning-guide-using-rest-apis.html</loc>
           
             <lastmod>2020-12-02</lastmod>
             <changefreq>daily</changefreq>
@@ -139,7 +121,7 @@
       
     
       <url>
-        <loc>https://live.support.brightcove.com/live-module/index.html</loc>
+        <loc>https://player.support.brightcove.com/basics/index.html</loc>
         <lastmod>2020-12-02</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -147,7 +129,7 @@
       
         <url>
           
-            <loc>https://live.support.brightcove.com/live-module/client-side-preroll-with-live-ssai.html</loc>
+            <loc>https://player.support.brightcove.com/basics/developer-basics-advanced-player-code.html</loc>
           
             <lastmod>2020-12-02</lastmod>
             <changefreq>daily</changefreq>
@@ -157,7 +139,7 @@
       
         <url>
           
-            <loc>https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html</loc>
+            <loc>https://player.support.brightcove.com/basics/developer-basics-autoplaying-video.html</loc>
           
             <lastmod>2020-12-02</lastmod>
             <changefreq>daily</changefreq>
@@ -167,7 +149,7 @@
       
         <url>
           
-            <loc>https://live.support.brightcove.com/live-module/creating-video-clip-using-live-module.html</loc>
+            <loc>https://player.support.brightcove.com/basics/developer-basics-custom-plugin-converting-code.html</loc>
           
             <lastmod>2020-12-02</lastmod>
             <changefreq>daily</changefreq>
@@ -177,7 +159,7 @@
       
         <url>
           
-            <loc>https://integrations.support.brightcove.com/web-conferencing/host-avaya-conference-brightcove-live.html</loc>
+            <loc>https://player.support.brightcove.com/basics/developer-basics-custom-plugin-passing-data.html</loc>
           
             <lastmod>2020-12-02</lastmod>
             <changefreq>daily</changefreq>
@@ -187,7 +169,7 @@
       
         <url>
           
-            <loc>https://integrations.support.brightcove.com/web-conferencing/host-cisco-webex-conference-brightcove-live.html</loc>
+            <loc>https://player.support.brightcove.com/basics/developer-basics-custom-plugin-using-studio.html</loc>
           
             <lastmod>2020-12-02</lastmod>
             <changefreq>daily</changefreq>
@@ -197,7 +179,7 @@
       
         <url>
           
-            <loc>https://integrations.support.brightcove.com/web-conferencing/host-zoom-conference-brightcove-live.html</loc>
+            <loc>https://player.support.brightcove.com/basics/developer-basics-custom-plugin-why-and-how.html</loc>
           
             <lastmod>2020-12-02</lastmod>
             <changefreq>daily</changefreq>
@@ -207,7 +189,7 @@
       
         <url>
           
-            <loc>https://integrations.support.brightcove.com/web-conferencing/host-inxpo-live.html</loc>
+            <loc>https://player.support.brightcove.com/training/developer-basics-videos.html</loc>
           
             <lastmod>2020-12-02</lastmod>
             <changefreq>daily</changefreq>
@@ -217,7 +199,7 @@
       
         <url>
           
-            <loc>https://live.support.brightcove.com/live-module/implementing-server-side-ads-live-module.html</loc>
+            <loc>https://player.support.brightcove.com/basics/developer-basics-generating-player-code.html</loc>
           
             <lastmod>2020-12-02</lastmod>
             <changefreq>daily</changefreq>
@@ -227,47 +209,7 @@
       
         <url>
           
-            <loc>https://live.support.brightcove.com/live-module/live-redundancy.html</loc>
-          
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
-            <loc>https://live.support.brightcove.com/live-module/publishing-live-event-facebook.html</loc>
-          
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
-            <loc>https://live.support.brightcove.com/live-module/publishing-live-event-youtube.html</loc>
-          
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
-            <loc>https://live.support.brightcove.com/live-module/reviewing-live-analytics.html</loc>
-          
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
-            <loc>https://live.support.brightcove.com/live-module/using-live-rtmp-outputs-stream-facebook-and-youtube.html</loc>
+            <loc>https://player.support.brightcove.com/basics/developer-basics-preparing-write-code.html</loc>
           
             <lastmod>2020-12-02</lastmod>
             <changefreq>daily</changefreq>
@@ -277,7 +219,7 @@
       
     
       <url>
-        <loc>https://live.support.brightcove.com/live-api/index.html</loc>
+        <loc>https://player.support.brightcove.com/references/index.html</loc>
         <lastmod>2020-12-02</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -285,308 +227,7 @@
       
         <url>
           
-            <loc>https://live.support.brightcove.com/live-api/getting-started/index.html</loc>
-          
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-          <url>
-            
-              <loc>https://live.support.brightcove.com/live-api/getting-started/overview-brightcove-live-api.html</loc>
-            
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://live.support.brightcove.com/live-api/getting-started/quick-start-create-live-stream-using-brightcove-live-api.html</loc>
-            
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-      
-        <url>
-          
-            <loc>https://live.support.brightcove.com/live-api/code-samples/index.html</loc>
-          
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-          <url>
-            
-              <loc>https://live.support.brightcove.com/live-api/code-samples/live-api-sample-create-live-job.html</loc>
-            
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://live.support.brightcove.com/live-api/code-samples/quick-start-create-live-job-mpeg2-ts-input.html</loc>
-            
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://live.support.brightcove.com/live-api/code-samples/quick-start-using-rtmp-outputs-live-events.html</loc>
-            
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://live.support.brightcove.com/live-api/code-samples/simulated-live.html</loc>
-            
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-      
-        <url>
-          
-            <loc>https://live.support.brightcove.com/live-api/references/index.html</loc>
-          
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-          <url>
-            
-              <loc>https://live.support.brightcove.com/live-api/references/live-api-error-messages.html</loc>
-            
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://live.support.brightcove.com/live-api/references/live-api-release-notes.html</loc>
-            
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://live.support.brightcove.com/live-api/references/reference.html</loc>
-            
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-      
-        <url>
-          
-            <loc>https://live.support.brightcove.com/live-api/ssai/index.html</loc>
-          
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-          <url>
-            
-              <loc>https://live.support.brightcove.com/live-api/ssai/live-api-cue-points-and-ad-beacons-ssai.html</loc>
-            
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://live.support.brightcove.com/live-api/ssai/live-api-server-side-ad-insertion-ssai.html</loc>
-            
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://live.support.brightcove.com/live-api/ssai/overview-player-enhancements-live-ssai.html</loc>
-            
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-      
-        <url>
-          
-            <loc>https://live.support.brightcove.com/live-api/guides/index.html</loc>
-          
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-          <url>
-            
-              <loc>https://live.support.brightcove.com/live-api/guides/brightcove-live-best-practices.html</loc>
-            
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://live.support.brightcove.com/live-api/guides/brightcove-live-program-ad-metadata-api.html</loc>
-            
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://live.support.brightcove.com/live-api/guides/live-api-creating-frame-accurate-clip.html</loc>
-            
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://live.support.brightcove.com/live-api/guides/live-api-creating-vod-clips.html</loc>
-            
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://live.support.brightcove.com/live-api/guides/getting-list-live-or-vod-jobs.html</loc>
-            
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://live.support.brightcove.com/live-api/guides/live-api-insert-id3-timed-metadata.html</loc>
-            
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://live.support.brightcove.com/live-api/guides/live-drm-live-api.html</loc>
-            
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://live.support.brightcove.com/live-api/guides/managing-credentials-live-api.html</loc>
-            
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://live.support.brightcove.com/live-api/guides/live-api-notifications.html</loc>
-            
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://live.support.brightcove.com/general/reducing-latency-live-streams.html</loc>
-            
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://live.support.brightcove.com/live-api/guides/live-api-rtmp-outputs.html</loc>
-            
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://live.support.brightcove.com/live-api/guides/live-api-static-entry-points.html</loc>
-            
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://live.support.brightcove.com/live-api/guides/signed-urls-and-token-auth-live-stream.html</loc>
-            
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://live.support.brightcove.com/live-api/guides/using-live-redundancy.html</loc>
-            
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://live.support.brightcove.com/live-api/guides/live-api-vod-live-event.html</loc>
-            
-            <lastmod>2020-12-02</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-      
-    
-      <url>
-        <loc>https://live.support.brightcove.com/admin/index.html</loc>
-        <lastmod>2020-12-02</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-      </url>
-      
-        <url>
-          
-            <loc>https://live.support.brightcove.com/admin/creating-custom-live-ingest-profiles.html</loc>
+            <loc>https://player.support.brightcove.com/references/brightcove-player-5-6-migration-guide.html</loc>
           
             <lastmod>2020-12-02</lastmod>
             <changefreq>daily</changefreq>
@@ -596,7 +237,7 @@
       
         <url>
           
-            <loc>https://live.support.brightcove.com/admin/fields-custom-live-ingest-profiles.html</loc>
+            <loc>https://docs.brightcove.com/brightcove-player/current-release/index.html</loc>
           
             <lastmod>2020-12-02</lastmod>
             <changefreq>daily</changefreq>
@@ -606,7 +247,7 @@
       
         <url>
           
-            <loc>https://live.support.brightcove.com/admin/managing-live-settings.html</loc>
+            <loc>https://player.support.brightcove.com/references/brightcove-player-cookies.html</loc>
           
             <lastmod>2020-12-02</lastmod>
             <changefreq>daily</changefreq>
@@ -616,7 +257,7 @@
       
         <url>
           
-            <loc>https://live.support.brightcove.com/admin/managing-api-authentication-credentials.html</loc>
+            <loc>https://player.support.brightcove.com/references/brightcove-player-error-reference.html</loc>
           
             <lastmod>2020-12-02</lastmod>
             <changefreq>daily</changefreq>
@@ -626,7 +267,97 @@
       
         <url>
           
-            <loc>https://live.support.brightcove.com/admin/standard-live-ingest-profiles.html</loc>
+            <loc>https://groups.google.com/forum/embed/?place=forum/bcplayerdev#!forum/bcplayerdev</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/references/brightcove-player-system-requirements.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/references/catalog-search-architecture.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://general.support.brightcove.com/general/known-issues-studio-brightcove-player-and-apis.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/references/player-catalog.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/references/player-feature-support-browser.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/references/player-metadata-bcinfo.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://docs.brightcove.com/brightcove-player/current-release/Player.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/references/guide-playlist-api.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/references/video-metadata-mediainfo.html</loc>
           
             <lastmod>2020-12-02</lastmod>
             <changefreq>daily</changefreq>
@@ -636,7 +367,7 @@
       
     
       <url>
-        <loc>https://live.support.brightcove.com/release-notes/index.html</loc>
+        <loc>https://player.support.brightcove.com/plugins/index.html</loc>
         <lastmod>2020-12-02</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -644,7 +375,7 @@
       
         <url>
           
-            <loc>https://live.support.brightcove.com/release-notes/live-api-release-notes.html</loc>
+            <loc>https://player.support.brightcove.com/plugins/360degvr-video-plugin.html</loc>
           
             <lastmod>2020-12-02</lastmod>
             <changefreq>daily</changefreq>
@@ -654,7 +385,247 @@
       
         <url>
           
-            <loc>https://live.support.brightcove.com/release-notes/known-issues.html</loc>
+            <loc>https://player.support.brightcove.com/plugins/ad-only-plugin.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/plugins/advertising-freewheel-plugin.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/plugins/advertising-ima3-plugin.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/plugins/upgrading-ima3-plugin-version-3.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/plugins/implementing-server-side-ads-brightcove-player.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/plugins/chromecast-plugin-brightcove-player.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/plugins/custom-endscreen-plugin.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/plugins/display-error-messages-plugin.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/plugins/display-thumbnail-previews-plugin.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/plugins/configuring-brightcove-player-drm.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/plugins/google-tag-manager-plugin-brightcove-player.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/plugins/hls-plugin.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/plugins/live-dvrux-plugin.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/plugins/display-overlay-plugin.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/plugins/overview-brightcove-player-plugins.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/plugins/picture-picture-plugin-aka-floating-or-pinned.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/plugins/playerplugin-version-testing.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/plugins/playlist-ui-plugin.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/plugins/changelog/index.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/plugins/plugin-registry.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/plugins/plugin-version-reference.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/plugins/quality-selection-plugin.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/plugins/social-sharing-plugin.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/plugins/tealium-plugin-brightcove-player.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/plugins/video-seo-schema-generator-plugin.html</loc>
           
             <lastmod>2020-12-02</lastmod>
             <changefreq>daily</changefreq>
@@ -664,7 +635,7 @@
       
     
       <url>
-        <loc>https://live.support.brightcove.com/support/index.html</loc>
+        <loc>https://player.support.brightcove.com/advertising/index.html</loc>
         <lastmod>2020-12-02</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -672,7 +643,7 @@
       
         <url>
           
-            <loc>https://live.support.brightcove.com/support/brightcove-answer.html</loc>
+            <loc>https://player.support.brightcove.com/advertising/ad-events-and-ad-objects.html</loc>
           
             <lastmod>2020-12-02</lastmod>
             <changefreq>daily</changefreq>
@@ -682,7 +653,7 @@
       
         <url>
           
-            <loc>https://live.support.brightcove.com/support/viewing-brightcove-system-status-page.html</loc>
+            <loc>https://player.support.brightcove.com/plugins/ad-only-plugin.html</loc>
           
             <lastmod>2020-12-02</lastmod>
             <changefreq>daily</changefreq>
@@ -692,7 +663,7 @@
       
         <url>
           
-            <loc>https://live.support.brightcove.com/support/contact-sales.html</loc>
+            <loc>https://player.support.brightcove.com/plugins/advertising-freewheel-plugin.html</loc>
           
             <lastmod>2020-12-02</lastmod>
             <changefreq>daily</changefreq>
@@ -702,7 +673,1483 @@
       
         <url>
           
-            <loc>https://live.support.brightcove.com/support/opening-case-with-brightcove-support.html</loc>
+            <loc>https://player.support.brightcove.com/plugins/advertising-ima3-plugin.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/advertising/client-side-preroll-with-live-ssai.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/advertising/displaying-ads-using-ad-cue-points.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/advertising/flash-no-longer-valid-ima.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/advertising/guide-ad-partner-integration.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/advertising/guide-contrib-ads-migration.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/plugins/implementing-server-side-ads-brightcove-player.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/advertising/jump-start-header-bidding-ad.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/advertising/jump-start-outstream-ad.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/advertising/jump-start-pre-roll-ad.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/advertising/known-issues-server-side-ad-insertion-ssai.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/getting-started/learning-guide-video-advertising.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/advertising/step-step-implementing-advertising.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/advertising/testing-pre-release-advertising-plugins.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/advertising/using-dfp-premium-brightcove-player.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/advertising/using-player-enhancements-live-ssai-brightcove-player.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/advertising/video-cloud-ssai-ad-tag-validation.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+    
+      <url>
+        <loc>https://player.support.brightcove.com/publish/index.html</loc>
+        <lastmod>2020-12-02</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+      </url>
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/publish/assigning-video-player-programmatically.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/publish/available-options-advanced-page-embed-code.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/publish/available-options-standard-iframe-embed-code.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/publish/brightcove-player-loader.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/publish/bulk-updating-brightcove-default-player.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://studio.support.brightcove.com/publish/choosing-correct-embed-code.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/publish/delaying-player-instantiation.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/publish/pre-release-player.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/publish/syndication-strategies.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/publish/using-non-brightcove-player.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://studio.support.brightcove.com/publish/using-multiple-players-one-page.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://studio.support.brightcove.com/publish/using-reference-ids.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+    
+      <url>
+        <loc>https://player.support.brightcove.com/troubleshooting/index.html</loc>
+        <lastmod>2020-12-02</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+      </url>
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/troubleshooting/brightcove-playback-technology-app.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/references/brightcove-player-error-reference.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/troubleshooting/brightcove-player-information-modal.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/troubleshooting/brightcove-player-troubleshooting-guide.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/troubleshooting/creating-charles-log.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/troubleshooting/creating-network-log.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/troubleshooting/domain-restrictions-messaging.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/plugins/display-error-messages-plugin.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/troubleshooting/manually-setting-player-version.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/plugins/playerplugin-version-testing.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/troubleshooting/player-informational-properties.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/code-samples/brightcove-player-sample-live-custom-error-message.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/troubleshooting/step-step-brightcove-player-debugger.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/troubleshooting/running-network-path-trace.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/troubleshooting/using-player-reference.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/troubleshooting/vetting-brightcove-player-releases.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/troubleshooting/viewing-player-configuration.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+    
+      <url>
+        <loc>https://player.support.brightcove.com/styling/index.html</loc>
+        <lastmod>2020-12-02</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+      </url>
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/styling/customizing-player-appearance.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/styling/customizing-player-appearance-legacy-skin.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/styling/brightcove-player-sample-player-styling-playground.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/styling/quick-start-player-customization-legacy-skin.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/getting-started/step-step-player-customization.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/styling/responsive-sizing-brightcove-player.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/styling/sizing-player.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/styling/skins-and-player-versions.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://studio.support.brightcove.com/media/styling-captions.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/styling/styling-playlists.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+    
+      <url>
+        <loc>https://player.support.brightcove.com/playback/index.html</loc>
+        <lastmod>2020-12-02</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+      </url>
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/playback/autoplay-considerations.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/troubleshooting/brightcove-playback-technology-app.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/playback/xdr-with-bcplayer.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://studio.support.brightcove.com/publish/deep-linking.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/playback/delivering-hls-video.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/playback/determining-which-rendition-will-play.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/playback/guide-playback-technology.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/plugins/hls-plugin.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/playback/ios-and-brightcove-player.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/playback/overview-https-support.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/plugins/quality-selection-plugin.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/playback/static-url-delivery.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/playback/streaming-playready-protected-content-dynamic-delivery.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/playback/using-brightcove-player-tve.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+    
+      <url>
+        <loc>https://player.support.brightcove.com/content-protection/index.html</loc>
+        <lastmod>2020-12-02</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+      </url>
+      
+        <url>
+          
+            <loc>https://studio.support.brightcove.com/players/configuring-player-content-restrictions.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/content-protection/creating-dash-drm-manifest-brightcove-player.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/troubleshooting/domain-restrictions-messaging.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/plugins/configuring-brightcove-player-drm.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/content-protection/overview-content-protection.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/content-protection/policy-keys.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/content-protection/restricting-video-playback-using-ip-address.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/content-protection/signed-urls-and-token-auth-live-stream.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+    
+      <url>
+        <loc>https://player.support.brightcove.com/coding-topics/index.html</loc>
+        <lastmod>2020-12-02</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+      </url>
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/publish/brightcove-player-loader.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/references/catalog-search-architecture.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/code-samples/brightcove-player-sample-trigger-rewind-custom-event.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/playback/guide-playback-technology.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/coding-topics/programmatically-localizing-brightcove-player.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/coding-topics/localizing-plugins.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/coding-topics/player-events.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/coding-topics/overview-components.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/playback/overview-https-support.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/coding-topics/overview-player-api.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/coding-topics/pass-data-plugin.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/coding-topics/react-player-loader.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/coding-topics/reporting-brightcove-player-configurations.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/coding-topics/requirejs-and-brightcove-player.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/coding-topics/step-step-plugin-development.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/coding-topics/step-step-videojs-plugin-generator.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/coding-topics/using-bc-and-getplayer-methods.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/troubleshooting/viewing-player-configuration.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+    
+      <url>
+        <loc>https://player.support.brightcove.com/general/index.html</loc>
+        <lastmod>2020-12-02</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+      </url>
+      
+        <url>
+          
+            <loc>https://studio.support.brightcove.com/publish/adding-application-id-player-embed-code.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/general/adding-captions-videos-programmatically.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://studio.support.brightcove.com/media/adding-chapters-video.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/general/brightcove-player-6-now-default-version.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/general/brightcove-player-accessibility.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/plugins/custom-endscreen-plugin.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/plugins/display-overlay-plugin.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/references/guide-playlist-api.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/general/identify-and-delete-low-performing-videos.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/general/implementing-cue-points-programmatically.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/general/implementing-playlists.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/general/implementing-modaldialog.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/general/live-hls.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/general/live-stream-configuration.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/general/multiple-audio-tracks.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/general/player-configuration-guide.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/general/playing-live-streams.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/plugins/playlist-ui-plugin.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/content-protection/signed-urls-and-token-auth-live-stream.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/plugins/social-sharing-plugin.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://apis.support.brightcove.com/player-management/getting-started/step-step-player-management.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/styling/styling-playlists.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/general/using-screen-reader-brightcove-player.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/general/versions-brightcove-player-documentation.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/general/volume-control.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+    
+      <url>
+        <loc>https://player.support.brightcove.com/code-samples/index.html</loc>
+        <lastmod>2020-12-02</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+      </url>
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/code-samples/index-thumb.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/code-samples/index.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+    
+      <url>
+        <loc>https://player.support.brightcove.com/amp/index.html</loc>
+        <lastmod>2020-12-02</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+      </url>
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/amp/amp-using-video-cloud-video.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/amp/amp-using-external-video.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+    
+      <url>
+        <loc>https://player.support.brightcove.com/training/index.html</loc>
+        <lastmod>2020-12-02</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+      </url>
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/training/online-training-courses.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/training/developer-basics-videos.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/training/player-development-training-videos.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/training/register-training.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/training/training-demand-developing-brightcove-player.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://apis.support.brightcove.com/player-management/getting-started/training-demand-quick-start-player-management.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/training/brightcove-university.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+    
+      <url>
+        <loc>https://player.support.brightcove.com/release-notes/index.html</loc>
+        <lastmod>2020-12-02</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+      </url>
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/release-notes/brightcove-player-release-notes.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/release-notes/brightcove-player-prerelease-notes.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+    
+      <url>
+        <loc>https://player.support.brightcove.com/support/index.html</loc>
+        <lastmod>2020-12-02</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+      </url>
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/support/brightcove-answer.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/support/viewing-brightcove-system-status-page.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/support/contact-sales.html</loc>
+          
+            <lastmod>2020-12-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://player.support.brightcove.com/support/opening-case-with-brightcove-support.html</loc>
           
             <lastmod>2020-12-02</lastmod>
             <changefreq>daily</changefreq>
