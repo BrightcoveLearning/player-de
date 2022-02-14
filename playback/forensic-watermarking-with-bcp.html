@@ -1,0 +1,152 @@
+---
+title: "Forensic Watermarking with Brightcove Player"
+description: "In this topic, you will learn how to use Brightcove Player to deliver videos protected with Forensic Watermarking."
+parent: Playback
+---
+
+
+<article class="bcls-article">
+  <h1>{{ page.title }}</h1>
+  <summary>{{ page.description }}</summary>
+
+  <section class="bcls-section">
+    <h2 id="Introduction">Einleitung</h2>
+    <p>
+      Mit Forensic Watermarking können Sie Ihre Premium-Inhalte vor Piraterie und unbefugtem Teilen von Inhalten schützen. Diese Funktion fügt Ihren Videos ein unsichtbares Wasserzeichen hinzu, sodass Sie Inhaltslecks verfolgen können.
+    </p>
+    <p>Weitere Informationen finden Sie im <a href="https://apis.support.brightcove.com/general/overview-forensic-watermarking.html">Überblick: Dokument zum forensischen</a> Wasserzeichen.</p>
+  </section>
+
+  <section class="bcls-section">
+    <h2 id="Requirements">Voraussetzungen</h2>
+    <p>Die folgenden Anforderungen sind erforderlich, um diese Funktion zu unterstützen:</p>
+    <h3>Setup</h3>
+    <p>Zusätzlich zur Konfiguration Ihres Players gibt es Setup-Anforderungen. Einzelheiten finden Sie im <a href="https://apis.support.brightcove.com/general/overview-forensic-watermarking.html">Überblick: Dokument zum forensischen</a> Wasserzeichen.</p>
+
+    <h3>Brightcove Spieler</h3>
+    <p>Brightcove Player-Version 6.55+ erforderlich; neueste Version empfohlen</p>
+  </section>
+
+  <section class="bcls-section">
+    <h2 id="Configuring_Brightcove_Player">Konfigurieren von Brightcove Player</h2>
+    <p>
+      Gehen Sie folgendermaßen vor, um einen Player für die Verwendung von forensischem Wasserzeichen zu konfigurieren:
+    </p>
+    <ol class="bcls-tasklist-restart">
+      <li>
+        <p>Der Player muss in Ihr Registrierungssystem integriert sein, damit eine Viewer-ID an das Analytics-Web-Beacon (im <code translate="No">user</code> Feld) weitergegeben wird.</p>
+        <p>Verwenden Sie dazu die <code translate="No">setUser()</code> Methode. Zum Beispiel:</p>
+        <pre>
+<code class="language-html" translate="No">myPlayer.bcAnalytics.client.setUser('viewer id');</code></pre>
+      </li>
+      <li>
+        <p>
+          Bevor Sie Ihr Video erhalten, legen Sie ein Zeichenfolgen-Token mit dem Wert Ihres Nagra-Wasserzeichen-Tokens als Teil des Player-Katalogobjekts fest.
+        </p>
+        <pre>
+<code class="language-html" translate="No">myPlayer.catalog.setWatermarkingToken()</code></pre>
+      </li>
+      <li>
+        <p>
+          Nachdem Sie das Wasserzeichen-Token festgelegt haben, können Sie Daten von der Brightcove-Wiedergabe-API anfordern und in den Player laden.
+        </p>
+        <p>
+          Hier ist ein Beispiel für das Abrufen eines einzelnen Videos:
+        </p>
+        <aside class="bcls-aside bcls-aside--tip">Beachten Sie, dass die <code translate="No">bc()</code> -Methode wird verwendet, damit Sie das Wasserzeichen-Token festlegen können, bevor Sie den Katalog aufrufen.</aside> <aside class="bcls-aside bcls-aside--information">Hinweis: Stellen Sie sicher, dass Sie NICHT die <code translate="No">data-video-id</code> Parameter im <code translate="No">&lt;video-js&gt;</code> -Tag, da dies eine automatische Videoanforderung ohne das Wasserzeichen-Token auslöst.</aside>
+
+        <h3>HTML</h3>
+  <pre class="line-numbers">
+<code class="language-html" translate="No">&lt;div style=&quot;max-width: 960px;&quot;&gt;
+  &lt;video-js id=&quot;myPlayerID&quot;
+    data-embed=&quot;default&quot;
+    controls=&quot;&quot;
+    data-application-id=&quot;&quot;
+    class=&quot;vjs-fluid&quot;&gt;
+  &lt;/video-js&gt;
+&lt;/div&gt;
+
+&lt;script src=&quot;https://players.brightcove.net/your account id/your player id_default/index.min.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+
+        <h3>JavaScript</h3>
+<pre class="line-numbers">
+<code class="language-javascript" translate="No">&lt;script&gt;
+  // +++ Add the player attributes +++
+  var myPlayer,
+    myPlayerEl = document.getElementById(&quot;myPlayerID&quot;);
+  myPlayerEl.setAttribute('data-account', your account id);
+  myPlayerEl.setAttribute('data-player', 'your player id');
+
+  // +++ Create the player +++
+  myPlayer = bc(myPlayerEl);
+
+  // Set the viewer id for Brightcove analytics
+  <span class="bcls-highlight">myPlayer.bcAnalytics.client.setUser(<span class="bcls-input">'viewer id'</span>)</span>;
+
+  // Set the watermarking key
+  <span class="bcls-highlight">myPlayer.catalog.setWatermarkingToken(<span class="bcls-input">your watermark token</span>)</span>;
+
+  myPlayer.catalog.get({id: 'your video id', type: 'video'}).
+  then(function(data) {
+    myPlayer.catalog.load(data);
+    myPlayer.muted(true);
+    myPlayer.play();
+  }).
+  catch(function(error) {
+    throw new Error(error);
+  });
+&lt;/script&gt;
+</code></pre>
+      </li>
+    </ol> 
+  </section>
+
+  <section class="bcls-section">
+    <h2 id="Using_a_data_attribute">Verwenden eines Datenattributs</h2>
+   <p>Alternativ können Sie ein Zeichenfolgentoken als Teil des Player-Katalogobjekts übergeben, indem Sie den Eigenschaftsnamen verwenden <code translate="No">data-watermarking-token</code>.</p>
+
+    <ol class="bcls-tasklist-restart">
+      <li>Rufen Sie den erweiterten Einbettungscode für Ihren Player ab.</li>
+      <li>
+        <p>Fügen Sie Ihr Wasserzeichen-Token mit dem Player-Einbettungscode hinzu. Dazu fügen Sie das data-watermarking-token als Attribut des <video-js> Schild.</p>
+          <pre class="line-numbers">
+<code class="language-html" translate="No">&lt;video-js id=&quot;myPlayerID&quot;
+  data-account=&quot;1752604059001&quot; 
+  data-player=&quot;default&quot; 
+  data-embed=&quot;default&quot; 
+  controls=&quot;&quot; 
+  data-video-id=&quot;5550679964001&quot; 
+  data-playlist-id=&quot;&quot; 
+  data-application-id=&quot;&quot; 
+  <span class="bcls-highlight">data-watermarking-token=&quot;<span class="bcls-input">your watermark token</span>&quot;</span>
+  width=&quot;960&quot; height=&quot;540&quot;&gt;
+&lt;/video-js&gt;            
+</code></pre>
+      </li>
+      <li>
+        <p>Der Player muss in Ihr Registrierungssystem integriert sein, damit eine Viewer-ID an das Analytics-Web-Beacon (im <code translate="No">user</code> Feld) weitergegeben wird.</p>
+        <p>Verwenden Sie dazu die <code translate="No">setUser()</code> Methode. Zum Beispiel:</p>
+        <pre><code class="language-html" translate="No">myPlayer.bcAnalytics.client.setUser('viewer id');</code></pre>
+        <h3>JavaScript</h3>
+        <pre class="line-numbers">
+<code class="language-html" translate="No">&lt;script&gt;
+  videojs.getPlayer('myPlayerID').ready(function() {
+    var myPlayer = this;
+
+    // Set the viewer id for Brightcove analytics
+    <span class="bcls-highlight">myPlayer.bcAnalytics.client.setUser('<span class="bcls-input">viewer id</span>'</span>); 
+  });
+&lt;/script&gt;      
+</code></pre>
+      </li>
+    </ol>
+  </section>
+
+  <section class="bcls-section">
+    <h2 id="Limitations">Einschränkungen</h2>
+    <p>Weitere Informationen zu den Einschränkungen für diese Funktion finden Sie in der <a href="https://apis.support.brightcove.com/general/overview-forensic-watermarking.html#Limitations">Übersicht: Dokument zum forensischen</a> Wasserzeichen.</p>
+  </section>
+
+  
+</article>

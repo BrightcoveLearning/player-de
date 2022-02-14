@@ -1,1120 +1,29 @@
-﻿<!doctype html>
-<html lang="de">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  
-  <title>Programmatisch Untertitel zu Videos hinzufügen</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">  
-  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-ultra.eot" type="font/eot">
-  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-ultra.woff" type="font/woff">
-  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-super.eot" type="font/eot">
-  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-super.woff" type="font/woff">
-  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-black.eot" type="font/eot">
-  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-black.woff" type="font/woff">
-  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-bold.eot" type="font/eot">
-  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-bold.woff" type="font/woff">
-  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-medium.eot" type="font/eot">
-  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-medium.woff" type="font/woff">
-  <link data-react-helmet="true" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500&amp;display=swap">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/prism.css">
-  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/styles.css">
-  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/landing-page.css">
-  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/tabs.css">
-  <link rel="stylesheet" href="/assets/css/local.css">
-  <link data-react-helmet="true" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500&display=swap">
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/381443caa8.js" crossorigin="anonymous"></script>
-  <script src="https://support.brightcove.com/site-assets/js/site/google-analytics.js"></script>
-  <script src="/assets/js/sajari-head.js"></script>
-</head>
-
-<body class="body">
-
-<header>
-  <div class="div-header">
-    <a href="/"><img class="product-logo" src="https://support.brightcove.com/site-assets/images/site/product-logos/Player_Logo.svg" alt="Produkt-Logo" style="max-height: 100px;max-width: 232px;"/></a>
-<!-- GTranslate: https://gtranslate.io/ -->
-<select onchange="doGTranslate(this);"><option value="">Sprache wählen</option><option value="en|en" translate="No">English</option><option value="en|zh-TW" translate="No">繁體中文</option><option value="en|fr" translate="No">Français</option><option value="en|de" translate="No">Deutsche</option><option value="en|ja" translate="No">日本語</option><option value="en|ko" translate="No">한국어</option><option value="en|es" translate="No">Español</option></select>
-
-<script>
-/* <![CDATA[ */
-function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];var plang=location.hostname.split('.')[0];if(plang.length !=2 && plang.toLowerCase() != 'zh-cn' && plang.toLowerCase() != 'zh-tw')plang='en';location.href=location.protocol+'//'+(lang == 'en' ? '' : lang+'.')+location.hostname.replace('www.', '').replace(RegExp('^' + plang + '\\.'), '')+location.pathname+location.search;}
-/* ]]> */
-</script>
-
-    <select id="site_select" class="bcls-select" style="margin-right: 1rem;">
-      <option value="">Weitere Brightcove Docs</option>
-      
-        
-          <option value="https://support.brightcove.com">Dokumentation Home</option>
-        
-      
-        
-          <option value="https://audience.support.brightcove.com">Brightcove Publikum</option>
-        
-      
-        
-          <option value="https://beacon.support.brightcove.com">Brightcove Leuchtfeuer</option>
-        
-      
-        
-          <option value="https://campaign.support.brightcove.com">Brightcove Kampagne</option>
-        
-      
-        
-          <option value="https://engage.support.brightcove.com">Brightcove Engage</option>
-        
-      
-        
-          <option value="https://live.support.brightcove.com">Brightcove Live</option>
-        
-      
-        
-          <option value="https://gallery.support.brightcove.com">Brightcove Gallery</option>
-        
-      
-        
-          <option value="https://ssai.support.brightcove.com">Brightcove SSAI</option>
-        
-      
-        
-          <option value="https://social.support.brightcove.com">Brightcove Social</option>
-        
-      
-        
-          <option value="https://studio.support.brightcove.com">Video Cloud Studio</option>
-        
-      
-        
-          <option value="https://player.support.brightcove.com">Brightcove Spieler-Entwicklung</option>
-        
-      
-        
-          <option value="https://apis.support.brightcove.com">APIs für Video Cloud-Plattform</option>
-        
-      
-        
-          <option value="https://sdks.support.brightcove.com">Videocloud-Geräte-SDKs</option>
-        
-      
-        
-          <option value="https://integrations.support.brightcove.com">Integrationen und CMS-Konnektoren</option>
-        
-      
-        
-          <option value="https://general.support.brightcove.com">Video Cloud — Allgemeine Informationen</option>
-        
-      
-        
-          <option value="https://zencoder.support.brightcove.com">Zencoder</option>
-        
-      
-    </select>
-
-
-    <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?"><img src="https://support.brightcove.com/site-assets/images/site/support.png" alt="Support"/> Kontaktieren Sie Support</a> <span style="vertical-align: top;margin-left:1em;margin-right:1em;">|</span> <a href="https://status.brightcove.com/"><img src="https://support.brightcove.com/site-assets/images/site/status.png" alt="Systemstatus"/> Systemstatus</a></span> <br/>
-    
-  </div>
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb arr-right">
-      
-      <li class="breadcrumb-item"><a href="/">Nach Hause</a></li>
-      
-      
-      
-      <li class="breadcrumb-item"><a href="/general/">Allgemeine Informationen</a></li>
-      
-      <li class="breadcrumb-item active" aria-current="page">Programmatisch Untertitel zu Videos hinzufügen</li>
-    </ol>
-  </nav>
-</header>
-<div class="container">
-    <div class="row">
-      <div class="col-sm-3 left-side-bar">
-        <nav class="sidenav" id="side_nav">
-          
-            
-            <h5><a href="/index.html">Nach Hause</a></h5>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/getting-started/index.html">Erste Schritte <strong>+</strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/training/developer-basics-videos.html">Basics Videos für Entwickler</a></li>
-                  
-                
-                  
-                    <li><a href="/getting-started/what-brightcove-player.html">Was ist der Brightcove Player?</a></li>
-                  
-                
-                  
-                    <li><a href="/getting-started/overview-brightcove-player.html">Übersicht: Brightcove Spieler</a></li>
-                  
-                
-                  
-                    <li><a href="/getting-started/learning-guide-video-advertising.html">Leitfaden zum Lernen: Videowerbung</a></li>
-                  
-                
-                  
-                    <li><a href="/getting-started/overview-brightcove-player-plugins.html">Übersicht: Brightcove Spieler-Plugins</a></li>
-                  
-                
-                  
-                    <li><a href="/training/player-development-training-videos.html">Schulungsvideos zur Spielerentwicklung</a></li>
-                  
-                
-                  
-                    <li><a href="/getting-started/step-step-brightcove-player.html">Schritt für Schritt: Brightcove Spieler</a></li>
-                  
-                
-                  
-                    <li><a href="/getting-started/step-step-player-customization.html">Schritt für Schritt: Spieler-Anpassung</a></li>
-                  
-                
-                  
-                    <li><a href="/training/training-demand-developing-brightcove-player.html">Schulung: Entwicklung mit dem Brightcove Player</a></li>
-                  
-                
-                  
-                    <li><a href="/getting-started/learning-guide-using-rest-apis.html">Leitfaden zum Lernen: Verwenden der REST APIs</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/basics/index.html">Lerne die Grundlagen <strong>+</strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/basics/developer-basics-advanced-player-code.html">Erweiterter Spielercode</a></li>
-                  
-                
-                  
-                    <li><a href="/basics/developer-basics-autoplaying-video.html">Automatisches Abspielen eines Videos</a></li>
-                  
-                
-                  
-                    <li><a href="/basics/developer-basics-custom-plugin-converting-code.html">Benutzerdefiniertes Plugin - Code konvertieren</a></li>
-                  
-                
-                  
-                    <li><a href="/basics/developer-basics-custom-plugin-passing-data.html">Benutzerdefiniertes Plugin - Übergeben</a></li>
-                  
-                
-                  
-                    <li><a href="/basics/developer-basics-custom-plugin-using-studio.html">Benutzerdefiniertes Plugin - Studio verwenden</a></li>
-                  
-                
-                  
-                    <li><a href="/basics/developer-basics-custom-plugin-why-and-how.html">Custom Plugin - Warum und wie</a></li>
-                  
-                
-                  
-                    <li><a href="/training/developer-basics-videos.html">Basics Videos für Entwickler</a></li>
-                  
-                
-                  
-                    <li><a href="/basics/developer-basics-generating-player-code.html">Erstellen von Spielercode</a></li>
-                  
-                
-                  
-                    <li><a href="/basics/developer-basics-preparing-write-code.html">Vorbereiten des Codeschreibens</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/references/index.html">Referenzen <strong>+</strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/references/brightcove-player-5-6-migration-guide.html">Migrationsleitfaden für Brightcove Player 5 auf 6</a></li>
-                  
-                
-                  
-                    <li><a href="https://docs.brightcove.com/brightcove-player/current-release/index.html">Brightcove Player API-Dokumentation (externe Website)</a></li>
-                  
-                
-                  
-                    <li><a href="/references/brightcove-player-cookies.html">Brightcove Spieler-Cookies</a></li>
-                  
-                
-                  
-                    <li><a href="/references/brightcove-player-error-reference.html">Brightcove Player Fehlerreferenz</a></li>
-                  
-                
-                  
-                    <li><a href="https://groups.google.com/forum/embed/?place=forum/bcplayerdev#!forum/bcplayerdev">Brightcove Player Ankündigungsforum</a></li>
-                  
-                
-                  
-                    <li><a href="/references/brightcove-player-system-requirements.html">Systemvoraussetzungen für Brightcove Player</a></li>
-                  
-                
-                  
-                    <li><a href="/references/catalog-search-architecture.html">Katalog-Suche Architektur</a></li>
-                  
-                
-                  
-                    <li><a href="https://general.support.brightcove.com/general/known-issues-studio-brightcove-player-and-apis.html">Bekannte Probleme</a></li>
-                  
-                
-                  
-                    <li><a href="/references/player-catalog.html">Spieler-Kat</a></li>
-                  
-                
-                  
-                    <li><a href="/references/player-feature-support-browser.html">Unterstützung von Spielerfunktionen nach Browser</a></li>
-                  
-                
-                  
-                    <li><a href="/references/player-metadata-bcinfo.html">Spieler-Metadaten von bcinfo</a></li>
-                  
-                
-                  
-                    <li><a href="https://docs.brightcove.com/brightcove-player/current-release/Player.html">Spieler-Methoden/Events API (externe Website)</a></li>
-                  
-                
-                  
-                    <li><a href="/references/guide-playlist-api.html">Playlist-API-Leitfaden</a></li>
-                  
-                
-                  
-                    <li><a href="/references/video-metadata-mediainfo.html">Video Metadaten von mediainfo</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/plugins/index.html">Plugins <strong>+</strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/plugins/360degvr-video-plugin.html">360º Video</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/ad-only-plugin.html">Nur Werbeanzeige</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/advertising-freewheel-plugin.html">Werbung mit dem FreeWheel Plugin</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/advertising-ima3-plugin.html">Werbung mit dem IMA3-Plugin</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/upgrading-ima3-plugin-version-3.html">Upgrade auf IMA3 Plugin Version 3</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/implementing-server-side-ads-brightcove-player.html">Werbung mit SSAI</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/chromecast-plugin-brightcove-player.html">Chromecast</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/custom-endscreen-plugin.html">Benutzerdefinierter Endscreen</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/display-error-messages-plugin.html">Fehlermeldungen anzeigen</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/display-thumbnail-previews-plugin.html">Miniaturansicht-Vorschau anzeigen</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/configuring-brightcove-player-drm.html">DRM</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/google-tag-manager-plugin-brightcove-player.html">GoogleTag-Manager</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/hls-plugin.html">HLS</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/live-dvrux-plugin.html">Leben DVRUX</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/display-overlay-plugin.html">Overlay</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/overview-brightcove-player-plugins.html">Übersicht: Spieler-Plugins</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/picture-picture-plugin-aka-floating-or-pinned.html">Bild-in-Bild</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/playerplugin-version-testing.html">Versionstest von Player/Plu</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/playlist-ui-plugin.html">Playlist-Benutzeroberfläche</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/changelog/index.html">Plugin-Changelog</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/plugin-registry.html">Plugin-Registrierung</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/plugin-version-reference.html">Referenz Plugin-Versionen</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/quality-selection-plugin.html">Qualitäts-Auswahl</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/social-sharing-plugin.html">Soziale Medien</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/tealium-plugin-brightcove-player.html">Tealium-Tag-Manager</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/video-seo-schema-generator-plugin.html">Video-SEO-Schemagenerator</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/advertising/index.html">Werbung <strong>+</strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/advertising/ad-events-and-ad-objects.html">Werbeveranstaltungen und Werbeobjekte</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/ad-only-plugin.html">Nur Werbe-Plugin</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/advertising-freewheel-plugin.html">Werbung mit dem FreeWheel Plugin</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/advertising-ima3-plugin.html">Werbung mit dem IMA3-Plugin</a></li>
-                  
-                
-                  
-                    <li><a href="/advertising/client-side-preroll-with-live-ssai.html">Clientseitige Pre-Roll-Anzeigen mit Live SSAI</a></li>
-                  
-                
-                  
-                    <li><a href="/advertising/displaying-ads-using-ad-cue-points.html">Anzeigen anzeigen, die Ad Cue-Points</a></li>
-                  
-                
-                  
-                    <li><a href="/advertising/flash-no-longer-valid-ima.html">Flash ist nicht mehr gültig mit IMA</a></li>
-                  
-                
-                  
-                    <li><a href="/advertising/guide-ad-partner-integration.html">Leitfaden: Integration von Werbepartnern</a></li>
-                  
-                
-                  
-                    <li><a href="/advertising/guide-contrib-ads-migration.html">Leitfaden: Beitragsanzeigen Migration</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/implementing-server-side-ads-brightcove-player.html">Implementierung von SSAI mit dem Brightcove Player</a></li>
-                  
-                
-                  
-                    <li><a href="/advertising/jump-start-header-bidding-ad.html">Starthilfe: Header Gebote Ad</a></li>
-                  
-                
-                  
-                    <li><a href="/advertising/jump-start-outstream-ad.html">Starthilfe: Outstream-Anzeige</a></li>
-                  
-                
-                  
-                    <li><a href="/advertising/jump-start-pre-roll-ad.html">Starthilfe: Pre-Roll-Anzeige</a></li>
-                  
-                
-                  
-                    <li><a href="/advertising/known-issues-server-side-ad-insertion-ssai.html">Bekannte Probleme: Serverseitige Anzeigeneinfügung (SSAI)</a></li>
-                  
-                
-                  
-                    <li><a href="/getting-started/learning-guide-video-advertising.html">Leitfaden zum Lernen: Videowerbung</a></li>
-                  
-                
-                  
-                    <li><a href="/advertising/step-step-implementing-advertising.html">Schritt für Schritt: Implementierung von Werbung</a></li>
-                  
-                
-                  
-                    <li><a href="/advertising/testing-pre-release-advertising-plugins.html">Testen von Pre-Release-Werbe-Plu</a></li>
-                  
-                
-                  
-                    <li><a href="/advertising/using-dfp-premium-brightcove-player.html">Verwenden von DFP Premium mit Brightcove Player</a></li>
-                  
-                
-                  
-                    <li><a href="/advertising/using-player-enhancements-live-ssai-brightcove-player.html">Verwenden von Live SSAI und Advanced Player Toolkit</a></li>
-                  
-                
-                  
-                    <li><a href="/advertising/video-cloud-ssai-ad-tag-validation.html">Video Cloud SSAI-Anzeigen-Tag-Validierung</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/publish/index.html">Veröffentlichen von Videos &amp; Spielern <strong>+</strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/publish/assigning-video-player-programmatically.html">Programmgesteuertes Zuweisen eines Videos zum Player</a></li>
-                  
-                
-                  
-                    <li><a href="/publish/available-options-advanced-page-embed-code.html">Verfügbare Optionen für den erweiterten (Seiten-) Einbettungscode</a></li>
-                  
-                
-                  
-                    <li><a href="/publish/available-options-standard-iframe-embed-code.html">Verfügbare Optionen für den Standard (iframe) -Einbettungscode</a></li>
-                  
-                
-                  
-                    <li><a href="/publish/brightcove-player-loader.html">Brightcove Spielerlader</a></li>
-                  
-                
-                  
-                    <li><a href="/publish/bulk-updating-brightcove-default-player.html">Bulk-Aktualisierung von Brightcove Default Player</a></li>
-                  
-                
-                  
-                    <li><a href="https://studio.support.brightcove.com/publish/choosing-correct-embed-code.html">Auswahl des richtigen Einbettungscodes</a></li>
-                  
-                
-                  
-                    <li><a href="/publish/delaying-player-instantiation.html">Verzögerung der Spieler-Instanziierung</a></li>
-                  
-                
-                  
-                    <li><a href="/publish/pre-release-player.html">Spieler vor der Veröffentlichung</a></li>
-                  
-                
-                  
-                    <li><a href="/publish/syndication-strategies.html">Strategien zur Syndizierung</a></li>
-                  
-                
-                  
-                    <li><a href="/publish/using-non-brightcove-player.html">Verwenden eines Nicht-Brightcove Players</a></li>
-                  
-                
-                  
-                    <li><a href="https://studio.support.brightcove.com/publish/using-multiple-players-one-page.html">Verwendung mehrerer Spieler auf einer Seite</a></li>
-                  
-                
-                  
-                    <li><a href="https://studio.support.brightcove.com/publish/using-reference-ids.html">Verwenden von Referenznummern</a></li>
-                  
-                
-                  
-                    <li><a href="">Inspektor für Videowiedergabe-Versionen</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/troubleshooting/index.html">Problembehandlung <strong>+</strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/troubleshooting/brightcove-playback-technology-app.html">Brightcove Wiedergabe-Technologie-App</a></li>
-                  
-                
-                  
-                    <li><a href="/references/brightcove-player-error-reference.html">Brightcove Player Fehlerreferenz</a></li>
-                  
-                
-                  
-                    <li><a href="/troubleshooting/brightcove-player-information-modal.html">Brightcove Spielerinformationen Modal</a></li>
-                  
-                
-                  
-                    <li><a href="/troubleshooting/brightcove-player-troubleshooting-guide.html">Handbuch zur Fehlerbehebung bei Brightcove</a></li>
-                  
-                
-                  
-                    <li><a href="/troubleshooting/creating-charles-log.html">Erstellen eines Charles Log</a></li>
-                  
-                
-                  
-                    <li><a href="/troubleshooting/creating-network-log.html">Erstellen eines Netzwerkprotokolls</a></li>
-                  
-                
-                  
-                    <li><a href="/troubleshooting/domain-restrictions-messaging.html">Messaging für Domänenein</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/display-error-messages-plugin.html">Plugin Fehlermeldungen anzeigen</a></li>
-                  
-                
-                  
-                    <li><a href="/troubleshooting/manually-setting-player-version.html">Manuelles Einstellen der Player-Version</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/playerplugin-version-testing.html">Versionstest von Player/Plu</a></li>
-                  
-                
-                  
-                    <li><a href="/troubleshooting/player-informational-properties.html">Informative Eigenschaften von Spielern</a></li>
-                  
-                
-                  
-                    <li><a href="/code-samples/brightcove-player-sample-live-custom-error-message.html">Beispiel: Benutzerdefinierte Live-Fehlermeldung</a></li>
-                  
-                
-                  
-                    <li><a href="/troubleshooting/step-step-brightcove-player-debugger.html">Schritt für Schritt: Brightcove Spieler-Debugger</a></li>
-                  
-                
-                  
-                    <li><a href="/troubleshooting/running-network-path-trace.html">Ausführen eines Netzwerkpfad-Trace</a></li>
-                  
-                
-                  
-                    <li><a href="/troubleshooting/using-player-reference.html">Verwenden der Spieler-Referenz</a></li>
-                  
-                
-                  
-                    <li><a href="/troubleshooting/vetting-brightcove-player-releases.html">Überprüfung von Brightcove Player-Veröffentlichungen</a></li>
-                  
-                
-                  
-                    <li><a href="/troubleshooting/viewing-player-configuration.html">Anzeigen der Player-Konfiguration</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/styling/index.html">Styling &amp; Aussehen <strong>+</strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/styling/customizing-player-appearance.html">Anpassen des Erscheinungsbildes des</a></li>
-                  
-                
-                  
-                    <li><a href="/styling/customizing-player-appearance-legacy-skin.html">Anpassen des Spielerauftritts - Legacy</a></li>
-                  
-                
-                  
-                    <li><a href="/styling/brightcove-player-sample-player-styling-playground.html">Spieler Styling Spielplatz</a></li>
-                  
-                
-                  
-                    <li><a href="/styling/quick-start-player-customization-legacy-skin.html">Kurzanleitung: Spieler-Anpassung - Legacy-Skin</a></li>
-                  
-                
-                  
-                    <li><a href="/getting-started/step-step-player-customization.html">Schritt für Schritt: Spieler-Anpassung</a></li>
-                  
-                
-                  
-                    <li><a href="/styling/responsive-sizing-brightcove-player.html">Responsive Größenanpassung für den Brightcove Player</a></li>
-                  
-                
-                  
-                    <li><a href="/styling/sizing-player.html">Dimensionierung des Players</a></li>
-                  
-                
-                  
-                    <li><a href="/styling/skins-and-player-versions.html">Skins und Player-Versionen</a></li>
-                  
-                
-                  
-                    <li><a href="https://studio.support.brightcove.com/media/styling-captions.html">Stiling Bildunterschriften</a></li>
-                  
-                
-                  
-                    <li><a href="/styling/styling-playlists.html">Wiedergabelisten gestalten</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/playback/index.html">wiedergabe <strong>+</strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/playback/autoplay-considerations.html">Überlegungen zur Autoplay-</a></li>
-                  
-                
-                  
-                    <li><a href="/troubleshooting/brightcove-playback-technology-app.html">Brightcove Wiedergabe-Technologie-App</a></li>
-                  
-                
-                  
-                    <li><a href="/playback/xdr-with-bcplayer.html">Geräteübergreifender Lebenslauf mit Brightcove Player</a></li>
-                  
-                
-                  
-                    <li><a href="https://studio.support.brightcove.com/publish/deep-linking.html">Deep Linking</a></li>
-                  
-                
-                  
-                    <li><a href="/playback/delivering-hls-video.html">HLS-Video liefern</a></li>
-                  
-                
-                  
-                    <li><a href="/playback/determining-which-rendition-will-play.html">Bestimmen, welche Wiedergabeversion spielen wird</a></li>
-                  
-                
-                  
-                    <li><a href="/playback/guide-playback-technology.html">Leitfaden: Playback-Technologie</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/hls-plugin.html">HLS Plugin</a></li>
-                  
-                
-                  
-                    <li><a href="/playback/ios-and-brightcove-player.html">iOS und Brightcove Spieler</a></li>
-                  
-                
-                  
-                    <li><a href="/playback/overview-https-support.html">Übersicht: HTTPS Unterstützung</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/quality-selection-plugin.html">Plugin zur Qualitätsauswahl</a></li>
-                  
-                
-                  
-                    <li><a href="/playback/static-url-delivery.html">Statische URL-Lieferung</a></li>
-                  
-                
-                  
-                    <li><a href="/playback/streaming-playready-protected-content-dynamic-delivery.html">Streaming von PlayReady geschützten Inhalten</a></li>
-                  
-                
-                  
-                    <li><a href="/playback/using-brightcove-player-tve.html">Verwenden des Brightcove Players für TVE</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/content-protection/index.html">DRM &amp; Content-Schutz <strong>+</strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="https://studio.support.brightcove.com/players/configuring-player-content-restrictions.html">Konfigurieren von Player-Inhaltsbeschränkungen</a></li>
-                  
-                
-                  
-                    <li><a href="/content-protection/creating-dash-drm-manifest-brightcove-player.html">Erstellen eines DASH-DRM-Manifest für den Brightcove Player</a></li>
-                  
-                
-                  
-                    <li><a href="/troubleshooting/domain-restrictions-messaging.html">Messaging für Domänenein</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/configuring-brightcove-player-drm.html">DRM-Plugin</a></li>
-                  
-                
-                  
-                    <li><a href="/content-protection/overview-content-protection.html">Übersicht: Schutz von Inhalten</a></li>
-                  
-                
-                  
-                    <li><a href="/content-protection/policy-keys.html">Richtlinien-</a></li>
-                  
-                
-                  
-                    <li><a href="/content-protection/restricting-video-playback-using-ip-address.html">Einschränken der Videowiedergabe mit IP-Adresse</a></li>
-                  
-                
-                  
-                    <li><a href="/content-protection/signed-urls-and-token-auth-live-stream.html">Signierte URLs und Token Auth mit einem Live Stream</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/coding-topics/index.html">Themen für Codierung <strong>+</strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/publish/brightcove-player-loader.html">Brightcove Spielerlader</a></li>
-                  
-                
-                  
-                    <li><a href="/references/catalog-search-architecture.html">Katalog-Suche Upgrade</a></li>
-                  
-                
-                  
-                    <li><a href="/code-samples/brightcove-player-sample-trigger-rewind-custom-event.html">Benutzerdefiniertes Ereignis</a></li>
-                  
-                
-                  
-                    <li><a href="/playback/guide-playback-technology.html">Leitfaden: Playback-Technologie</a></li>
-                  
-                
-                  
-                    <li><a href="/coding-topics/programmatically-localizing-brightcove-player.html">Lokalisieren von Brightcove Player</a></li>
-                  
-                
-                  
-                    <li><a href="/coding-topics/localizing-plugins.html">Lokalisieren von Plugins</a></li>
-                  
-                
-                  
-                    <li><a href="/coding-topics/player-events.html">Spieler-Events</a></li>
-                  
-                
-                  
-                    <li><a href="/coding-topics/overview-components.html">Übersicht: </a>Komponenten</li>
-                  
-                
-                  
-                    <li><a href="/playback/overview-https-support.html">Übersicht: HTTPS Unterstützung</a></li>
-                  
-                
-                  
-                    <li><a href="/coding-topics/overview-player-api.html">Übersicht: Spieler-API</a></li>
-                  
-                
-                  
-                    <li><a href="/coding-topics/pass-data-plugin.html">Übergeben Sie Daten an das Plugin</a></li>
-                  
-                
-                  
-                    <li><a href="/coding-topics/react-player-loader.html">Reagieren Spielerlader</a></li>
-                  
-                
-                  
-                    <li><a href="/coding-topics/reporting-brightcove-player-configurations.html">Berichterstattung über Brightcove Player-Konfigurationen</a></li>
-                  
-                
-                  
-                    <li><a href="/coding-topics/requirejs-and-brightcove-player.html">RequireJS und Brightcove Player</a></li>
-                  
-                
-                  
-                    <li><a href="/coding-topics/step-step-plugin-development.html">Schritt für Schritt: Plugin-Entwicklung</a></li>
-                  
-                
-                  
-                    <li><a href="/coding-topics/step-step-videojs-plugin-generator.html">Schritt für Schritt: Video.js Plugin-Gener</a></li>
-                  
-                
-                  
-                    <li><a href="/coding-topics/using-bc-and-getplayer-methods.html">Verwenden von bc () und getPlayer () Methoden</a></li>
-                  
-                
-                  
-                    <li><a href="/troubleshooting/viewing-player-configuration.html">Anzeigen der Player-Konfiguration</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/general/index.html">Allgemeine Informationen <strong>+</strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="https://studio.support.brightcove.com/publish/adding-application-id-player-embed-code.html">Hinzufügen einer Anwendungs-ID zum Einbettungscode für Spieler</a></li>
-                  
-                
-                  
-                    <li><a href="/general/adding-captions-videos-programmatically.html">Programmatisch Untertitel zu Videos hinzufügen</a></li>
-                  
-                
-                  
-                    <li><a href="https://studio.support.brightcove.com/media/adding-chapters-video.html">Hinzufügen von Kapiteln zu einem Video</a></li>
-                  
-                
-                  
-                    <li><a href="/general/brightcove-player-6-now-default-version.html">Brightcove Player 6 jetzt Standardversion</a></li>
-                  
-                
-                  
-                    <li><a href="/general/brightcove-player-accessibility.html">Barrierefreiheit von Brightcove Spielern</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/custom-endscreen-plugin.html">Benutzerdefiniertes Endscreen-Plu</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/display-overlay-plugin.html">Overlay-Plugin anzeigen</a></li>
-                  
-                
-                  
-                    <li><a href="/references/guide-playlist-api.html">Leitfaden: Playlist-API</a></li>
-                  
-                
-                  
-                    <li><a href="/general/identify-and-delete-low-performing-videos.html">Identifizieren und Löschen von Videos mit geringer Leistung</a></li>
-                  
-                
-                  
-                    <li><a href="/general/implementing-cue-points-programmatically.html">Programmatische Implementierung von Cue-Points</a></li>
-                  
-                
-                  
-                    <li><a href="/general/implementing-playlists.html">Implementierung von Playlists</a></li>
-                  
-                
-                  
-                    <li><a href="/general/implementing-modaldialog.html">Implementierung des ModalDialog</a></li>
-                  
-                
-                  
-                    <li><a href="/general/live-hls.html">Live-HLS</a></li>
-                  
-                
-                  
-                    <li><a href="/general/live-stream-configuration.html">Live Stream-Konfiguration</a></li>
-                  
-                
-                  
-                    <li><a href="/general/multiple-audio-tracks.html">Mehrere Audiospuren</a></li>
-                  
-                
-                  
-                    <li><a href="/general/player-configuration-guide.html">Anleitung zur Spieler-Konfiguration</a></li>
-                  
-                
-                  
-                    <li><a href="/general/playing-live-streams.html">Livestreams spielen</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/playlist-ui-plugin.html">Playlist-UI-Plu</a></li>
-                  
-                
-                  
-                    <li><a href="/content-protection/signed-urls-and-token-auth-live-stream.html">Signierte URLs und Token Auth mit einem Live Stream</a></li>
-                  
-                
-                  
-                    <li><a href="/plugins/social-sharing-plugin.html">Plugin für soziale Medien</a></li>
-                  
-                
-                  
-                    <li><a href="https://apis.support.brightcove.com/player-management/getting-started/step-step-player-management.html">Schritt für Schritt: Spieler-Management</a></li>
-                  
-                
-                  
-                    <li><a href="/styling/styling-playlists.html">Wiedergabelisten gestalten</a></li>
-                  
-                
-                  
-                    <li><a href="/general/using-screen-reader-brightcove-player.html">Verwenden eines Screenreaders mit dem Brightcove Player</a></li>
-                  
-                
-                  
-                    <li><a href="/general/versions-brightcove-player-documentation.html">Versionen der Brightcove Player-Dokumentation</a></li>
-                  
-                
-                  
-                    <li><a href="/general/volume-control.html">Lautstärkeregelung</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/code-samples/index.html">Codebeispiele <strong>+</strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/code-samples/index-thumb.html">Codebeispiele nach Gruppen</a></li>
-                  
-                
-                  
-                    <li><a href="/code-samples/index.html">Codebeispielindex</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/amp/index.html">AMP <strong>+</strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/amp/amp-using-video-cloud-video.html">AMP Verwendung eines Video Cloud-Videos</a></li>
-                  
-                
-                  
-                    <li><a href="/amp/amp-using-external-video.html">AMP Verwenden eines externen Videos</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/training/index.html">Schulung <strong>+</strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/training/online-training-courses.html">Alle Online-Schulungen</a></li>
-                  
-                
-                  
-                    <li><a href="/training/developer-basics-videos.html">Basics Videos für Entwickler</a></li>
-                  
-                
-                  
-                    <li><a href="/training/player-development-training-videos.html">Schulungsvideos zur Spielerentwicklung</a></li>
-                  
-                
-                  
-                    <li><a href="/training/register-training.html">Registrieren Sie sich für Schulungen mit Kursleiter</a></li>
-                  
-                
-                  
-                    <li><a href="/training/training-demand-developing-brightcove-player.html">Schulung: Entwicklung mit dem Brightcove Player</a></li>
-                  
-                
-                  
-                    <li><a href="https://apis.support.brightcove.com/player-management/getting-started/training-demand-quick-start-player-management.html">Schulung: Schnelleinstieg in die Spielerverwaltung</a></li>
-                  
-                
-                  
-                    <li><a href="/training/brightcove-university.html">Schulungskurse der Brightcove University</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/release-notes/index.html">Versionsinformationen <strong>+</strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/release-notes/brightcove-player-release-notes.html">Versionshinweise für Brightcove Spieler</a></li>
-                  
-                
-                  
-                    <li><a href="/release-notes/brightcove-player-prerelease-notes.html">Vorabversionsinformationen für Brightcove-Spieler</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/support/index.html">unterstützung <strong>+</strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    
-                  
-                
-                  
-                    <li><a href="/support/viewing-brightcove-system-status-page.html">Anzeigen der Seite „Systemstatus von Brightcove“</a></li>
-                  
-                
-                  
-                    <li><a href="/support/contact-sales.html">Kontakt mit dem Vertrieb</a></li>
-                  
-                
-                  
-                    <li><a href="/support/opening-case-with-brightcove-support.html">Einen Supportfall öffnen</a></li>
-                  
-                
-              </ul>
-            
-          
-      </nav>
-    </div>
-    <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
-  <!-- bootstrap layout -->
-
-<p id="bc_veggie_burger_wrapper" style="display: none;"><img id="bc_veggie_burger" src="/assets/images/feather/menu.svg" alt="Menü „Navigation"/></p>
-
-<!-- search bar -->
-<div id="nav-search-box" style="margin-top: 1rem;"></div>
-<!-- in-page navigation for narrow screens -->
-<details class="centered-inpage-nav" id="centered_inpage_nav">
-  <summary><h6 class="toc">Inhalt der Seite</h6></summary>
-  <nav id="centered_toc"></nav>
-  <ul id="centered_in_page_toc" class="list-none"></ul>
-</details>
-<!-- open in new tab/window -->
-<a id="open_new_tab" href="#" target="_blank" style="display: none;"><img src="/assets/images/feather/external-link.svg" alt="in neuem Tab öffnen" style="margin-top:4em;width: 1.5em;"/></a>
-
-
-
-  
-    
-
+---
+title: Programmgesteuertes Hinzufügen von Untertiteln zu Videos
+parent: General Information
+description: In this topic, you will learn how to add captions to videos using the Brightcove Player.
+---
 
 <article class="bcls-article">
-  <h1>Programmatisch Untertitel zu Videos hinzufügen</h1>
-  <summary>In diesem Thema erfahren Sie, wie Sie mit dem Brightcove Player Untertitel zu Videos hinzufügen.</summary>
+  <h1>Programmgesteuertes Hinzufügen von Untertiteln zu Videos</h1>
+  <summary>{{ page.description }}</summary>
   <style type="text/css">
-.vjs-text-track {
-	background-color: black;
-	font-size: medium;
-	font-weight: bold;
-}
+.vjs-text-track { background-color: black; font-size: medium; font-weight: bold; }
 </style>
   <section class="bcls-section">
-    <h2 id="Overview">Übersicht</h2>
-    <p>Fügen Sie Ihren Videos Untertitel hinzu, um dem Betrachter auf Wunsch zusätzliche Informationen oder eine Verständnishilfe zu bieten. Untertitel sind erforderlich, damit taube und hörbehinderte Betrachter den Audio-Teil von Videos verstehen. Um Untertitel für ein Video im Brightcove Player anzuzeigen, müssen Sie die folgenden Aufgaben ausführen:</p>
+    <h2 id="Overview">Überblick</h2>
+    <p>Ihren Videos können Untertitel hinzugefügt werden, um Personen, die darauf zugreifen möchten, zusätzliche oder interpretive Informationen zur Verfügung zu stellen. Untertitel sind notwendig, damit Gehörlose und Schwerhörige auf den Audioteil von Videopräsentationen zugreifen können. Um Untertitel für ein Video im Brightcove Player anzuzeigen, müssen Sie die folgenden Aufgaben ausführen:</p>
     <ul>
       <li><a href="#captionsfile">Erstellen Sie eine Untertiteldatei für Ihr Video</a></li>
-      <li><a href="#pubcode">Ändern Sie den Player-Veröffentlichungscode so, dass er ein &lt;track&gt; -Tag enthält</a></li>
-      <li><a href="#style">Gestalten Sie die Untertitel</a></li>
+      <li><a href="#pubcode">Ändern Sie den Publishing-Code des Players, um ein &lt;Track&gt; Tag einzuschließen</a></li>
+      <li><a href="#style">Stylen Sie die Untertitel</a></li>
       <li><a href="#implementcode">Verwenden Sie Code, um Untertitel hinzuzufügen</a></li>
     </ul>
-    <aside class="bcls-aside bcls-aside--information video-cloud-only">Untertitel können auch mit Video Cloud Studio konfiguriert werden. Weitere Informationen finden Sie unter <a href="https://studio.support.brightcove.com/media/adding-captions-videos-using-media-module.html">Hinzufügen von Untertiteln zu Videos</a>.</aside>
+    <aside class="bcls-aside bcls-aside--information video-cloud-only">Untertitel können auch mit Video Cloud Studio konfiguriert werden. Weitere Informationen finden Sie unter Beschriftungen zu Videos <a href="https://studio.support.brightcove.com/media/adding-captions-videos-using-media-module.html">hinzufügen</a>.</aside>
   </section>
   <section class="bcls-section">
     <h2 id="captionsfile">Erstellen von Untertiteldateien</h2>
-    <p>Um einem Video Untertitel hinzuzufügen, müssen Sie zunächst eine Untertiteldatei erstellen. Für den Brightcove Player müssen Untertitel im Web Video Text Tracks Format (WebVTT) vorliegen. (Wenn Sie Untertitel in ein Dynamic Delivery-Konto aufnehmen, können Sie DFXP- oder SRT-Beschriftungen hinzufügen. Diese werden automatisch in WebVTT-Beschriftungen konvertiert.) Das WebVTT-Dateiformat ist ein reines Textformat und enthält Zeittextdaten gefolgt vom gewünschten Untertiteltext. Hier ein Auszug aus einer WebVTT-Datei:</p>
+    <p>Um einem Video Beschriftungen hinzuzufügen, müssen Sie zuerst eine Untertiteldatei erstellen. Der Brightcove Player verlangt, dass Beschriftungen im Web Video Text Tracks Format (WebVTT) enthalten sind. (Wenn Sie Beschriftungen in ein Dynamic Delivery-Konto aufnehmen, können Sie DFXP- oder SRT-Untertitel hinzufügen, die automatisch in WebVTT-Untertitel konvertiert werden.) Das WebVTT-Dateiformat ist im Klartext und enthält Zeittextdaten gefolgt von der gewünschten Beschriftung oder Untertiteltext. Ein Teil einer WebVTT-Datei ist unten dargestellt.</p>
     <pre class="line-numbers">
 <code class="language-html" translate="No">WEBVTT
 
@@ -1134,23 +43,24 @@ brief overview of what
 
 00:00:14.940 --&gt; 00:00:17.490 align:middle line:90%
 you can accomplish using it.</code></pre>
-    <p>Weitere Informationen über das WebVTT-Format finden Sie <a href="//dev.w3.org/html5/webvtt/">hier</a>. Sie sollten eine separate Untertiteldatei für jede Sprache haben, die Sie unterstützen müssen. Ihnen stehen neben Brightcove-Partnern, die Transkription, Untertitelung und Übersetzungen anbieten, auch viele Tools von Drittanbietern zum Erstellen von Untertiteldateien zur Verfügung. Eine vollständige Liste aller Brightcove-Partner finden Sie im Abschnitt <a href="https://www.brightcove.com/en/partners/find-partner">Partners</a> auf unserer Website.</p>
-    <p>Wenn Sie Dynamic Delivery-Videos verwenden, können Sie auch SRT- oder DFXP-Untertitel aufnehmen, und Brightcove konvertiert sie automatisch in WebVTT. Siehe die <a href="https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-webvtt-files-text-trackscaptions.html">WebVTT-Dateien aufnehmen (Textspuren / Bildunterschriften)</a> Dokument für weitere Informationen.</p>
+    <p>Weitere Informationen zum WebVTT-Format finden Sie unter <a href="//dev.w3.org/html5/webvtt/">diesem Link</a>. Sie sollten eine separate Untertiteldatei für jede Sprache haben, die Sie unterstützen müssen. Während es viele Tools von Drittanbietern gibt, mit denen Sie Untertiteldateien erstellen können, hat Brightcove mehrere Partner, die Transkriptions-, Untertitelungs- und Übersetzungsdienste anbieten. Eine vollständige Liste der Brightcove-Partner finden Sie im</a> Abschnitt <a href="https://www.brightcove.com/en/partners/find-partner">Partner unserer Website.</p>
+    <p>Wenn Sie Dynamic Delivery-Videos verwenden, können Sie auch SRT- oder DFXP-Untertitel aufnehmen, und Brightcove konvertiert sie automatisch in WebVTT. Weitere Informationen finden Sie im</a> Dokument <a href="https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-webvtt-files-text-trackscaptions.html">Ingesting webVTT Files (Text Tracks/Captions).</p>
   </section>
   <section class="bcls-section video-cloud-only">
-    <h2 id="Add_captions_to_videos">Fügen Sie Videos Untertitel hinzu</h2>
-    <p>In Video Cloud können Sie Ihre WebVTT-Untertitel einem Video hinzufügen, entweder als Remote-Asset, das Sie hosten, oder indem Sie es in Video Cloud aufnehmen. Sobald Sie dies getan haben, fügt der Brightcove-Player beim Laden des Videos automatisch die Untertitel hinzu und zeigt die an <strong>CC</strong> Taste in den Player-Steuerelementen. Weitere Informationen zum Hinzufügen von Untertiteln zu Videos finden Sie unter <a href="https://studio.support.brightcove.com/media/overview-adding-captions-video.html">Überblick: Hinzufügen von Untertiteln zu einem Video</a>.</p>
-    <aside class="bcls-aside bcls-aside--information">Hinweis: Wenn Sie Untertiteldateien auf Ihrem eigenen Server hosten, stellen Sie sicher, dass sich die Datei unter einer URL befindet, auf die der Brightcove Player zugreifen kann. Auf dem Server, der die Untertiteldatei hostet, sollte auch Cross-Origin Resource Sharing (CORS) aktiviert sein. Weitere Informationen über CORS finden Sie <a href="https://general.support.brightcove.com/developer/concepts-cors.html">hier</a>.</aside>
+    <h2 id="Add_captions_to_videos">Fügen Sie Beschriftungen zu Videos hinzu</h2>
+    <p>In Video Cloud können Sie Ihre WebVTT-Untertitel entweder als Remote-Asset, das Sie hosten, oder indem Sie es in Video Cloud aufnehmen. Sobald Sie dies tun, fügt der Brightcove Player die Untertitel automatisch hinzu, wenn er das Video lädt, und zeigt die <strong></strong> CC-Taste in den Player-Steuerelementen an. Weitere Informationen zum Hinzufügen von Untertiteln zu Videos finden Sie unter <a href="https://studio.support.brightcove.com/media/overview-adding-captions-video.html">Überblick: Hinzufügen von Untertiteln zu einem Video</a>.</p>
+    <aside class="bcls-aside bcls-aside--information">Hinweis: Wenn Sie Untertiteldateien auf Ihrem eigenen Server hosten, stellen Sie sicher, dass sich die Datei unter einer URL befindet, auf die der Brightcove Player zugreifen kann. Auf dem Server, der die Untertiteldatei hostet, sollte auch Cross-Origin Resource Sharing (CORS) aktiviert sein. Mehr über CORS können Sie <a href="https://general.support.brightcove.com/developer/concepts-cors.html">hier lesen</a>.</aside>
   </section>
   <section class="bcls-section">
-    <h2 id="pubcode">Einschließlich eines &lt;track&gt; -Tags</h2>
-    <p>Um einem Brightcove-Player WebVTT-Untertiteldateien zuzuordnen, müssen Sie den In-Page-Einbettungscode so ändern, dass er einbezogen wird <code translate="No">&lt;track&gt;</code> Tag für jede Untertiteldatei, die Sie haben. Beispiel:</p>
+    <h2 id="pubcode">Einschließlich eines &lt;Track&gt; Tag</h2>
+    <p>Um eine WebVTT-Untertiteldatei (en) einem Brightcove Player zuzuordnen, müssen Sie den In-Page-Einbettungscode so ändern, dass er ein <code translate="No">&lt;track&gt;</code> Tag für jede Untertiteldatei enthält, die Sie haben. Zum Beispiel:</p>
     <pre class="line-numbers">
 <code class="language-html" translate="No">&lt;track kind="captions" src="&lt;location of caption file&gt;" srclang="en" label="English"&gt;</code></pre>
-    <p>Das <code translate="No">&lt;track&gt;</code> Mit dem Tag werden Untertitel, Untertiteldateien oder andere Dateien mit Text angegeben, die während der Wiedergabe des Mediums sichtbar sein sollen. Die Schritte dazu sind unten beschrieben.</p>
-    <aside class="bcls-aside bcls-aside--information">Beachten Sie, dass für die Sprache 2- oder 4-Buchstaben-Sprachcodes verwendet werden können <code translate="No">srclang</code> Attribut (z <code translate="No">en</code> oder <code translate="No">en-us</code>).</aside>
+    <p>Das <code translate="No">&lt;track&gt;</code> Tag wird verwendet, um Untertitel, Untertiteldateien oder andere Dateien mit Text anzugeben, die bei der Wiedergabe des Mediums sichtbar sein sollten. Die Schritte dazu sind nachstehend beschrieben.</p>
+    <aside class="bcls-aside bcls-aside--information">Beachten Sie, dass Sprachcodes mit 2 oder 4 Buchstaben für das <code translate="No">srclang</code> Attribut verwendet werden können ( <code translate="No">en</code> z. <code translate="No">en-us</code>).</aside>
     <ol class="bcls-tasklist">
-      <li>Generieren Sie die <strong>Fortgeschrittene</strong> (In-Page) Code für Ihren Player einbetten. <span class="video-cloud-only">Dies kann mit dem erfolgen <a href="https://studio.support.brightcove.com/players/generating-player-embed-code.html">Medienmodul</a>.</span><br/> Ihr Code sollte ungefähr so aussehen:
+      <li>Generiere den <strong>Advanced</strong> (In-Page) Einbettungscode für deinen Spieler. <span class="video-cloud-only">Dies kann mit dem <a href="https://studio.support.brightcove.com/players/generating-player-embed-code.html">Medienmodul erfolgen</a>.</span><br />
+        Ihr Code sollte folgendermaßen aussehen:
         <pre class="video-cloud-only">
 <code class="language-html" translate="No">&lt;video-js 
 	id="myPlayerID" 
@@ -1174,9 +84,11 @@ you can accomplish using it.</code></pre>
     width="640" height="360"&gt;
 &lt;/video-js&gt;
 &lt;script src="https://players.brightcove.net/20318290001/default_default/index.min.js"&gt;&lt;/script&gt;</code></pre>
-        <aside class="bcls-aside bcls-aside--tip">Zum <code translate="No">&lt;video-js&gt;</code> Element haben wir ein hinzugefügt <code translate="No">id</code> Attribut mit einem Wert von <strong>myPlayerID</strong>. Dies ist erforderlich, um in Schritt 3 einen Verweis auf den Spieler zu erhalten.</aside>
+        <aside class="bcls-aside bcls-aside--tip">Zum <code translate="No">&lt;video-js&gt;</code> Element haben wir ein <code translate="No">id</code> Attribut mit dem Wert <strong>myPlayerID hinzugefügt</strong>. Dies ist erforderlich, um in Schritt 3 einen Verweis auf den Spieler zu erhalten.</aside>
       </li>
-      <li>Hinzufügen <code translate="No">&lt;track&gt;</code> Tag (s) innerhalb der <code translate="No">&lt;video-js&gt;</code> Kennzeichnen Sie diesen Punkt mit dem Speicherort aller Untertiteldateien. <span class="player-only">Player Studio bietet Publishern derzeit keine Möglichkeit, WebVTT-Untertiteldateien hochzuladen.</span> Die URL für den Speicherort der Untertiteldatei muss weniger als 250 Zeichen enthalten.<br/> <br/> Im folgenden Beispiel wurden englische, japanische und französische Untertiteldateien angegeben. Eine vollständige Liste der Sprachcodes finden Sie in der <a href="http://www.w3schools.com/tags/ref_language_codes.asp">HTML-Sprachcode-Referenz</a>.
+      <li>Fügen Sie <code translate="No">&lt;track&gt;</code> Tags innerhalb des <code translate="No">&lt;video-js&gt;</code> Tags hinzu, die auf den Speicherort aller Untertiteldateien zeigen. <span class="player-only">Player Studio bietet Publishern derzeit keine Möglichkeit, WebVTT-Untertiteldateien hochzuladen.</span> Die URL für den Speicherort der Untertiteldatei muss weniger als 250 Zeichen lang sein.<br />
+        <br />
+        Im folgenden Beispiel wurden englische, japanische und französische Untertiteldateien angegeben. Eine vollständige Liste der Sprachcodes finden Sie in der <a href="http://www.w3schools.com/tags/ref_language_codes.asp">HTML-Sprachcode-Referenz</a>.
         <pre class="video-cloud-only">
 <code class="language-html" translate="No">&lt;video-js 
 	id="myPlayerID" 
@@ -1207,42 +119,42 @@ you can accomplish using it.</code></pre>
 &lt;script src="https://players.brightcove.net/20318290001/default_default/index.min.js"&gt;&lt;/script&gt;
 </code></pre>
       </li>
-      <li><strong>(Optional)</strong> Damit Untertitel automatisch angezeigt werden, wenn das Video abgespielt wird, müssen Sie einige Änderungen an Ihrer Seite vornehmen. Sie müssen das hinzufügen <code translate="No">default</code> Attribut auf die <code translate="No">&lt;track&gt;</code> Tag für die Sprache zum Anzeigen und Festlegen und Hinzufügen einer kleinen Menge Code. Notiere dass der <code translate="No">default</code> Attribut sollte nur auf einem erscheinen <code translate="No">&lt;track&gt;</code> Etikett. Damit beispielsweise die englischen Untertitel angezeigt werden, wenn das Video abgespielt wird, wird die <code translate="No">&lt;track&gt;</code> Das Tag würde wie folgt geändert:
+      <li><strong>(Optional)</strong> Damit Untertitel automatisch angezeigt werden, wenn das Video abgespielt wird, müssen Sie einige Änderungen an Ihrer Seite vornehmen. Sie müssen das <code translate="No">default</code> Attribut dem <code translate="No">&lt;track&gt;</code> Tag hinzufügen, damit die Sprache angezeigt und festgelegt und eine kleine Menge Code hinzufügen kann. Beachten Sie, dass das <code translate="No">default</code> Attribut nur auf einem <code translate="No">&lt;track&gt;</code> Tag erscheinen sollte. Damit beispielsweise die englischen Bildunterschriften angezeigt werden, wenn das Video abgespielt wird, wird das <code translate="No">&lt;track&gt;</code> Tag wie folgt geändert:
         <pre class="line-numbers">
 <code class="language-html" translate="No">&lt;track kind="captions" src="https://solutions.brightcove.com/bcls/assets/captions/intro-vcs.vtt" srclang="en" label="English" default&gt;
 &lt;track kind="captions" src="https://solutions.brightcove.com/bcls/assets/captions/intro-vcs-jp.vtt" srclang="ja" label="Japanese"&gt;
 &lt;track kind="captions" src="https://solutions.brightcove.com/bcls/assets/captions/intro-vcs-fr.vtt" srclang="fr" label="French"&gt;</code></pre>
-        <p>Der Code, der zum automatischen Starten der angegebenen Untertitel benötigt wird, lautet:</p>
+        <p>Der Code, der benötigt wird, um die vorgesehenen Untertitel automatisch zu starten, lautet:</p>
         <pre class="line-numbers">
 <code class="language-javascript" translate="No">&lt;script type="text/javascript"&gt;
   videojs.getPlayer('myPlayerID').ready(function () {
     var myPlayer = this;
-    myPlayer.on("loadedmetadata", function () {
+    myPlayer.one("play", function () {
       //If you want to start English as the caption automatically
       myPlayer.textTracks()[1].mode = "showing";
     });
   });
 &lt;/script&gt;</code></pre>
       </li>
-      <li>Veröffentlichen Sie die Seite mit dem Player. Wird ein Player mit Untertiteln veröffentlicht, erscheint im Ladebildschirm die Schaltfläche <strong>CC</strong>.
-        <figure class="bcls-figure"><img class="bcls-image" alt="CC-Schaltfläche in der Symbolleiste" src="//img.brightcove.com/cc-button.png"/></figure>
+      <li>Veröffentlichen Sie die Seite mit dem Player. Wenn ein Spieler mit zugehörigen Beschriftungen veröffentlicht wird, erscheint eine <strong></strong> CC-Schaltfläche im Player Chrome.
+        <figure class="bcls-figure"><img class="bcls-image" alt="CC button on toolbar" src="/assets/images/general/cc-button.png" /></figure>
       </li>
-      <li>Klicken Sie auf <strong>CC</strong>, um die Untertitelsprache auszuwählen und die Untertitel anzuzeigen.
-        <figure class="bcls-figure"><img class="bcls-image" alt="Untertitel-Menü" src="//img.brightcove.com/caption-select.png"/></figure>
+      <li>Klicken Sie auf die</strong> Schaltfläche <strong>CC, um eine Untertitelsprache auszuwählen und die Untertitel anzuzeigen.
+        <figure class="bcls-figure"><img class="bcls-image" alt="captions menu" src="/assets/images/general/caption-select.png" /></figure>
       </li>
     </ol>
-    <aside class="bcls-aside bcls-aside--tip">Hinweis: Für Zuschauer auf iOS-Geräten empfehlen wir beim Anzeigen von Videos mit Untertiteln und Anzeigen, explizit einen Titel auszuwählen und die Untertitel während der Wiedergabe des Videos nicht auf Auto (empfohlen) zu setzen. Bei Verwendung der Einstellung Auto (empfohlen) werden möglicherweise falsche Untertitel für Anzeigen angezeigt. Beachten Sie, dass die Verwendung der Einstellung Auto (empfohlen) die Anzeige der Untertitel für das eigentliche Video nicht beeinflusst. Die Zuschauer sehen Videotitel für Anzeigen, aber sobald das Video abgespielt wird (Pre-Rolls) oder fortgesetzt wird (Mid-Rolls), werden die Untertitel wie erwartet angezeigt.</aside>
+    <aside class="bcls-aside bcls-aside--tip">Hinweis: Für Zuschauer auf iOS-Geräten empfehlen wir beim Betrachten von Videos mit Untertiteln und Anzeigen, explizit einen Titel auszuwählen und keine Untertitel auf Auto (empfohlen) zu setzen, wenn das Video abgespielt wird. Wenn Sie die Einstellung Auto (empfohlen) verwenden, werden möglicherweise falsche Untertitel für Anzeigen angezeigt. Beachten Sie, dass die Verwendung der Einstellung Auto (empfohlen) die Anzeige der Untertitel für das eigentliche Video nicht beeinflusst. Zuschauer sehen Videobeschriftungen für Anzeigen, aber sobald das Video abgespielt (Pre-Rolls) oder fortgesetzt wird (Mid-Rolls), werden die Untertitel wie erwartet angezeigt.</aside>
   </section>
   <section class="bcls-section">
-    <h2 id="style">Untertiteldesign</h2>
-    <p>In diesem Abschnitt erfahren Sie, wie Sie Untertitel programmgesteuert formatieren. Informationen zum Stylen von Untertiteln durch Ändern der WebVTT-Datei sowie der Benutzeroberfläche im Player finden Sie in der <a href="https://studio.support.brightcove.com/media/styling-captions.html">Bildunterschriften stylen</a> Dokument.</p>
-    <p>Zwei Methoden sind der Schlüssel zum programmgesteuerten Gestalten von Untertiteln:</p>
+    <h2 id="style">Beschriftungen stylen</h2>
+    <p>In diesem Abschnitt erfahren Sie, wie Sie Beschriftungen programmgesteuert gestalten können. Informationen zum Stylen von Beschriftungen durch Ändern der WebVTT-Datei und auch der Benutzeroberfläche im Player finden Sie im</a> Dokument <a href="https://studio.support.brightcove.com/media/styling-captions.html">Styling Captions.</p>
+    <p>Zwei Methoden sind der Schlüssel zum programmgesteuerten Stylen von Beschriftungen, die sind:</p>
     <ul>
-      <li><code translate="No">player.textTrackSettings.setValues()</code>:: Legt dynamisch Stile für die Beschriftungen in einem Player fest</li>
-      <li><code translate="No">player.textTrackSettings.saveSettings()</code>:: Speichert die Einstellungen im Browser <strong>lokaler Speicher</strong></li>
+      <li><code translate="No">player.textTrackSettings.setValues()</code>: Legt Stile dynamisch auf die Beschriftungen eines Players fest</li>
+      <li><code translate="No">player.textTrackSettings.saveSettings()</code>: Speichert Einstellungen im <strong>LocalStorage des Browsers</strong></li>
     </ul>
-    <h3>setValues (objectOfStyles)</h3>
-    <p>Es gibt eine begrenzte Anzahl von Stilen, die Sie für Beschriftungen ändern können. Diese werden im Folgenden beschrieben. Ein Beispiel für die Verwendung dieser Stile wird im folgenden Code gezeigt und zeigt Beschriftungen an, wie im Screenshot gezeigt:</p>
+    <h3>setValues (ObjectOfStyles)</h3>
+    <p>Es gibt eine begrenzte Anzahl von Stilen, die Sie für Beschriftungen ändern können, die unten aufgeführt sind. Ein Beispiel für die Verwendung dieser Stile ist im folgenden Code dargestellt und zeigt Beschriftungen an, wie im Screenshot gezeigt:</p>
     <pre class="line-numbers">
 <code class="language-javascript" translate="No">videojs.getPlayer('myPlayerID').ready(function () {
     var myPlayer = this;
@@ -1255,9 +167,9 @@ you can accomplish using it.</code></pre>
       windowOpacity: "0.5"
     }) </span>;
 });</code></pre>
-    <figure class="bcls-figure"><img class="bcls-image" alt="Gestaltete Untertitel" src="//learning-services-media.brightcove.com/doc-assets/player-development/player-customization/captions/styled-captions.png"/></figure>
-    <aside class="bcls-aside bcls-aside--tip language-editable">Das <strong>Fenster</strong> ist das cyanfarbene Rechteck, das fast die gesamte Breite des Players hat. Es ist üblich, KEIN Fenster zu verwenden, daher ist die Standardopazität <code translate="No">0</code>.</aside>
-    <p>In der folgenden Tabelle sind die Beschriftungsstile aufgeführt, die Sie ändern können, sowie die gültigen Werte für diese Stile:</p>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Styled Captions" src="/assets/images/general/styled-captions.png" /></figure>
+    <aside class="bcls-aside bcls-aside--tip">Das <strong>Fenster</strong> ist das cyanfarbene Rechteck, das fast die volle Breite des Spielers hat. Es ist üblich, KEIN Fenster zu verwenden, daher ist die Standarddeckkraft <code translate="No">0</code>.</aside>
+    <p>In der folgenden Tabelle sind die Beschriftungsstile aufgeführt, die Sie ändern können, und die gültigen Werte für diese Stile:</p>
     <table class="bcls-table">
       <thead class="bcls-table__head">
         <tr>
@@ -1272,7 +184,8 @@ you can accomplish using it.</code></pre>
         </tr>
         <tr>
           <td><code translate="No">backgroundOpacity</code></td>
-          <td><code translate="No">1</code> ( undurchsichtig)<br/> <code translate="No">.5</code> (halbtransparent)</td>
+          <td><code translate="No">1</code>(undurchsichtig)<br />
+            <code translate="No">.5</code>(halbtransparent)</td>
         </tr>
         <tr>
           <td><code translate="No">color</code></td>
@@ -1297,7 +210,8 @@ you can accomplish using it.</code></pre>
             small-caps</code></td>
         </tr>
         <tr>
-          <td><code translate="No">fontPercent</code><br/> (NICHT in Anführungszeichen im Objekt)</td>
+          <td><code translate="No">fontPercent</code><br />
+            (NICHT in Anführungszeichen im Objekt)</td>
           <td><code translate="No">0.50<br />
             0.75<br />
             1.00<br />
@@ -1310,7 +224,8 @@ you can accomplish using it.</code></pre>
         </tr>
         <tr>
           <td><code translate="No">textOpacity</code></td>
-          <td><code translate="No">1</code> ( undurchsichtig)<br/> <code translate="No">.5</code> (halbtransparent)</td>
+          <td><code translate="No">1</code>(undurchsichtig)<br />
+            <code translate="No">.5</code>(halbtransparent)</td>
         </tr>
         <tr>
           <td><code translate="No">windowColor</code></td>
@@ -1318,7 +233,9 @@ you can accomplish using it.</code></pre>
         </tr>
         <tr>
           <td><code translate="No">windowOpacity</code></td>
-          <td><code translate="No">1</code>(undurchsichtig)<br/> <code translate="No">.5</code> (halbtransparent)<br/> <code translate="No">0</code> (transparent)</td>
+          <td><code translate="No">1</code>(undurchsichtig)<br />
+            <code translate="No">.5</code>(halbtransparent)<br />
+            <code translate="No">0</code>(transparent)</td>
         </tr>
       </tbody>
     </table>
@@ -1356,14 +273,14 @@ you can accomplish using it.</code></pre>
         </tr>
       </tbody>
     </table>
-    <h3>Einstellungen speichern()</h3>
-    <p>Eine andere Methode, die beim Stylen von Untertiteln hilfreich sein kann, ist <code translate="No">player.textTrackSettings.saveSettings()</code>. Diese Methode wird im Browser gespeichert <strong>lokaler Speicher</strong> die aktuellen Einstellungen des Untertitelstils. Der folgende Screenshot von Chrome <strong>Anwendung</strong> Die Registerkarte zeigt den lokalen Speicher für die Seite, die den Player bedient, und den Namen des Schlüssels. <strong>vjs-text-track-settings</strong> und die zugehörigen Werte.</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="Lokalen Speicher anzeigen" src="//learning-services-media.brightcove.com/doc-assets/player-development/player-customization/captions/view-local-storage.png"/></figure>
-    <p>Diese Methode bietet Ihnen die Möglichkeit, die Beschriftungsstile über die Benutzeroberfläche des Players zu konfigurieren, die Einstellungen zu speichern und die zu verwendenden Werte zu kopieren <code translate="No">player.textTrackSettings.setValues()</code> , wie oben gezeigt.</p>
+    <h3>speichernSettings ()</h3>
+    <p>Eine andere Methode, die beim Stylen von Untertiteln hilfreich sein könnte, ist <code translate="No">player.textTrackSettings.saveSettings()</code>. Diese Methode speichert die aktuellen Einstellungen des Untertitelstylings</strong> im <strong>LocalStorage des Browsers. Der folgende Screenshot von Chrome's <strong>Application</strong> Tab zeigt den lokalen Speicher für die Seite, die den Player bedient, und den Namen des Schlüssels, die <strong>vjs-text-track-Einstellungen</strong> und die zugehörigen Werte.</p>
+    <figure class="bcls-figure"><img class="bcls-image" alt="View local storage" src="/assets/images/general/view-local-storage.png" /></figure>
+    <p>Mit dieser Methode haben Sie die Möglichkeit, die Beschriftungsstile über die Benutzeroberfläche des Players zu konfigurieren, dann die Einstellungen zu speichern und die zu verwendenden Werte zu kopieren <code translate="No">player.textTrackSettings.setValues()</code>, wie oben gezeigt.</p>
   </section>
   <section class="bcls-section">
     <h2 id="implementcode">Implementieren mit Code</h2>
-    <p>Es ist möglich, programmgesteuert Textspuren für Beschriftungen hinzuzufügen. Die Schlüsselmethode für diese Funktionalität ist <code translate="No">addRemoteTextTrack()</code> , deren Syntax lautet:</p>
+    <p>Es ist möglich, programmgesteuert Textspuren für Beschriftungen hinzuzufügen. Die Schlüsselmethode für diese Funktionalität ist <code translate="No">addRemoteTextTrack()</code>, deren Syntax lautet:</p>
     <pre class="line-numbers">
 <code class="language-javascript" translate="No">playerObject.addRemoteTextTrack({
   kind: string,
@@ -1373,13 +290,13 @@ you can accomplish using it.</code></pre>
 });</code></pre>
     <p>wo:</p>
     <ul>
-      <li><code translate="No">kind</code>- Art der Textspur für diese Verwendung <strong>"Bildunterschriften"</strong></li>
-      <li><code translate="No">language</code>- Zum Beispiel ein Sprachcode mit zwei Buchstaben <strong>'en'</strong></li>
-      <li><code translate="No">label</code>- Die Sprachbezeichnung, die beispielsweise in der Benutzeroberfläche für Beschriftungen angezeigt wird <strong>'Englisch'</strong></li>
-      <li><code translate="No">src</code>- URL zur WebVTT-formatierten Untertiteldatei</li>
+      <li><code translate="No">kind</code>- Typ der Textspur, dazu verwenden Sie <strong>„Untertitel“</strong></li>
+      <li><code translate="No">language</code>- Sprachcode mit zwei Buchstaben, zum Beispiel <strong>„en“</strong></li>
+      <li><code translate="No">label</code>- Die Sprachbezeichnung, die in der Untertitel-Benutzeroberfläche angezeigt wird, zum Beispiel <strong>„Englisch“</strong></li>
+      <li><code translate="No">src</code>- URL zur in WebVTT formatierten Untertiteldatei</li>
     </ul>
     <p>Der Funktionsaufruf gibt ein Objekt vom Typ zurück <code translate="No">vjs.TextTrack</code>.</p>
-    <p>Anwendungsbeispiel:</p>
+    <p>Beispiel Verwendung:</p>
     <pre class="line-numbers">
 <code class="language-javascript" translate="No">var frTrack = myPlayer.addRemoteTextTrack({
   kind: 'captions',
@@ -1387,7 +304,7 @@ you can accomplish using it.</code></pre>
   label: 'French',
   src: 'https://solutions.brightcove.com/bcls/captions/adding_captions_to_videos_french.vtt'
 });</code></pre>
-    <p>Sie müssen auf die warten <code translate="No">loadedmetadata</code> Ereignis, das versendet werden soll, bevor Sie das verwenden <code translate="No">addRemoteTextTrack()</code> Methode. Das folgende Beispiel zeigt den Skriptblock zum Hinzufügen von englischen und französischen Untertiteln zu einem Video.</p>
+    <p>Sie müssen warten, bis das <code translate="No">loadedmetadata</code> Ereignis ausgelöst wird, bevor Sie die <code translate="No">addRemoteTextTrack()</code> Methode verwenden. Das folgende Beispiel zeigt den Skriptblock zum Hinzufügen englischer und französischer Beschriftungen zu einem Video.</p>
     <pre class="line-numbers">
 <code class="language-html" translate="No">&lt;script type="text/javascript"&gt;
   videojs.getPlayer('myPlayerID').ready(function () {
@@ -1408,182 +325,25 @@ you can accomplish using it.</code></pre>
     });
   });
 &lt;/script&gt;</code></pre>
-    <p>Die komplementäre Methode <code translate="No">textTracks()</code> Ermöglicht das Abrufen aller einem Player zugewiesenen Textspuren. Die Methode gibt ein Objekt vom Typ zurück <code translate="No">vjs.TextTrackList</code>.</p>
+    <p>Die ergänzende Methode <code translate="No">textTracks()</code> ermöglicht es Ihnen, alle Textspuren abzurufen, die einem Player zugewiesen sind. Die Methode gibt ein Objekt vom Typ zurück <code translate="No">vjs.TextTrackList</code>.</p>
   </section>
   <section class="bcls-section">
     <h2 id="livestreamwithcaptions">Live-Streaming mit Untertiteln</h2>
-    <p>Bis zu diesem Zeitpunkt wurden die Dokumentbeschriftungen als separate Datei geliefert und über das &lt;track&gt; -Element einem Video zugeordnet. Diese Art von Untertiteln wird manchmal als bezeichnet <em>außerhalb der Bandbreite</em>. Die alternative Methode beinhaltet das Einbetten der Untertiteldaten direkt in den Videoinhalt, häufig Live-Videostreams, und wird manchmal aufgerufen <em>In-Band</em> Bildunterschriften.</p>
-    <p>Brightcove Live unterstützt derzeit 608 Untertitel im Band (innerhalb von h.264-Headern). Wenn sich Beschriftungen innerhalb des h.264-Eingangssignals befinden (im user_data-Paket korrekt signalisiert), werden diese an die h.264-Ausgänge weitergegeben.</p>
-    <p>Wenn Sie einen Sendeelementar-Live-Encoder verwenden, können Sie Untertitel von SDI (EIA-608/CEA-608) oder anderen Quellen (SCTE-20, SCC, Teletext, DVB-Sub, Ancillary, ARIB, TTML, STL, SRT, SMI) erhalten und sie in den h.264-Stream einfügen, den Sie uns senden. Andere Encoder für Broadcasts können wahrscheinlich das Gleiche tun, aber wir haben sie nicht offiziell getestet.</p>
+    <p>Bis zu diesem Zeitpunkt wurden die Dokumentbeschriftungen als separate Datei geliefert und mit einem Video über das &lt;track&gt; -Element verknüpft. Diese Art von Untertiteln wird manchmal als <em>Out-of-Band</em>. Die alternative Methode besteht darin, die Untertiteldaten direkt in den Videoinhalt einzubetten, häufig Live-Videostreams, und wird manchmal genannt <em>in-Band</em> Beschriftungen.</p>
+    <p>Brightcove Live unterstützt derzeit 608 Beschriftungen im Band (in h.264-Headern). Wenn sich Beschriftungen innerhalb des h.264-Eingangssignals befinden (korrekt im user_data Paket signalisiert), werden diese an die h.264-Ausgänge weitergeleitet.</p>
+    <p>Wenn Sie einen Broadcast-Elementar-Live-Encoder verwenden, können Sie Beschriftungen von SDI (EIA-608/CEA-608) oder anderen Quellen (SCTE-20, SCC, Teletext, DVB-Sub, Hilfs-, ARIB, TTML, SCTE-27, STL, SRT, SMI) abrufen und sie in den h.264-Stream abrufen, den Sie uns senden. Andere Sendegeber können wahrscheinlich dasselbe tun, aber wir haben sie nicht formell getestet.</p>
     <p>WebVTT-Untertitel werden für Live-Streams <strong>nicht</strong> unterstützt.</p>
-    <p>Brightcove Player unterstützt In-Band-Untertitel und daher Live with Captions, die in HLS integriert sind. Daher werden keine Plugins benötigt. Die Implementierung von Brightcove Player funktioniert überall dort, wo natives HLS nicht verwendet wird. Wenn natives HLS verwendet wird, hängt die Unterstützung für In-Band-Untertitel vom Betriebssystem und vom Browser ab. Zum Beispiel bietet das native HLS von iOS volle Unterstützung für In-Band-Untertitel.</p>
+    <p>Brightcove Player unterstützt In-Band-Untertitel und daher Live mit Bildunterschriften, die in HLS integriert sind, daher werden keine Plugins benötigt. Die Implementierung von Brightcove Player funktioniert überall dort, wo native HLS nicht verwendet wird. Wenn native HLS verwendet wird, ist die Unterstützung für In-Band-Untertitel vom Betriebssystem und Browser abhängig. Zum Beispiel unterstützt die native HLS von iOS volle Unterstützung für In-Band-Untertitel.</p>
   </section>
   <section class="bcls-section">
     <h2 id="limitations">Einschränkungen</h2>
-    <p>Untertitel werden auf folgenden Geräten und unter folgenden Betriebssystemen unterstützt.</p>
+    <p>Untertitel werden auf den folgenden Gerätetypen und Betriebssystemen unterstützt.</p>
     <ul>
-      <li>iOS 9+</li>
+      <li>iOS 9 +</li>
       <li>Android 4+</li>
       <li>Internet Explorer 8+</li>
-      <li>Die neuesten Versionen der Browser Chrome, Safari und Firefox auf Desktops</li>
+      <li>Die neuesten Chrome-, Safari- und Firefox-Browser auf Desktops</li>
     </ul>
-    <aside class="bcls-aside bcls-aside--information">Da Safari die nativen Funktionen zum Styling von Untertiteln verwendet, ist die Menüoption <strong>Untertiteleinstellungen</strong> im <strong>CC-Menü</strong> in Safari-Browsern (sowohl iOS als auch macOS) nicht verfügbar.</aside>
+    <aside class="bcls-aside bcls-aside--information">Da Safari die nativen Funktionen zum Stylen von Untertiteln verwendet, ist die</strong> Menüoption „ <strong>Untertiteleinstellungen“ im <strong></strong> CC-Menü in Safari-Browsern (sowohl iOS als auch macOS).</aside>
   </section>
 </article>
-
-<!-- complete bootstrap layout -->
-    </div>
-    <div class="col-sm-2 right-side-bar">
-      
-      <nav class="right-side-nav" id="right_side_nav">
-        <h6 class="toc">Inhalt der Seite</h6>
-        <ul id="in_page_nav" class="list-none"></ul>
-      </nav>
-      
-    </div>
-  </div>
-</div>
-
-<hr>
-<footer class="bcls-footer" role="contentinfo">  <div class="row">
-    <div class="region region-footer-top-center col-md-12">
-      <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="footer-menu">
-
-        <h2>Brightcove Support-Service</h2>
-
-        <ul class="menu">
-          <li>
-            <a href="https://status.brightcove.com">Systemstatus</a>
-          </li>
-          <li>
-            <a href="https://supportportal.brightcove.com/s/login/?">Kontakt mit dem Support</a>
-          </li>
-          <li>
-            <a href="https://support.brightcove.com/">DOKUMENTATION</a>
-          </li>
-        </ul>
-
-      </nav>
-      <nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="footer-menu">
-
-        <h2>Schulungen</h2>
-
-        <ul class="menu">
-          <li>
-            <a href="https://studio.support.brightcove.com/training/online-training-courses.html">Online-Kurse</a>
-          </li>
-          <li>
-            <a href="https://studio.support.brightcove.com/training/register-training.html">Für einen Kurs anmelden</a>
-          </li>
-          <li>
-            <a href="https://university.brightcove.com/">Brightcove Universität</a>
-          </li>
-        </ul>
-
-      </nav>
-      <nav role="navigation" aria-labelledby="block-brightcove-menu" class="footer-menu">
-
-        <h2>Brightcove</h2>
-
-        <ul class="menu">
-          <li>
-            <a href="https://www.brightcove.com">brightcove.com</a>
-          </li>
-          <li>
-            <a href="https://supportportal.brightcove.com/s/login/?">Kontaktiere uns</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-  <div class="row">
-    <div class="region region-footer-bottom-center col-md-12">
-      <div class="bcls-copyright footer-menu">
-        <table>
-          <tr>
-            <td>
-              <div id="bc_copyright" class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" style="float: left;"> Brightcove Inc. Alle Rechte vorbehalten.</div>
-            </td>
-            <td><a href="https://www.brightcove.com/en/legal/privacy">Privacy</a> | <a href="https://www.brightcove.com/en/terms-and-conditions">Allgemeine Geschäftsbedingungen</a></td>
-            <td>
-              <div class="gf-links-cols footer-menu">
-                <div class="gf-social"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" newtab="newtab" class="gf-social-linkedin"><i class="fab fa-linkedin-in" style="font-size: 1.5rem;"></i></a><a href="https://twitter.com/brightcove" title="Twitter" newtab="newtab" class="gf-social-twitter"><i class="fab fa-twitter" style="font-size: 1.5rem;"></i></a><a href="https://www.facebook.com/Brightcove" title="Facebook" newtab="newtab" class="gf-social-facebook"><i class="fab fa-facebook-f" style="font-size: 1.5rem;"></i></a>
-                </div>
-              </div>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  </div>
-</footer>
-
-</div>
-</div>
-<script>
-      
-  var searchBox = sajari.init({
-    mode: "search-box",
-    project: "1588255093746585379", // Set this to your project.
-    collection: "brightcove-documenation", // Set this to your collection.
-    instantPipeline: "autocomplete", // Pipeline used as you type
-    inputPlaceholder: "Search", // Input element placeholder
-    maxSuggestions: 5, // Maximum number of suggestions to show
-    attachSearchBox: document.getElementById("nav-search-box") // DOM element to attach to
-  });
-  
-    searchBox("sub", "pipeline.search-sent", function (_, query) {
-      window.location = "/search.html?q=" + encodeURIComponent(query.q);
-    });
-  
-
-</script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="https://support.brightcove.com/site-assets/js/site/https-fix.js"></script>
-  <script src="https://support.brightcove.com/site-assets/js/site/setDate.js"></script>
-  
-  <script src="https://support.brightcove.com/site-assets/js/site/prism.js"></script>
-  
-  <script src="https://support.brightcove.com/site-assets/js/site/site.js"></script>
-  <script src="https://support.brightcove.com/site-assets/js/site/tabs.js"></script>
-  <script src="https://support.brightcove.com/site-assets/js/site/toc.js"></script>
-  <script src="/assets/js/sites_nav.js"></script>
-  <script src="https://support.brightcove.com/site-assets/js/site/bcls-utils.js"></script>
-  <script src="https://support.brightcove.com/site-assets/js/site/local-link-fix.js"></script>
-  <script src="/assets/js/feedback.js"></script>
-  
-  <script src="/assets/js/sajari-search-foot.js"></script>
-  
-  <!-- <script src="/assets/js/sajari-index.js"></script> -->
-  <style>
-    a.sj-paginator__page-number.sj-paginator__page-number--current.css-so0ov7 {
-      background-color: lightblue;
-    }
-    div.sj-tabs__tab {
-      margin-top: 3rem;
-      margin-left: .3rem;
-      border-top-left-radius: .4rem;
-      border-top-right-radius: .4rem;
-      background-color:#e8e8e8;
-    }
-
-    div.sj-tabs__tab.sj-tabs__tab--selected {
-      border-bottom-color: crimson;
-      background-color: #f8f8f8;
-    }
-
-    p.sj-results__result__description.css-p9jvyt {
-      font-size: 1rem;
-    }
-
-    .sj-result__text.css-31l7gp h3 {
-      color: navy;
-      font-size: 1.4rem;
-    }
-    </style>
-
-</body>
-
-</html>

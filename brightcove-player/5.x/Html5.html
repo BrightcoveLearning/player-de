@@ -1,0 +1,12036 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Brightcove Player v5.22.2 Klasse: Html5</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+
+	<link type="text/css" rel="stylesheet" href="styles/site.yeti.css">
+
+</head>
+
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">Brightcove Spieler v5.22.2</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="modules.list.html" class="dropdown-toggle" data-toggle="dropdown">Module<b class="caret"></b></a>
+				<ul class="dropdown-menu inline">
+					<li><a href="module-browser.html">Browser</a></li><li><a href="module-buffer.html">Puffer</a></li><li><a href="module-computed-style.html">rechen-Stil</a></li><li><a href="module-dom.html">Dom</a></li><li><a href="module-events.html">Ereignisse</a></li><li><a href="module-extend.html">verlängern</a></li><li><a href="module-flash-rtmp.html">flash-rtmp</a></li><li><a href="module-fn.html">fn</a></li><li><a href="module-Format-time.html">Format-Zeit</a></li><li><a href="module-guid.html">Guid</a></li><li><a href="module-log.html">protokollieren</a></li><li><a href="module-merge-options.html">Zusammenführungs-Optionen</a></li><li><a href="module-obj.html">obj</a></li><li><a href="module-plugins.html">Plugins</a></li><li><a href="module-setup.html">einrichten</a></li><li><a href="module-stylesheet.html">Stylesheet</a></li><li><a href="module-text-track-list-converter.html">Text-Track-Listen-Konverter</a></li><li><a href="module-time-ranges.html">Zeitbereiche</a></li><li><a href="module-to-title-case.html">in den Titelfall</a></li><li><a href="module-url.html">url</a></li><li><a href="module-videojs.html">Videojs</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Klassen<b class="caret"></b></a>
+				<ul class="dropdown-menu inline">
+					<li><a href="AudioTrack.html">AudioTrack</a></li><li><a href="AudioTrackButton.html">AudioTrackButton</a></li><li><a href="AudioTrackList.html">AudioTrackList</a></li><li><a href="AudioTrackMenuItem.html">AudioTrackMenuItem</a></li><li><a href="BigPlayButton.html">bigPlayButton</a></li><li><a href="Button.html">Knopf</a></li><li><a href="CaptionsButton.html">Untertitel-Button</a></li><li><a href="CaptionSettingsMenuItem.html">UntertitelSettingsMenuItem</a></li><li><a href="ChaptersButton.html">ChaptersButton</a></li><li><a href="ChaptersTrackMenuItem.html">ChapterstrackMenuItem</a></li><li><a href="ClickableComponent.html">ClickableComponent</a></li><li><a href="CloseButton.html">CloseButton</a></li><li><a href="Component.html">Komponente</a></li><li><a href="ControlBar.html">ControlBar</a></li><li><a href="CurrentTimeDisplay.html">currentTimeDisplay</a></li><li><a href="CustomControlSpacer.html">CustomControlSpacer</a></li><li><a href="DescriptionsButton.html">DescriptionsButton</a></li><li><a href="DurationDisplay.html">DurationDisplay</a></li><li><a href="ErrorDisplay.html">ErrorDisplay</a></li><li><a href="EventTarget.html">EventTarget</a></li><li><a href="Flash.html">Flash</a></li><li><a href="FullscreenToggle.html">FullScreenToggle</a></li><li><a href="Html5.html">Html5</a></li><li><a href="HTMLTrackElement.html">HtmlTrackElement</a></li><li><a href="HtmlTrackElementList.html">HtmlTrackElementList</a></li><li><a href="LiveDisplay.html">LiveDisplay</a></li><li><a href="LoadingSpinner.html">LoadingSpinner</a></li><li><a href="LoadProgressBar.html">LoadProgressBar</a></li><li><a href="MediaError.html">MediaError</a></li><li><a href="MediaLoader.html">MediaLoader</a></li><li><a href="Menu.html">Menu</a></li><li><a href="MenuButton.html">MenuButton</a></li><li><a href="MenuItem.html">MenuItem</a></li><li><a href="ModalDialog.html">ModalDialog</a></li><li><a href="module-videojs-videojs.AudioTrack.videojs.AudioTrack.html">Videojs~Videojs.AudioTrack.Videojs.AudioTrack</a></li><li><a href="module-videojs-videojs.EventTarget.videojs.EventTarget.html">Videojs~Videojs.EventTarget.Videojs.EventTarget</a></li><li><a href="module-videojs-videojs.TextTrack.videojs.TextTrack.html">videojs~videojs.textTrack.Videojs.TextTrack</a></li><li><a href="module-videojs-videojs.VideoTrack.videojs.VideoTrack.html">Videojs~Videojs.VideoTrack.Videojs.VideoTrack</a></li><li><a href="MouseTimeDisplay.html">MouseTimeDisplay</a></li><li><a href="MuteToggle.html">MuteToggle</a></li><li><a href="OffTextTrackMenuItem.html">offTextTrackMenuItem</a></li><li><a href="PlaybackRateMenuButton.html">playbackRateMenuButton</a></li><li><a href="PlaybackRateMenuItem.html">playbackRateMEnuItem</a></li><li><a href="Player.html">Spieler</a></li><li><a href="PlayProgressBar.html">PlayProgressBar</a></li><li><a href="PlayToggle.html">PlayToggle</a></li><li><a href="Popup.html">Popup</a></li><li><a href="PopupButton.html">popupButton</a></li><li><a href="PosterImage.html">PosterImage</a></li><li><a href="ProgressControl.html">ProgressControl</a></li><li><a href="RemainingTimeDisplay.html">RemainingTimeDisplay</a></li><li><a href="SeekBar.html">SeekBar</a></li><li><a href="Slider.html">Schieberegler</a></li><li><a href="Spacer.html">Abstandshalter</a></li><li><a href="SubtitlesButton.html">SubtitlesButton</a></li><li><a href="Tech.html">Tech</a></li><li><a href="TextTrack.html">TextTrack</a></li><li><a href="TextTrackButton.html">textTrackButton</a></li><li><a href="TextTrackCueList.html">textTrackCueList</a></li><li><a href="TextTrackDisplay.html">TextTrackDisplay</a></li><li><a href="TextTrackList.html">TextTrackList</a></li><li><a href="TextTrackMenuItem.html">textTrackMenuItem</a></li><li><a href="TextTrackSettings.html">TextTrackSettings</a></li><li><a href="TimeDivider.html">TimediVider</a></li><li><a href="TooltipProgressBar.html">ToolTipProgressBar</a></li><li><a href="Track.html">Verfolgen</a></li><li><a href="TrackButton.html">TrackButton</a></li><li><a href="TrackList.html">TrackList</a></li><li><a href="VideoTrack.html">VideoTrack</a></li><li><a href="VideoTrackList.html">VideoTrackList</a></li><li><a href="VolumeBar.html">VolumeBar</a></li><li><a href="VolumeControl.html">VolumeControl</a></li><li><a href="VolumeLevel.html">VolumElevel</a></li><li><a href="VolumeMenuButton.html">VolumemenuButton</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="mixins.list.html" class="dropdown-toggle" data-toggle="dropdown">Mixins<b class="caret"></b></a>
+				<ul class="dropdown-menu inline">
+					<li><a href="module-flash-rtmp-FlashRtmpDecorator.html">Flash-RTMP~flashrtmpDecorator</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="events.list.html" class="dropdown-toggle" data-toggle="dropdown">Ereignisse<b class="caret"></b></a>
+				<ul class="dropdown-menu inline">
+					<li><a href="AudioTrack.html#event:enabledchange">AudioTrack #Ereignis:enabledchange</a></li><li><a href="AudioTrackList.html#event:addtrack">AudioTrackList #Ereignis:addtrack</a></li><li><a href="AudioTrackList.html#event:change">AudioTrackList #Ereignis:ändern</a></li><li><a href="AudioTrackList.html#event:removetrack">AudioTrackList #Ereignis:removetrack</a></li><li><a href="BigPlayButton.html#event:dispose">BigPlayButton #Ereignis:entsorgen</a></li><li><a href="BigPlayButton.html#event:ready">bigPlayButton #Ereignis:bereit</a></li><li><a href="BigPlayButton.html#event:resize">bigPlayButton #Ereignis:resize</a></li><li><a href="BigPlayButton.html#event:tap">bigPlayButton #Ereignis:tippen</a></li><li><a href="Button.html#event:dispose">Button #Ereignis:Entsorgen</a></li><li><a href="Button.html#event:ready">Button #Ereignis:bereit</a></li><li><a href="Button.html#event:resize">Schaltfläche #Ereignis:skalieren</a></li><li><a href="Button.html#event:tap">Button #Ereignis:tippen</a></li><li><a href="ClickableComponent.html#event:dispose">ClickableComponent #Ereignis:entsorgen</a></li><li><a href="ClickableComponent.html#event:ready">ClickableComponent #Ereignis:bereit</a></li><li><a href="ClickableComponent.html#event:resize">ClickableComponent #Ereignis:skalieren</a></li><li><a href="ClickableComponent.html#event:tap">ClickableComponent #Ereignis:tippen</a></li><li><a href="CloseButton.html#event:close">CloseButton #Ereignis:schließen</a></li><li><a href="CloseButton.html#event:dispose">closeButton #Ereignis:entsorgen</a></li><li><a href="CloseButton.html#event:ready">closeButton #Ereignis:bereit</a></li><li><a href="CloseButton.html#event:resize">closeButton #Ereignis:skalieren</a></li><li><a href="CloseButton.html#event:tap">CloseButton #Ereignis:tippen</a></li><li><a href="Component.html#event:dispose">Komponente #Ereignis:Entsorgen</a></li><li><a href="Component.html#event:ready">Komponente #Ereignis:bereit</a></li><li><a href="Component.html#event:resize">Komponente #Ereignis:skalieren</a></li><li><a href="Component.html#event:tap">Komponente #Ereignis:tippen</a></li><li><a href="ControlBar.html#event:dispose">ControlBar #Ereignis:Entsorgen</a></li><li><a href="ControlBar.html#event:ready">ControlBar #Ereignis:bereit</a></li><li><a href="ControlBar.html#event:resize">ControlBar #Ereignis:skalieren</a></li><li><a href="ControlBar.html#event:tap">ControlBar #Ereignis:tippen</a></li><li><a href="CurrentTimeDisplay.html#event:dispose">currentTimeDisplay #Ereignis:entsorgen</a></li><li><a href="CurrentTimeDisplay.html#event:ready">currentTimeDisplay #Ereignis:bereit</a></li><li><a href="CurrentTimeDisplay.html#event:resize">currentTimeDisplay #Ereignis:resize</a></li><li><a href="CurrentTimeDisplay.html#event:tap">currentTimeDisplay #Ereignis:tippen</a></li><li><a href="CustomControlSpacer.html#event:dispose">CustomControlSpacer #Ereignis:entsorgen</a></li><li><a href="CustomControlSpacer.html#event:ready">CustomControlSpacer #Ereignis:bereit</a></li><li><a href="CustomControlSpacer.html#event:resize">CustomControlSpacer #Ereignis:resize</a></li><li><a href="CustomControlSpacer.html#event:tap">CustomControlSpacer #Ereignis:tippen</a></li><li><a href="DurationDisplay.html#event:dispose">DurationDisplay #Ereignis:entsorgen</a></li><li><a href="DurationDisplay.html#event:ready">DurationDisplay #Ereignis:bereit</a></li><li><a href="DurationDisplay.html#event:resize">DurationDisplay #Ereignis:skalieren</a></li><li><a href="DurationDisplay.html#event:tap">DauerAnzeige #Ereignis:tippen</a></li><li><a href="ErrorDisplay.html#event:beforemodalclose">errorDisplay #Ereignis:beforemodalclose</a></li><li><a href="ErrorDisplay.html#event:beforemodalempty">errorDisplay #event:beforemodalempty</a></li><li><a href="ErrorDisplay.html#event:beforemodalfill">errorDisplay #Ereignis:beforemodalfill</a></li><li><a href="ErrorDisplay.html#event:beforemodalopen">errorDisplay #Ereignis:beforemodalopen</a></li><li><a href="ErrorDisplay.html#event:modalclose">errorDisplay #Ereignis:modalclose</a></li><li><a href="ErrorDisplay.html#event:modalempty">errorDisplay #event:modalempty</a></li><li><a href="ErrorDisplay.html#event:modalfill">errorDisplay #Ereignis:modalfill</a></li><li><a href="ErrorDisplay.html#event:modalopen">errorDisplay #Ereignis:modalopen</a></li><li><a href="Flash.html#event:audiotrackchange">Flash #Ereignis:audiotrackchange</a></li><li><a href="Flash.html#event:progress">Flash #Ereignis:Fortschritt</a></li><li><a href="Flash.html#event:texttrackchange">Flash #Ereignis:texttrackchange</a></li><li><a href="Flash.html#event:timeupdate">Flash #Ereignis:timeupdate</a></li><li><a href="Flash.html#event:videotrackchange">Flash #Ereignis:Videotrackchange</a></li><li><a href="Flash.html#event:vttjsloaded">Flash #Ereignis:vttjsloaded</a></li><li><a href="FullscreenToggle.html#event:dispose">FullScreenToggle #Ereignis:entsorgen</a></li><li><a href="FullscreenToggle.html#event:ready">FullScreenToggle #Ereignis:bereit</a></li><li><a href="FullscreenToggle.html#event:resize">FullScreenToggle #Ereignis:resize</a></li><li><a href="FullscreenToggle.html#event:tap">FullScreenToggle #Ereignis:tippen</a></li><li><a href="Html5.html#event:audiotrackchange">Html5 #Ereignis:audiotrackchange</a></li><li><a href="Html5.html#event:progress">Html5 #Ereignis:Fortschritt</a></li><li><a href="Html5.html#event:texttrackchange">Html5 #Ereignis:texttrackchange</a></li><li><a href="Html5.html#event:timeupdate">Html5 #Ereignis:timeupdate</a></li><li><a href="Html5.html#event:videotrackchange">Html5 #Ereignis:videotrackchange</a></li><li><a href="Html5.html#event:vttjsloaded">Html5 #Ereignis:vttjsloaded</a></li><li><a href="LiveDisplay.html#event:dispose">LiveDisplay #Ereignis:entsorgen</a></li><li><a href="LiveDisplay.html#event:ready">LiveDisplay #Ereignis:bereit</a></li><li><a href="LiveDisplay.html#event:resize">LiveDisplay #Ereignis:skalieren</a></li><li><a href="LiveDisplay.html#event:tap">LiveDisplay #Ereignis:tippen</a></li><li><a href="LoadingSpinner.html#event:dispose">LoadingSpinner #Ereignis:Entsorgen</a></li><li><a href="LoadingSpinner.html#event:ready">LoadingSpinner #Ereignis:bereit</a></li><li><a href="LoadingSpinner.html#event:resize">LoadingSpinner #Ereignis:skalieren</a></li><li><a href="LoadingSpinner.html#event:tap">LoadingSpinner #Ereignis:tippen</a></li><li><a href="LoadProgressBar.html#event:dispose">LoadProgressBar #Ereignis:entsorgen</a></li><li><a href="LoadProgressBar.html#event:ready">LoadProgressBar #Ereignis:bereit</a></li><li><a href="LoadProgressBar.html#event:resize">LoadProgressBar #Ereignis:resize</a></li><li><a href="LoadProgressBar.html#event:tap">LoadProgressBar #Ereignis:tippen</a></li><li><a href="MediaLoader.html#event:dispose">MediaLoader #Ereignis:entsorgen</a></li><li><a href="MediaLoader.html#event:ready">MediaLoader #Ereignis:bereit</a></li><li><a href="MediaLoader.html#event:resize">MediaLoader #Ereignis:resize</a></li><li><a href="MediaLoader.html#event:tap">MediaLoader #Ereignis:tippen</a></li><li><a href="Menu.html#event:dispose">Menü #Ereignis:Entsorgen</a></li><li><a href="Menu.html#event:ready">Menü #Ereignis:bereit</a></li><li><a href="Menu.html#event:resize">Menü #Ereignis:skalieren</a></li><li><a href="Menu.html#event:tap">Menü #Ereignis:tippen</a></li><li><a href="MenuButton.html#event:dispose">menuButton #Ereignis:entsorgen</a></li><li><a href="MenuButton.html#event:ready">menuButton #Ereignis:bereit</a></li><li><a href="MenuButton.html#event:resize">menuButton #Ereignis:skalieren</a></li><li><a href="MenuButton.html#event:tap">menuButton #Ereignis:tippen</a></li><li><a href="MenuItem.html#event:dispose">menuItem #Ereignis:entsorgen</a></li><li><a href="MenuItem.html#event:ready">MenuItem #Ereignis:bereit</a></li><li><a href="MenuItem.html#event:resize">menuItem #Ereignis:skalieren</a></li><li><a href="MenuItem.html#event:tap">MenuItem #Ereignis:tippen</a></li><li><a href="ModalDialog.html#event:beforemodalclose">ModalDialog #Ereignis:beforemodalclose</a></li><li><a href="ModalDialog.html#event:beforemodalempty">ModalDialog #Ereignis:beforemodalempty</a></li><li><a href="ModalDialog.html#event:beforemodalfill">ModalDialog #Ereignis:beforemodalfill</a></li><li><a href="ModalDialog.html#event:beforemodalopen">ModalDialog #Ereignis:beforemodalopen</a></li><li><a href="ModalDialog.html#event:dispose">ModalDialog #Ereignis:Entsorgen</a></li><li><a href="ModalDialog.html#event:modalclose">ModalDialog #Ereignis:modalclose</a></li><li><a href="ModalDialog.html#event:modalempty">ModalDialog #event:modalempty</a></li><li><a href="ModalDialog.html#event:modalfill">ModalDialog #Ereignis:modalfill</a></li><li><a href="ModalDialog.html#event:modalopen">ModalDialog #Ereignis:modalopen</a></li><li><a href="ModalDialog.html#event:ready">ModalDialog #Ereignis:bereit</a></li><li><a href="ModalDialog.html#event:resize">ModalDialog #Ereignis:resize</a></li><li><a href="ModalDialog.html#event:tap">ModalDialog #Ereignis:tippen</a></li><li><a href="MouseTimeDisplay.html#event:dispose">MouseTimeDisplay #event:entsorgen</a></li><li><a href="MouseTimeDisplay.html#event:ready">mouseTimeDisplay #Ereignis:bereit</a></li><li><a href="MouseTimeDisplay.html#event:resize">MouseTimeDisplay #Ereignis:resize</a></li><li><a href="MouseTimeDisplay.html#event:tap">MouseTimeDisplay #Ereignis:tippen</a></li><li><a href="MuteToggle.html#event:dispose">MuteToggle #event:entsorgen</a></li><li><a href="MuteToggle.html#event:ready">MuteToggle #Ereignis:bereit</a></li><li><a href="MuteToggle.html#event:resize">muteToggle #Ereignis:resize</a></li><li><a href="MuteToggle.html#event:tap">MuteToggle #Ereignis:tippen</a></li><li><a href="Player.html#event:abort">Spieler #Ereignis:abbrechen</a></li><li><a href="Player.html#event:canplay">Spieler #Ereignis:canplay</a></li><li><a href="Player.html#event:canplaythrough">Spieler #Ereignis:canplaythrough</a></li><li><a href="Player.html#event:controlsdisabled">Spieler #Ereignis:controlsdisabled</a></li><li><a href="Player.html#event:controlsenabled">Spieler #Ereignis:controlsenabled</a></li><li><a href="Player.html#event:dispose">Spieler #Ereignis:Entsorgen</a></li><li><a href="Player.html#event:durationchange">Spieler #Ereignis:durationchange</a></li><li><a href="Player.html#event:emptied">Spieler #Ereignis:geleert</a></li><li><a href="Player.html#event:ended">Spieler #Ereignis:beendet</a></li><li><a href="Player.html#event:enterFullWindow">Spieler #Ereignis:EnterFullWindow</a></li><li><a href="Player.html#event:error">Spieler #Ereignis:Fehler</a></li><li><a href="Player.html#event:exitFullWindow">Spieler #Ereignis:ExitFullWindow</a></li><li><a href="Player.html#event:firstplay">Spieler #Ereignis:firstplay</a></li><li><a href="Player.html#event:fullscreenchange">Spieler #Ereignis:fullscreenchange</a></li><li><a href="player_.html#event:loadeddata">Spieler #event:loadeddata</a></li><li><a href="Player.html#event:loadeddata">Spieler #event:loadeddata</a></li><li><a href="Player.html#event:loadedmetadata">Spieler #event:loadedmetadata</a></li><li><a href="Player.html#event:loadstart">Spieler #Ereignis:loadstart</a></li><li><a href="Player.html#event:pause">Spieler #Ereignis:Pause</a></li><li><a href="Player.html#event:play">Spieler #Ereignis:spielen</a></li><li><a href="Player.html#event:playing">Spieler #Ereignis:spielen</a></li><li><a href="Player.html#event:posterchange">Spieler #Ereignis:posterchange</a></li><li><a href="Player.html#event:progress">Spieler #Ereignis:Fortschritt</a></li><li><a href="player_.html#event:ratechange">Spieler #Ereignis:ratechange</a></li><li><a href="Player.html#event:ready">Spieler #Ereignis:bereit</a></li><li><a href="Player.html#event:resize">Spieler #Ereignis:Größe ändern</a></li><li><a href="Player.html#event:seeked">Spieler #Ereignis:suched</a></li><li><a href="Player.html#event:seeking">Spieler #Ereignis:suche</a></li><li><a href="Player.html#event:stalled">Spieler #Ereignis:ins Stocken geraten</a></li><li><a href="Player.html#event:suspend">Spieler #Ereignis:suspendieren</a></li><li><a href="Player.html#event:tap">Spieler #Ereignis:tippen</a></li><li><a href="Player.html#event:textdata">Spieler #Ereignis:Textdata</a></li><li><a href="player_.html#event:texttrackchange">Spieler #Ereignis:texttrackchange</a></li><li><a href="player_.html#event:timeupdate">Spieler #Ereignis:timeupdate</a></li><li><a href="Player.html#event:timeupdate">Spieler #Ereignis:timeupdate</a></li><li><a href="Player.html#event:useractive">Spieler #Ereignis:useractive</a></li><li><a href="Player.html#event:userinactive">Spieler #Ereignis:userinactive</a></li><li><a href="Player.html#event:usingcustomcontrols">Spieler #Ereignis:usingcustomControls</a></li><li><a href="Player.html#event:usingnativecontrols">Spieler #Ereignis:usingnativeControls</a></li><li><a href="Player.html#event:volumechange">Spieler #Ereignis:volumechange</a></li><li><a href="player_.html#event:volumechange">Spieler #Ereignis:volumechange</a></li><li><a href="Player.html#event:waiting">Spieler #Ereignis:warten</a></li><li><a href="PlayProgressBar.html#event:dispose">PlayProgressBar #Ereignis:entsorgen</a></li><li><a href="PlayProgressBar.html#event:ready">PlayProgressBar #Ereignis:bereit</a></li><li><a href="PlayProgressBar.html#event:resize">PlayProgressBar #Ereignis:skalieren</a></li><li><a href="PlayProgressBar.html#event:tap">PlayProgressBar #Ereignis:tippen</a></li><li><a href="PlayToggle.html#event:dispose">PlayToggle #Ereignis:entsorgen</a></li><li><a href="PlayToggle.html#event:ready">PlayToggle #Ereignis:bereit</a></li><li><a href="PlayToggle.html#event:resize">PlayToggle #Ereignis:skalieren</a></li><li><a href="PlayToggle.html#event:tap">PlayToggle #Ereignis:tippen</a></li><li><a href="Popup.html#event:dispose">Popup #Ereignis:entsorgen</a></li><li><a href="Popup.html#event:ready">Popup #Ereignis:bereit</a></li><li><a href="Popup.html#event:resize">Popup #Ereignis:Größe ändern</a></li><li><a href="Popup.html#event:tap">Popup #Ereignis:tippen</a></li><li><a href="PopupButton.html#event:dispose">popupButton #Ereignis:entsorgen</a></li><li><a href="PopupButton.html#event:ready">popupButton #Ereignis:bereit</a></li><li><a href="PopupButton.html#event:resize">popupButton #Ereignis:skalieren</a></li><li><a href="PopupButton.html#event:tap">popupButton #Ereignis:tippen</a></li><li><a href="PosterImage.html#event:dispose">PosterImage #Ereignis:entsorgen</a></li><li><a href="PosterImage.html#event:ready">PosterImage #Ereignis:bereit</a></li><li><a href="PosterImage.html#event:resize">PosterImage #Ereignis:Größenänderung</a></li><li><a href="PosterImage.html#event:tap">PosterImage #Ereignis:tippen</a></li><li><a href="ProgressControl.html#event:dispose">ProgressControl #Ereignis:entsorgen</a></li><li><a href="ProgressControl.html#event:ready">ProgressControl #Ereignis:bereit</a></li><li><a href="ProgressControl.html#event:resize">ProgressControl #Ereignis:skalieren</a></li><li><a href="ProgressControl.html#event:tap">ProgressControl #Ereignis:tippen</a></li><li><a href="RemainingTimeDisplay.html#event:dispose">RemainingTimeDisplay #event:entsorgen</a></li><li><a href="RemainingTimeDisplay.html#event:ready">RemainingTimeDisplay #Ereignis:bereit</a></li><li><a href="RemainingTimeDisplay.html#event:resize">RemainingTimeDisplay #Ereignis:resize</a></li><li><a href="RemainingTimeDisplay.html#event:tap">RemainingTimeDisplay #Ereignis:tippen</a></li><li><a href="SeekBar.html#event:slideractive">SeekBar #Ereignis:slideractive</a></li><li><a href="SeekBar.html#event:sliderinactive">SeekBar #Ereignis:sliderinactive</a></li><li><a href="Slider.html#event:dispose">Schieberegler #Ereignis:entsorgen</a></li><li><a href="Slider.html#event:ready">Schieberegler #Ereignis:bereit</a></li><li><a href="Slider.html#event:resize">Schieberegler #Ereignis:Größe ändern</a></li><li><a href="Slider.html#event:slideractive">Schieberegler #Ereignis:slideractive</a></li><li><a href="Slider.html#event:sliderinactive">Schieberegler #Ereignis:sliderinactive</a></li><li><a href="Slider.html#event:tap">Schieberegler #Ereignis:tippen</a></li><li><a href="Spacer.html#event:dispose">Abstandshalter #Ereignis:entsorgen</a></li><li><a href="Spacer.html#event:ready">Abstandshalter #Ereignis:bereit</a></li><li><a href="Spacer.html#event:resize">Abstandshalter #Ereignis:Größe ändern</a></li><li><a href="Spacer.html#event:tap">Abstandshalter #Ereignis:tippen</a></li><li><a href="Tech.html#event:audiotrackchange">Tech #Ereignis:audiotrackchange</a></li><li><a href="Tech.html#event:dispose">Tech #Ereignis:entsorgen</a></li><li><a href="Tech.html#event:progress">Tech #Ereignis:Fortschritt</a></li><li><a href="Tech.html#event:ready">Tech #Ereignis:bereit</a></li><li><a href="Tech.html#event:resize">Tech #Ereignis:Größe ändern</a></li><li><a href="Tech.html#event:tap">Tech #Ereignis:tippen</a></li><li><a href="Tech.html#event:texttrackchange">Tech #Ereignis:texttrackchange</a></li><li><a href="Tech.html#event:timeupdate">Tech #Ereignis:timeupdate</a></li><li><a href="Tech.html#event:videotrackchange">Tech #Ereignis:Videotrackchange</a></li><li><a href="Tech.html#event:vttjsloaded">Tech #Ereignis:vttjsloaded</a></li><li><a href="TextTrack.html#event:modechange">TextTrack #Ereignis:modechange</a></li><li><a href="TextTrackDisplay.html#event:dispose">textTrackDisplay #Ereignis:entsorgen</a></li><li><a href="TextTrackDisplay.html#event:ready">textTrackDisplay #Ereignis:ready</a></li><li><a href="TextTrackDisplay.html#event:resize">textTrackDisplay #Ereignis:resize</a></li><li><a href="TextTrackDisplay.html#event:tap">textTrackDisplay #Ereignis:tippen</a></li><li><a href="TextTrackList.html#event:addtrack">textTrackList #Ereignis:addtrack</a></li><li><a href="TextTrackList.html#event:change">textTrackList #Ereignis:ändern</a></li><li><a href="TextTrackList.html#event:removetrack">textTrackList #Ereignis:removetrack</a></li><li><a href="TextTrackSettings.html#event:dispose">textTrackSettings #Ereignis:entsorgen</a></li><li><a href="TextTrackSettings.html#event:ready">textTrackSettings #Ereignis:bereit</a></li><li><a href="TextTrackSettings.html#event:resize">TextTrackSettings #Ereignis:resize</a></li><li><a href="TextTrackSettings.html#event:tap">TextTrackSettings #Ereignis:tippen</a></li><li><a href="TimeDivider.html#event:dispose">TimediVider #Ereignis:entsorgen</a></li><li><a href="TimeDivider.html#event:ready">TimediVider #Ereignis:bereit</a></li><li><a href="TimeDivider.html#event:resize">TimediVider #Ereignis:resize</a></li><li><a href="TimeDivider.html#event:tap">TimediVider #Ereignis:tippen</a></li><li><a href="TooltipProgressBar.html#event:dispose">ToolTipProgressBar #Ereignis:entsorgen</a></li><li><a href="TooltipProgressBar.html#event:ready">ToolTipProgressBar #Ereignis:bereit</a></li><li><a href="TooltipProgressBar.html#event:resize">ToolTipProgressBar #Ereignis:resize</a></li><li><a href="TooltipProgressBar.html#event:tap">ToolTipProgressBar #Ereignis:tippen</a></li><li><a href="TrackList.html#event:addtrack">TrackList #Ereignis:addtrack</a></li><li><a href="TrackList.html#event:change">TrackList #Ereignis:ändern</a></li><li><a href="TrackList.html#event:removetrack">TrackList #Ereignis:removetrack</a></li><li><a href="VideoTrack.html#event:selectedchange">VideoTrack #Ereignis:selectedchange</a></li><li><a href="VideoTrackList.html#event:addtrack">VideoTrackList #Ereignis:addtrack</a></li><li><a href="VideoTrackList.html#event:change">VideoTrackList #Ereignis:ändern</a></li><li><a href="VideoTrackList.html#event:removetrack">VideoTrackList #Ereignis:removetrack</a></li><li><a href="VolumeBar.html#event:slideractive">VolumeBar #Ereignis:slideractive</a></li><li><a href="VolumeBar.html#event:sliderinactive">VolumeBar #Ereignis:sliderinactive</a></li><li><a href="VolumeControl.html#event:dispose">VolumeControl #Ereignis:entsorgen</a></li><li><a href="VolumeControl.html#event:ready">VolumeControl #Ereignis:bereit</a></li><li><a href="VolumeControl.html#event:resize">VolumeControl #Ereignis:skalieren</a></li><li><a href="VolumeControl.html#event:tap">VolumeControl #Ereignis:tippen</a></li><li><a href="VolumeLevel.html#event:dispose">VolumElevel #Ereignis:entsorgen</a></li><li><a href="VolumeLevel.html#event:ready">VolumElevel #Ereignis:bereit</a></li><li><a href="VolumeLevel.html#event:resize">VolumElevel #Ereignis:skalieren</a></li><li><a href="VolumeLevel.html#event:tap">VolumElevel #Ereignis:tippen</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Global<b class="caret"></b></a>
+				<ul class="dropdown-menu inline">
+					<li><a href="global.html#activeCues">ActiveCues</a></li><li><a href="global.html#createTrackHelper">CreateTrackHelper</a></li><li><a href="global.html#cues">Hinweise</a></li><li><a href="global.html#currentSrc">CurrentSRC</a></li><li><a href="global.html#default">Standardwert</a></li><li><a href="global.html#emulateTextTracks">EmulateTextTracks</a></li><li><a href="global.html#enabled">aktiviert</a></li><li><a href="global.html#id">id</a></li><li><a href="global.html#kind">freundlich</a></li><li><a href="global.html#label">Etikett</a></li><li><a href="global.html#language">Sprache</a></li><li><a href="global.html#length">Länge</a></li><li><a href="global.html#mode">Modus</a></li><li><a href="global.html#NONE">KEINE</a></li><li><a href="global.html#readyState">ReadyState</a></li><li><a href="global.html#selected">ausgewählt</a></li><li><a href="global.html#track">verfolgen</a></li><li><a href="global.html#tryUpdateStyle">TryUpdateStyle</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+        
+            <div class="col-sm-3 col-md-3">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="q" id="search-input">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" id="search-submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+	</div>
+
+</div>
+</div>
+
+
+<div class="container" id="toc-content">
+<div class="row">
+
+	
+	<div class="col-md-8">
+	
+		<div id="main">
+			
+
+	<h1 class="page-title">Klasse: Html5</h1>
+<section>
+
+<header>
+    
+        <h2>
+        Html5
+        </h2>
+        
+            <div class="class-description"><p>HTML5 Mediencontroller - Wrapper für HTML5 Media API</p></div>
+        
+    
+</header>
+
+
+<article>
+    <div class="container-overview">
+    
+        
+<hr>
+<dt>
+    <h4 class="name" id="Html5"><span class="type-signature"></span>neues Html5( [Optionen], fertig)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Erstellen Sie eine Instanz dieser Technologie.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameter:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Nennen</th>
+        
+
+        <th>Typ</th>
+
+        
+        <th>Argument</th>
+        
+
+        
+
+        <th class="last">Beschreibung</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>Optionen</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Objekt</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional&gt;<br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Der Schlüssel-/Wert-Speicher der Spieleroptionen.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>bereit</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Component.html#~ReadyCallback">component~ReadyCallback</a></span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Callback-Funktion, die aufgerufen werden soll, wenn der <code>HTML5</code> Tech bereit ist.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+        <dt class="mixes">Mischt sich ein:</dt>
+
+        <dd class="mixes"><ul>
+        
+            <li>Tech~SouceHandlerErgänzungen</li>
+        
+        </ul></dd>
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+    
+    </div>
+
+    
+        <h3 class="subsection-title">Verlängert</h3>
+
+        
+
+
+    <ul>
+        <li><a href="Tech.html">Tech</a></li>
+    </ul>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Mitglieder</h3>
+
+        <dl>
+            
+<hr>
+<dt class="name" id="featuresFullscreenResize">
+    <h4 id="featuresFullscreenResize"><span class="type-signature"></span>FeaturesFullScreenResize<span class="type-signature"> :boolean</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Boolescher Wert, der angibt, ob die <code></code> HTML5-Technologie derzeit die automatische Medienänderung unterstützt, wenn er in den Vollbildmodus geht.</p>
+    </div>
+    
+
+    
+        <h5>Typ:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">boolescher Wert</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+    <dt class="tag-overrides">Überschreibungen:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Tech.html#featuresFullscreenResize">Tech #featuresFullscreenResize</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+	<dt class="tag-default method-doc-label method-doc-details-label">Standardwert:</dt>
+	<dd class="tag-default">
+		<ul class="dummy">
+			<li>wahr</li>
+		</ul>
+	</dd>
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id="featuresNativeAudioTracks">
+    <h4 id="featuresNativeAudioTracks"><span class="type-signature"></span>FunktionenNativeAudioTracks<span class="type-signature"> :boolesch</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Boolescher Wert, der angibt, ob die <code>HTML5</code> tech unterstützt derzeit native <code>AudioTrack</code>S.</p>
+    </div>
+    
+
+    
+        <h5>Typ:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">boolescher Wert</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+	<dt class="tag-default method-doc-label method-doc-details-label">Standardwert:</dt>
+	<dd class="tag-default">
+		<ul class="dummy">
+			<li>Html5.supportsNativeAudioTracks<a href="Html5.html#.supportsNativeAudioTracks"></a></li>
+		</ul>
+	</dd>
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id="featuresNativeTextTracks">
+    <h4 id="featuresNativeTextTracks"><span class="type-signature"></span>FeaturesNativeTextTracks<span class="type-signature"> :boolean</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Boolescher Wert, der angibt, ob die <code>HTML5</code> tech unterstützt derzeit native <code>TextTrack</code>S.</p>
+    </div>
+    
+
+    
+        <h5>Typ:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">boolescher Wert</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+    <dt class="tag-overrides">Überschreibungen:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Tech.html#featuresNativeTextTracks">Tech #featuresNativeTextTracks</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+	<dt class="tag-default method-doc-label method-doc-details-label">Standardwert:</dt>
+	<dd class="tag-default">
+		<ul class="dummy">
+			<li>Html5.supportsNativeTextTracks<a href="Html5.html#.supportsNativeTextTracks"></a></li>
+		</ul>
+	</dd>
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id="featuresNativeVideoTracks">
+    <h4 id="featuresNativeVideoTracks"><span class="type-signature"></span>FunktionenNativeVideoTracks<span class="type-signature"> :boolesch</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Boolescher Wert, der angibt, ob die <code>HTML5</code> tech unterstützt derzeit native <code>Videospur</code>S.</p>
+    </div>
+    
+
+    
+        <h5>Typ:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">boolescher Wert</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+	<dt class="tag-default method-doc-label method-doc-details-label">Standardwert:</dt>
+	<dd class="tag-default">
+		<ul class="dummy">
+			<li>Html5.supportsNativeVideoTracks<a href="Html5.html#.supportsNativeVideoTracks"></a></li>
+		</ul>
+	</dd>
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id="featuresPlaybackRate">
+    <h4 id="featuresPlaybackRate"><span class="type-signature"></span>FeaturesPlaybackRate<span class="type-signature"> :boolean</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Boolescher Wert, der angibt, ob die <code>Technik</code> unterstützt die Änderung der Geschwindigkeit, mit der die Medien wiedergegeben werden. Beispiele:</p>
+<ul>
+<li>Stellen Sie den Spieler so ein, dass er 2x (zweimal) so schnell spielt</li>
+<li>Stellen Sie den Spieler so ein, dass er 0,5x (halb) so schnell spielt</li>
+</ul>
+    </div>
+    
+
+    
+        <h5>Typ:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">boolescher Wert</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+    <dt class="tag-overrides">Überschreibungen:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Tech.html#featuresPlaybackRate">Tech #featuresPlaybackRate</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+	<dt class="tag-default method-doc-label method-doc-details-label">Standardwert:</dt>
+	<dd class="tag-default">
+		<ul class="dummy">
+			<li>Html5.canControlPlaybackRate<a href="Html5.html#.canControlPlaybackRate"></a></li>
+		</ul>
+	</dd>
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id="featuresProgressEvents">
+    <h4 id="featuresProgressEvents"><span class="type-signature"></span>FeaturesProgressEvents<span class="type-signature"> :boolean</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Boolescher Wert, der angibt, ob die <code></code> HTML5-Technologie derzeit das Fortschrittsereignis unterstützt. Wenn dies falsch ist, manuell <code>Fortschritt</code> Stattdessen werden Ereignisse ausgelöst.</p>
+    </div>
+    
+
+    
+        <h5>Typ:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">boolescher Wert</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+    <dt class="tag-overrides">Überschreibungen:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Tech.html#featuresProgressEvents">Tech #featuresProgressEvents</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+	<dt class="tag-default method-doc-label method-doc-details-label">Standardwert:</dt>
+	<dd class="tag-default">
+		<ul class="dummy">
+			<li>wahr</li>
+		</ul>
+	</dd>
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id="featuresTimeupdateEvents">
+    <h4 id="featuresTimeupdateEvents"><span class="type-signature"></span>FeaturestimeUpdateEvents<span class="type-signature"></span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Boolescher Wert, der angibt, ob die <code></code> HTML5-Technologie derzeit das timeupdate-Ereignis unterstützt. Wenn dies falsch ist, manuell <code>Zeitupdate</code> Stattdessen werden Ereignisse ausgelöst.</p>
+    </div>
+    
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+    <dt class="tag-overrides">Überschreibungen:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Tech.html#featuresTimeupdateEvents">Tech #featuresTimeupdateEvents</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+	<dt class="tag-default method-doc-label method-doc-details-label">Standardwert:</dt>
+	<dd class="tag-default">
+		<ul class="dummy">
+			<li>wahr</li>
+		</ul>
+	</dd>
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id="featuresVolumeControl">
+    <h4 id="featuresVolumeControl"><span class="type-signature"></span>FeaturesVolumeControl<span class="type-signature"> :boolean</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Boolean, der angibt, ob der <code>Tech die Lautstärkeregelung</code> unterstützt</p>
+    </div>
+    
+
+    
+        <h5>Typ:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">boolescher Wert</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+    <dt class="tag-overrides">Überschreibungen:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Tech.html#featuresVolumeControl">Tech #featuresVolumeControl</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+	<dt class="tag-default method-doc-label method-doc-details-label">Standardwert:</dt>
+	<dd class="tag-default">
+		<ul class="dummy">
+			<li>Html5.canControlVolume<a href="Html5.html#.canControlVolume"></a></li>
+		</ul>
+	</dd>
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id="movingMediaElementInDOM">
+    <h4 id="movingMediaElementInDOM"><span class="type-signature"></span>MovingMediaElementinDom<span class="type-signature"> :boolean</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Boolescher Wert, der angibt, ob die <code></code> HTML5-Technologie derzeit das Medienelement unterstützt, das sich im DOM bewegt. iOS bricht zusammen, wenn Sie das Medienelement verschieben, daher wird dies dort auf false gesetzt. Überall sonst sollte das stimmen.</p>
+    </div>
+    
+
+    
+        <h5>Typ:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">boolescher Wert</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".nativeSourceHandler">
+    <h4 id=".nativeSourceHandler"><span class="type-signature">&lt;statisch&gt; </span>nativeSourceHandler<span class="type-signature"></span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Native Source-Handler für Html5, übergibt die Quelle einfach an das Medienelement.</p>
+    </div>
+    
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        </dl>
+    
+
+    
+        <h3 class="subsection-title">Methoden</h3>
+
+        <dl>
+            
+<hr>
+<dt>
+    <h4 class="name" id="addRemoteTextTrack"><span class="type-signature"></span>addremoteTextTrack (Optionen [, ManualCleanup])</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Erstellt ein Remote-Textspur-Objekt und gibt ein HTML-Spurelement zurück.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameter:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Nennen</th>
+        
+
+        <th>Typ</th>
+
+        
+        <th>Argument</th>
+        
+
+        
+        <th>Standardwert</th>
+        
+
+        <th class="last">Beschreibung</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>Optionen</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Objekt</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>Das Objekt sollte Werte für Art, Sprache, Label und src enthalten (Speicherort der WebVTT-Datei)</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>ManualCleanup</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolescher Wert</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional&gt;<br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    wahr
+                
+                </td>
+            
+
+            <td class="description last"><p>falls auf false gesetzt, wird der TextTrack automatisch aus dem Videoelement entfernt, wenn sich die Quelle ändert</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+    <dt class="tag-overrides">Überschreibungen:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Tech.html#addRemoteTextTrack">Tech #addRemoteTextTrack</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+	
+	<dt class="important tag-deprecated method-doc-label method-doc-details-label">Veraltet:</dt>
+	
+    <dd>
+        <ul class="dummy">
+            <li>Der Standardwert des Parameters „ManualCleanup“ wird in kommenden Versionen von Video.js standardmäßig auf „false“ gesetzt</li>
+        </ul>
+    </dd>
+    
+    
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <p>Ein Html-Spurelement. Dies kann ein emuliertes <a href="HTMLTrackElement.html">HtmlTrackElement</a> oder ein natives sein.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="HTMLTrackElement.html">HtmlTrackElement</a></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="addTextTrack"><span class="type-signature"></span>addTextTrack (kind [, label] [, Sprache])</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Erstellen Sie ein <a href="TextTrack.html"></a> Remote-TextTrack-Objekt und gibt es zurück.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameter:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Nennen</th>
+        
+
+        <th>Typ</th>
+
+        
+        <th>Argument</th>
+        
+
+        
+
+        <th class="last">Beschreibung</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>freundlich</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p><code>TextTrack</code> kind (Untertitel, Beschriftungen, Beschreibungen, Kapitel oder Metadaten)</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Etikett</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional&gt;<br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Beschriftung zur Identifizierung der Textspur</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Sprache</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional&gt;<br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Zwei-Buchstaben-Sprachabkürzung</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+    <dt class="tag-overrides">Überschreibungen:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Tech.html#addTextTrack">Tech #addTextTrack</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <p>Der TextTrack, der erstellt wird.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="TextTrack.html">TextTrack</a></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="addWebVttScript_"><span class="type-signature"></span>addWebVttScript_ ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Emulieren Sie bei Bedarf TextTracks mit vtt.js</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Geerbt von:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="Tech.html#addWebVttScript_">Tech #addWebVttScript_</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/tech.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+    <h5>Brände:</h5>
+    <ul>
+        <li><a href="Tech.html#event:vttjsloaded">Tech #Ereignis:vttjsloaded</a></li>
+    
+        <li>Tech #Ereignis:vttjserror</li>
+    </ul>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="audioTracks"><span class="type-signature"></span>AudioTracks ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Bekommen das <code>Technik</code>S <a href="AudioTrackList.html">AudioTrackListe</a>.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Geerbt von:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="Tech.html#audioTracks">Tech #audioTracks</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/tech.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <p>Die Audiospurliste, die der Tech derzeit verwendet.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="AudioTrackList.html">AudioTrackList</a></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="autoplay"><span class="type-signature"></span>Autoplay ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Holen Sie sich den Wert von <code>Autoplay</code> aus dem Medienelement. <code>Autoplay</code> zeigt an, dass das Medium mit der Wiedergabe beginnen sollte, sobald die Seite fertig ist.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><p><a href="https://www.w3.org/TR/html5/embedded-content-0.html#attr-media-autoplay">Spec</a></p></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <ul>
+<li>Der Wert von <code>Autoplay</code> aus dem Medienelement.<pre class="prettyprint source"><code> - True indicates that the media should start as soon as the page loads. - False indicates that the media should not start as soon as the page loads.</code></pre></li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">boolescher Wert</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="buffered"><span class="type-signature"></span>gepuffert ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Ruft den Wert von <code>gepuffert</code> aus dem Medienelement ab. <code>buffered</code> ist ein <code></code> TimeRange-Objekt, das die Teile des Mediums darstellt, die bereits heruntergeladen und für die Wiedergabe verfügbar sind.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+    <dt class="tag-overrides">Überschreibungen:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Tech.html#buffered">Tech #buffered</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><p><a href="https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-buffered">Spec</a></p></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <p>Der Wert von <code>gepuffert</code> aus dem Medienelement.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">TimeRange</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="bufferedPercent"><span class="type-signature"></span>bufferedPercent ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Ruft den Prozentsatz des aktuellen Videos ab, das derzeit gepuffert ist.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Geerbt von:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="Tech.html#bufferedPercent">Tech #bufferedPercent</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/tech.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <p>Eine Zahl von 0 bis 1, die den Dezimalprozentsatz des gepufferten Videos darstellt.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">Zahl</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="cleanupAutoTextTracks"><span class="type-signature"></span>cleanupAutoTextTracks ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Entfernen Sie alle TextTracks, die über AddremoteTextTrack hinzugefügt wurden und für die automatische Garbage Collection gekennzeichnet sind</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Geerbt von:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="Tech.html#cleanupAutoTextTracks">Tech #cleanupAutoTextTracks</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/tech.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="clearTracks"><span class="type-signature"></span>ClearTracks (Typen)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Löschen Sie eine einzelne <code>TrackList</code> oder ein Array von <code>TrackLists mit ihren</code> Namen.</p>
+<blockquote>
+<p>Hinweis: Techniker ohne Quellhandler sollten dies zwischen Quellen für <code>Video</code> - und <code></code> Audiospuren aufrufen. Du willst sie nicht zwischen Tracks benutzen!</p>
+</blockquote>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameter:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Nennen</th>
+        
+
+        <th>Typ</th>
+
+        
+
+        
+
+        <th class="last">Beschreibung</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>Typen</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;string&gt;</span> | <span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>TrackList-Namen zu löschen, gültige Namen sind <code>Video</code> , <code>Audio-</code> , und <code>Text</code>.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Geerbt von:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="Tech.html#clearTracks">Tech #clearTracks</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/tech.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="controls"><span class="type-signature"></span>steuert ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Regt den Wert von <code>Steuerelementen</code> aus dem Medienelement ab. <code>Steuerelemente</code> zeigen an, ob die Steuerelemente für native Medien ein- oder ausgeblendet werden sollen.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><p><a href="https://www.w3.org/TR/html5/embedded-content-0.html#attr-media-controls">Spec</a></p></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <ul>
+<li>Der Wert von <code>Steuerelementen</code> aus dem Medienelement.<pre class="prettyprint source"><code> - True indicates that native controls should be showing. - False indicates that native controls should be hidden.</code></pre></li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">boolescher Wert</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="createEl"><span class="type-signature"></span>createEL ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Erstellen Sie das DOM-Element der <code>Html5</code> Tech.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <p>Das Element, das erstellt wird.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">Element</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="createRemoteTextTrack"><span class="type-signature"></span>createEmoteTextTrack (Optionen)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Erstellt je nach Wert von <code>FeaturesNativeTextTracks entweder nativen TextTrack oder einen emulierten TextTrack</code></p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameter:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Nennen</th>
+        
+
+        <th>Typ</th>
+
+        
+
+        
+
+        <th class="last">Beschreibung</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>Optionen</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Objekt</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Das Objekt sollte die Optionen zum Initialisieren des TextTrack enthalten.</p>
+                <h6 class="method-params-label method-subparams-label">Immobilien</h6>
+                
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Nennen</th>
+        
+
+        <th>Typ</th>
+
+        
+        <th>Argument</th>
+        
+
+        
+
+        <th class="last">Beschreibung</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>freundlich</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional&gt;<br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p><code>TextTrack</code> kind (Untertitel, Beschriftungen, Beschreibungen, Kapitel oder Metadaten).</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Etikett</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional&gt;<br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Beschriftung zur Identifizierung der Textspur</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Sprache</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional&gt;<br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Abkürzung der Sprache mit zwei Buchstaben.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Standardwert</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolescher Wert</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional&gt;<br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Standardmäßig ist dieser Track auf on.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional&gt;<br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Die interne ID zum Zuweisen dieser Spur.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>src</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional&gt;<br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Eine Quell-URL für den Track.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+    <dt class="tag-overrides">Überschreibungen:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Tech.html#createRemoteTextTrack">Tech #createRemoteTextTrack</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <p>Das Track-Element, das erstellt wird.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="HTMLTrackElement.html">HtmlTrackElement</a></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="currentSrc"><span class="type-signature"></span>currentSRC ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Holen Sie sich die aktuelle Quelle des <code>HTML5</code> Tech. Greift auf die Rückgabe der Quelle aus dem HTML5-Medienelement zurück.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <p>Das aktuelle Quellobjekt der HTML5-Technologie. Mit einem Fallback auf die Elementquelle.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Tech.html#~SourceObject">Tech~SourceObject</a></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="currentTime"><span class="type-signature"></span>currentTime ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Holen Sie sich den Wert von <code>CurrentTime</code> aus dem Medienelement. <code>CurrentTime</code> gibt die aktuelle Sekunde an, in der sich das Medium in der Wiedergabe befindet.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><p><a href="https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-currenttime">Spec</a></p></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <p>Der Wert von <code>CurrentTime</code> aus dem Medienelement.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">Zahl</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="defaultMuted"><span class="type-signature"></span>defaultMuted ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Regt den Wert von <code>defaultMuted</code> aus dem Medienelement ab. <code>defaultMuted</code> gibt an, ob das Medium stumm gestartet werden soll oder nicht. Ändert nur den Standardstatus des Mediums. <code>gedämpft</code> und <code>defaultMuted</code> können unterschiedliche Werte haben. <code>stumm</code> zeigt den aktuellen Status an.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><p><a href="https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-defaultmuted">Spec</a></p></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <ul>
+<li>Der Wert von <code>defaultMuted</code> aus dem Medienelement.<pre class="prettyprint source"><code> - True indicates that the media should start muted. - False indicates that the media should not start muted</code></pre></li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">boolescher Wert</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="dispose"><span class="type-signature"></span>entsorgen ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Entsorgen Sie das <code></code> HTML5-Medienelement und entfernen Sie alle Spuren.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+    <dt class="tag-overrides">Überschreibungen:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Tech.html#dispose">Tech #dispose</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="duration"><span class="type-signature"></span>dauer ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Holen Sie sich die aktuelle Dauer des HTML5-Medienelements.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <p>Die Dauer der Medien oder 0, wenn keine Dauer vorliegt.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">Zahl</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="ended"><span class="type-signature"></span>beendet ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Holen Sie sich den Wert von <code>ended</code> aus dem Medienelement. <code>ended</code> gibt an, ob die Medien das Ende erreicht haben oder nicht.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><p><a href="https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-ended">Spec</a></p></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <ul>
+<li>Der Wert von <code>endete</code> aus dem Medienelement.<pre class="prettyprint source"><code> - True indicates that the media has ended. - False indicates that the media has not ended.</code></pre></li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">boolescher Wert</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="enterFullScreen"><span class="type-signature"></span>EnterFullScreen ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Fordern Sie die <code>HTML5</code> Tech auf, den Vollbildmodus einzugeben.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="error"><span class="type-signature"></span>Error()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Holen Sie sich den Wert der <code>Error</code> aus dem Medienelement. <code>Error</code> zeigt einen MediaError an, der möglicherweise während der Wiedergabe aufgetreten ist. Wenn der Fehler null zurückgibt, liegt kein aktueller Fehler vor.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+    <dt class="tag-overrides">Überschreibungen:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Tech.html#error">Tech #error</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><p><a href="https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-error">Spec</a></p></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <p>Der Wert des <code>Fehlers</code> aus dem Medienelement. Wird <code>MediaError sein,</code> wenn ein aktueller Fehler vorliegt und andernfalls null.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="MediaError.html">MediaError</a></span> | <span class="param-type">null</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="exitFullScreen">exitFullScreen()<span class="type-signature"></span></h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Fordern Sie an, dass der <code>HTML5</code> Tech den Vollbildmodus beendet.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="getVideoPlaybackQuality"><span class="type-signature"></span>getVideoPlaybackQuality ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Ruft verfügbare Metriken für die Medienwiedergabe ab, wie in der Media Playback Quality API des W3C angegeben.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+    <dt class="tag-overrides">Überschreibungen:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Tech.html#getVideoPlaybackQuality">Tech #getVideoPlaybackQuality</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><p><a href="https://wicg.github.io/media-playback-quality">Spec</a></p></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <p>Ein Objekt mit unterstützten Metriken für die Medienwiedergabe</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">Objekt</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="handleLateInit_">handleLateInit_()<span class="type-signature"></span></h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Dies wird ausgelöst, wenn das Loadstart-Ereignis bereits ausgelöst wurde, bevor Videojs fertig war. Zwei bekannte Beispiele dafür, wann dies passieren kann, sind:</p>
+<ol>
+<li>Wenn wir das Wiedergabeobjekt laden, nachdem es mit dem Laden begonnen hat</li>
+<li>Die Medien spielen dann schon das (oft mit Autoplay an)</li>
+</ol>
+<p>Diese Funktion löst einen weiteren Loadstart aus, damit Videojs aufholen können.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+    <h5>Brände:</h5>
+    <ul>
+        <li>Tech #Ereignis:Loadstart</li>
+    </ul>
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <p>gibt nichts zurück.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">undefiniert</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="handleTextTrackAdd">handleTextTrackAdd(e)<span class="type-signature"></span></h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Behandeln Sie alle <a href="TextTrackList.html">TextTrackList</a> <code>Addtrack</code> Veranstaltung.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameter:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Nennen</th>
+        
+
+        <th>Typ</th>
+
+        
+
+        
+
+        <th class="last">Beschreibung</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>e</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="EventTarget.html#~Event">eventTarget~Event</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Die <code>Addtrack</code> Ereignis, das diese Ausführung verursacht hat.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+    <h5>Hört auf Ereignisse:</h5>
+    <ul>
+        <li><a href="TextTrackList.html#event:addtrack">textTrackList #Ereignis:addtrack</a></li>
+    </ul>
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="handleTextTrackChange">handleTextTrackChange(e)<span class="type-signature"></span></h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Behandeln Sie alle <a href="TextTrackList.html">TextTrackList</a> <code>Veränderung</code> Veranstaltung.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameter:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Nennen</th>
+        
+
+        <th>Typ</th>
+
+        
+
+        
+
+        <th class="last">Beschreibung</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>e</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="EventTarget.html#~Event">eventTarget~Event</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Die <code>Veränderung</code> Ereignis, das diese Ausführung verursacht hat.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+    <h5>Hört auf Ereignisse:</h5>
+    <ul>
+        <li><a href="TextTrackList.html#event:change">textTrackList #Ereignis:ändern</a></li>
+    </ul>
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="handleTextTrackRemove">handleTextTrackRemove(e)<span class="type-signature"></span></h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Behandeln Sie alle <a href="TextTrackList.html">TextTrackList</a> <code>Spur entfernen</code> Veranstaltung.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameter:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Nennen</th>
+        
+
+        <th>Typ</th>
+
+        
+
+        
+
+        <th class="last">Beschreibung</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>e</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="EventTarget.html#~Event">eventTarget~Event</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Die <code>Spur entfernen</code> Ereignis, das diese Ausführung verursacht hat.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+    <h5>Hört auf Ereignisse:</h5>
+    <ul>
+        <li><a href="TextTrackList.html#event:removetrack">textTrackList #Ereignis:removetrack</a></li>
+    </ul>
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="height"><span class="type-signature"></span>Höhe()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Holen Sie sich die aktuelle Höhe des HTML5-Medienelements.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <p>Die Höhe des HTML5-Medienelements.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">Zahl</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="initTextTrackListeners"><span class="type-signature"></span>initTextTrackListener ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Schalten Sie Listener für <a href="TextTrackList.html"></a> TextTrackList-Ereignisse ein. Dies fügt eventTarget~EventListener für <code>texttrackchange</code>, <code>addtrack</code> und <code>removetrack hinzu</code>.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Geerbt von:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="Tech.html#initTextTrackListeners">Tech #initTextTrackListeners</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/tech.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+    <h5>Brände:</h5>
+    <ul>
+        <li><a href="Tech.html#event:texttrackchange">Tech #Ereignis:texttrackchange</a></li>
+    </ul>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="initTrackListeners"><span class="type-signature"></span>initTrackListener ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Schalten Sie die Hörer für <a href="VideoTrackList.html">VideoTrackList</a> - und {AudioTrackList-Ereignisse ein. Dies fügt eventTarget~EventListener für <code>addtrack</code> und <code>removetrack hinzu</code>.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Geerbt von:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="Tech.html#initTrackListeners">Tech #initTrackListeners</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/tech.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+    <h5>Brände:</h5>
+    <ul>
+        <li><a href="Tech.html#event:audiotrackchange">Tech #Ereignis:audiotrackchange</a></li>
+    
+        <li><a href="Tech.html#event:videotrackchange">Tech #Ereignis:Videotrackchange</a></li>
+    </ul>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="load"><span class="type-signature"></span>laden ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Ein Wrapper um die <code></code> Ladefunktion der Medienelemente. Dies ruft die <code></code>Ladefunktion der Medienelemente des <code>HTML5</code> auf.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><p><a href="https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-load">Spec</a></p></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="loop"><span class="type-signature"></span>Schleife ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Holen Sie sich den Wert der <code>Schleife</code> aus dem Medienelement. <code>-Schleife</code> zeigt an, dass das Medium zum Anfang des Mediums zurückkehren und die Wiedergabe fortsetzen sollte, sobald es das Ende erreicht hat.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><p><a href="https://www.w3.org/TR/html5/embedded-content-0.html#attr-media-loop">Spec</a></p></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <ul>
+<li>Der Wert der <code>Schleife</code> aus dem Medienelement.<pre class="prettyprint source"><code> - True indicates that playback should seek back to start once the end of a media is reached. - False indicates that playback should not loop back to the start when the end of the media is reached.</code></pre></li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">boolescher Wert</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="manualProgressOff"><span class="type-signature"></span>ManualProgressoFF ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Deaktivieren Sie das Polyfill für <code></code> Fortschrittsereignisse, die in <a href="Tech.html#manualProgressOn">Tech #manualProgressOn erstellt wurden</a></p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Geerbt von:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="Tech.html#manualProgressOff">Tech #manualProgressOff</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/tech.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="manualProgressOn"><span class="type-signature"></span>ManualProgresson ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Polyfill das <code></code> Fortschrittereignis für Browser, die es nicht nativ unterstützen.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Geerbt von:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="Tech.html#manualProgressOn">Tech #manualProgressOn</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/tech.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><a href="Tech.html#trackProgress">Tech #trackProgress</a></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="manualTimeUpdatesOff"><span class="type-signature"></span>ManualTimeUpdateSoff ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Deaktivieren Sie das Polyfill für <code></code> Timeupdate-Ereignisse, die in <a href="Tech.html#manualTimeUpdatesOn">Tech #manualTimeUpdatesOn erstellt wurden</a></p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Geerbt von:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="Tech.html#manualTimeUpdatesOff">Tech #manualTimeUpdatesOff</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/tech.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="manualTimeUpdatesOn"><span class="type-signature"></span>ManualTimeUpdatesOn ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Polyfill das <code></code> timeupdate-Ereignis für Browser, die es nicht unterstützen.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Geerbt von:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="Tech.html#manualTimeUpdatesOn">Tech #manualTimeUpdatesOn</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/tech.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><a href="Tech.html#trackCurrentTime">Tech #trackCurrentTime</a></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="muted"><span class="type-signature"></span>gedämpft ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Holen Sie sich den Wert von <code>stumm</code> aus dem Medienelement. <code>gedämpft</code> zeigt an, dass die Lautstärke für die Medien auf stumm eingestellt werden sollte. Dies ändert das <code></code> Volume-Attribut nicht wirklich.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><p><a href="https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-muted">Spec</a></p></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <ul>
+<li>True, wenn der Wert der <code>Lautstärke</code> ignoriert und das Audio auf leise eingestellt werden soll.<pre class="prettyprint source"><code> - False if the value of `volume` should be used.</code></pre></li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">boolescher Wert</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="networkState"><span class="type-signature"></span>networkState ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Regt den Wert von <code>NetworkState</code> aus dem Medienelement ab. <code>NetworkState</code> gibt den aktuellen Netzwerkstatus an. Es gibt eine Aufzählung aus der folgenden Liste zurück:</p>
+<ul>
+<li>0: NETWORK_EMPTY</li>
+<li>1: NEWORK_IDLE</li>
+<li>2: NETWORK_LOADING</li>
+<li>3: NETWORK_NO_SOURCE</li>
+</ul>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><p> https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-networkstate<a href="https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-networkstate"></a></p></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <p>Der Wert von <code>NetworkState</code> aus dem Medienelement. Dies wird eine Zahl aus der Liste in der Beschreibung sein.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">Zahl</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="onDurationChange"><span class="type-signature"></span>OnDurationChange (Ereignis)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Aktualisieren Sie unsere interne Dauer bei einem <code></code> Daueränderungs-Ereignis, indem Sie Tech #duration anrufen.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameter:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Nennen</th>
+        
+
+        <th>Typ</th>
+
+        
+
+        
+
+        <th class="last">Beschreibung</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>Ereignis</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="EventTarget.html#~Event">eventTarget~Event</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Das <code></code> durationchange-Ereignis, das dazu geführt hat, dass dies ausgeführt wurde.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Geerbt von:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="Tech.html#onDurationChange">Tech #onDurationChange</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/tech.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+    <h5>Hört auf Ereignisse:</h5>
+    <ul>
+        <li>Tech #Ereignis:Durationchange</li>
+    </ul>
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="pause"><span class="type-signature"></span>pausieren ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Ein Wrapper um die Medienelemente <code>Pause</code> Funktion. Dies ruft die <code></code> Pause-Funktion der <code></code> HTML5-Medienelemente auf.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><p><a href="https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-pause">Spec</a></p></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="paused"><span class="type-signature"></span>pausiert ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Holen Sie sich den Wert von <code>pausiert</code> aus dem Medienelement. <code>pausiert</code> gibt an, ob das Medienelement derzeit angehalten ist oder nicht.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><p><a href="https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-paused">Spec</a></p></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <p>Der Wert von <code>pausiert</code> aus dem Medienelement.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">boolescher Wert</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="play"><span class="type-signature"></span>spielen ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Angerufen von <a href="Player.html#play">Spieler#play</a> mit dem spielen <code>HTML5</code> <code>Technik</code>.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="playbackRate"><span class="type-signature"></span>playBackRate ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Holen Sie sich den Wert von <code>PlayBackRate</code> aus dem Medienelement. <code>PlayBackRate</code> gibt die Rate an, mit der das Medium gerade wiedergegeben wird. Beispiele:</p>
+<ul>
+<li>wenn PlayBackRate auf 2 eingestellt ist, werden Medien doppelt so schnell abgespielt.</li>
+<li>wenn PlayBackRate auf 0.5 eingestellt ist, werden Medien halb so schnell abgespielt.</li>
+</ul>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><p><a href="https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-playbackrate">Spec</a></p></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <p>Der Wert von <code>PlayBackRate</code> aus dem Medienelement. Eine Zahl, die die aktuelle Wiedergabegeschwindigkeit des Mediums angibt, wobei 1 die normale Geschwindigkeit ist.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">Zahl</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="played"><span class="type-signature"></span>gespielt ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Holen Sie sich den Wert von <code>wiedergegeben</code> aus dem Medienelement. <code>played</code> gibt ein <code></code> TimeRange-Objekt zurück, das Punkte in der Medienzeitachse darstellt, die abgespielt wurden.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+    <dt class="tag-overrides">Überschreibungen:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Tech.html#played">Tech #played</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><p><a href="https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-played">Spec</a></p></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <p>Der Wert von <code>gespielt</code> aus dem Medienelement. Ein <code></code> TimeRange-Objekt, das die gespielten Zeitbereiche angibt.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">TimeRange</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="playsinline"><span class="type-signature"></span>playinline()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Holen Sie sich den Wert von <code>playsinline</code> aus dem Medienelement. <code>playsinline</code> zeigt dem Browser an, dass die Nicht-Vollbild-Wiedergabe bevorzugt wird, wenn die Vollbild-Wiedergabe die native Standardeinstellung ist, z. B. in iOS Safari.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+    <dt class="tag-overrides">Überschreibungen:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Tech.html#playsinline">Tech #playsinline</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><p><a href="https://html.spec.whatwg.org/#attr-video-playsinline">Spec</a></p></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <ul>
+<li>Der Wert von <code>Playsinline</code> aus dem Medienelement.<pre class="prettyprint source"><code> - True indicates that the media should play inline. - False indicates that the media should not play inline.</code></pre></li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">boolescher Wert</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="poster"><span class="type-signature"></span>Plakat ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Holen Sie sich den Wert von <code>Poster</code> aus dem Medienelement. <code>Poster</code> gibt an, dass die URL einer Bilddatei angezeigt wird, die angezeigt werden kann/wird, wenn keine Mediendaten verfügbar sind.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><p><a href="https://www.w3.org/TR/html5/embedded-content-0.html#attr-video-poster">Spec</a></p></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <p>Der Wert von <code>Poster</code> aus dem Medienelement. Der Wert ist eine URL zu einem Bild.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="preload"><span class="type-signature"></span>vorladen ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Rufe den Wert der <code>Vorspannung</code> aus dem Medienelement ab. <code>preload</code> gibt an, was heruntergeladen werden soll, bevor das Medium interagiert wird. Es kann folgende Werte haben:</p>
+<ul>
+<li>none: nichts sollte heruntergeladen werden</li>
+<li>Metadaten: Poster und die ersten Frames der Medien können heruntergeladen werden, um Mediendimensionen und andere Metadaten zu erhalten</li>
+<li>auto: Erlauben Sie, dass die Medien und Metadaten für die Medien vor der Interaktion heruntergeladen werden</li>
+</ul>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><p><a href="https://www.w3.org/TR/html5/embedded-content-0.html#attr-media-preload">Spec</a></p></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <p>Der Wert der <code>Vorspannung</code> aus dem Medienelement. Es wird „keine“, „Metadaten“ oder „auto“ sein.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="proxyNativeTextTracks_">proxyNativeTextTracks_()<span class="type-signature"></span></h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Fügen Sie Ereignis-Listener zu nativen Text-Track-Ereignissen hinzu. Dadurch werden die nativen Textspuren zu unserem emulierten hinzugefügt <a href="TextTrackList.html">TextTrackList</a>.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="readyState"><span class="type-signature"></span>readyState ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Regt den Wert von <code>ReadyState</code> aus dem Medienelement ab. <code>ReadyState</code> gibt den aktuellen Status des Medienelements an. Es gibt eine Aufzählung aus der folgenden Liste zurück:</p>
+<ul>
+<li>0: HABEN_NICHTS</li>
+<li>1: HABEN_METADATEN</li>
+<li>2: HAVE_CURRENT_DATA</li>
+<li>3: HAVE_FUTURE_DATA</li>
+<li>4: HAVE_ENOUGH_DATA</li>
+</ul>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><p> https://www.w3.org/TR/html5/embedded-content-0.html#ready-states<a href="https://www.w3.org/TR/html5/embedded-content-0.html#ready-states"></a></p></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <p>Der Wert von <code>ReadyState</code> aus dem Medienelement. Dies wird eine Zahl aus der Liste in der Beschreibung sein.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">Zahl</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="remoteTextTrackEls"><span class="type-signature"></span>remoteTextTrackels ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Holen Sie sich die <code>Tech</code>s {HTMLTrackElementList}, die die Elemente im DOM sind, die als TextTracks verwendet werden.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Geerbt von:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="Tech.html#remoteTextTrackEls">Tech #remoteTextTrackEls</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/tech.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <p>Die aktuellen HTML-Track-Elemente, die für die Technologie existieren.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">HtmlTrackElementList</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="remoteTextTracks"><span class="type-signature"></span>remoteTextTracks ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Bekommen das <code>Technik</code>s Fernbedienung <a href="TextTrackList.html">TextTrackList</a> , die aus Elementen erstellt wird, die dem DOM hinzugefügt wurden.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Geerbt von:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="Tech.html#remoteTextTracks">Tech #remoteTextTracks</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/tech.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <p>Die Remote-Text-Spurliste, die der Tech derzeit verwendet.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="TextTrackList.html">TextTrackList</a></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="removeOldTextTracks_">removeOldTextTracks_()<span class="type-signature"></span></h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Entfernen <a href="TextTrack.html">TextTrack</a>s, die nicht in der nativen Trackliste von unserem emulierten vorhanden sind <a href="TextTrackList.html">TextTrackList</a>.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+    <h5>Hört auf Ereignisse:</h5>
+    <ul>
+        <li>Tech #Ereignis:Loadstart</li>
+    </ul>
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="removeRemoteTextTrack"><span class="type-signature"></span>removeremoteTextTrack (Spur)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Entfernen Sie Remote <code>TextTrack</code> aus dem <code></code> TextTrackList-Objekt</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameter:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Nennen</th>
+        
+
+        <th>Typ</th>
+
+        
+
+        
+
+        <th class="last">Beschreibung</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>verfolgen</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="TextTrack.html">TextTrack</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p><code>Zu entfernendes</code> TextTrack-Objekt</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+    <dt class="tag-overrides">Überschreibungen:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Tech.html#removeRemoteTextTrack">Tech #removeRemoteTextTrack</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="reset"><span class="type-signature"></span>reset ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Setzen Sie die Technologie zurück, indem Sie alle Quellen entfernen und dann Html5.resetMediaElement aufrufen.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+    <dt class="tag-overrides">Überschreibungen:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Tech.html#reset">Tech #reset</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="seekable"><span class="type-signature"></span>suchbar ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Holen Sie sich den Wert von <code>suchbar</code> aus dem Medienelement. <code>seekable</code> gibt ein <code></code> TimeRange-Objekt zurück, das Zeitbereiche angibt, die derzeit <code>angestrebt</code> werden können.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><p><a href="https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-seekable">Spec</a></p></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <p>Der Wert von <code>suchbar</code> aus dem Medienelement. Ein <code></code> TimeRange-Objekt, das die aktuellen Zeitbereiche angibt, die angestrebt werden können.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">TimeRange</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="seeking"><span class="type-signature"></span>suchend ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Holen Sie sich den Wert der <code>Suche</code> aus dem Medienelement. <code>suche</code> gibt an, ob die Medien derzeit eine neue Position anstreben oder nicht.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><p><a href="https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-seeking">Spec</a></p></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <ul>
+<li>Der Wert der <code>Suche</code> nach dem Medienelement.<pre class="prettyprint source"><code> - True indicates that the media is currently seeking to a new position. - Flase indicates that the media is not seeking to a new position at this time.</code></pre></li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">boolescher Wert</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="setAutoplay"><span class="type-signature"></span>setAutoPlay (Autoplay)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Stellen Sie den Wert von <code>Autoplay</code> für das Medienelement ein. <code>Autoplay</code> zeigt an, dass das Medium mit der Wiedergabe beginnen sollte, sobald die Seite fertig ist.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameter:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Nennen</th>
+        
+
+        <th>Typ</th>
+
+        
+
+        
+
+        <th class="last">Beschreibung</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>Autoplay</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolescher Wert</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><ul>
+<li>True gibt an, dass das Medium gestartet werden sollte, sobald die Seite geladen wird.<pre class="prettyprint source"><code> - False indicates that the media should not start as soon as the page loads.</code></pre></li>
+</ul></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><p><a href="https://www.w3.org/TR/html5/embedded-content-0.html#attr-media-autoplay">Spec</a></p></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="setControls">setControls(val)<span class="type-signature"></span></h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Legen Sie das Steuerelement Attribut für das HTML5-Medienelement fest.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameter:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Nennen</th>
+        
+
+        <th>Typ</th>
+
+        
+
+        
+
+        <th class="last">Beschreibung</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>Val</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Wert, auf den das Controls Attribut gesetzt werden soll</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="setCurrentTime"><span class="type-signature"></span>setCurrentTime (Sekunden)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Stellen Sie die aktuelle Uhrzeit für die <code></code> HTML5-Technologie ein.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameter:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Nennen</th>
+        
+
+        <th>Typ</th>
+
+        
+
+        
+
+        <th class="last">Beschreibung</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>Sekunden</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Zahl</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Stellen Sie die aktuelle Uhrzeit der Medien darauf ein.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+    <dt class="tag-overrides">Überschreibungen:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Tech.html#setCurrentTime">Tech #setCurrentTime</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="setLoop"><span class="type-signature"></span>setLoop (Schleife)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Stellen Sie den Wert der <code>Schleife</code> für das Medienelement ein. <code>-Schleife</code> zeigt an, dass das Medium zum Anfang des Mediums zurückkehren und die Wiedergabe fortsetzen sollte, sobald es das Ende erreicht hat.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameter:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Nennen</th>
+        
+
+        <th>Typ</th>
+
+        
+
+        
+
+        <th class="last">Beschreibung</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>Schleife</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolescher Wert</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><ul>
+<li>True zeigt an, dass die Wiedergabe einmal wieder gestartet werden sollte<pre class="prettyprint source"><code> the end of a media is reached. - False indicates that playback should not loop back to the start when the end of the media is reached.</code></pre></li>
+</ul></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><p><a href="https://www.w3.org/TR/html5/embedded-content-0.html#attr-media-loop">Spec</a></p></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="setMuted"><span class="type-signature"></span>setMuted (stumm geschaltet)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Stellen Sie den Wert von ein <code>stummgeschaltet</code> auf dem Medienelement. <code>stummgeschaltet</code> zeigt an, dass der aktuelle Audiopegel stumm sein soll.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameter:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Nennen</th>
+        
+
+        <th>Typ</th>
+
+        
+
+        
+
+        <th class="last">Beschreibung</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>gedämpft</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolescher Wert</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><ul>
+<li>True, wenn das Audio auf leise eingestellt sein soll<pre class="prettyprint source"><code> - False otherwise</code></pre></li>
+</ul></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><p><a href="https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-muted">Spec</a></p></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="setPlaybackRate">setPlaybackRate()<span class="type-signature"></span></h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Stellen Sie den Wert von <code>PlayBackRate</code> für das Medienelement ein. <code>PlayBackRate</code> gibt die Rate an, mit der das Medium wiedergegeben werden soll. Beispiele:</p>
+<ul>
+<li>wenn PlayBackRate auf 2 eingestellt ist, werden Medien doppelt so schnell abgespielt.</li>
+<li>wenn PlayBackRate auf 0.5 eingestellt ist, werden Medien halb so schnell abgespielt.</li>
+</ul>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><p><a href="https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-playbackrate">Spec</a></p></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <p>Der Wert von <code>PlayBackRate</code> aus dem Medienelement. Eine Zahl, die die aktuelle Wiedergabegeschwindigkeit des Mediums angibt, wobei 1 die normale Geschwindigkeit ist.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">Zahl</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="setPlaysinline">setPlaysinline(playsinline)<span class="type-signature"></span></h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Stellen Sie den Wert von <code>playsinline</code> aus dem Medienelement ein. <code>playsinline</code> zeigt dem Browser an, dass die Nicht-Vollbild-Wiedergabe bevorzugt wird, wenn die Vollbild-Wiedergabe die native Standardeinstellung ist, z. B. in iOS Safari.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameter:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Nennen</th>
+        
+
+        <th>Typ</th>
+
+        
+
+        
+
+        <th class="last">Beschreibung</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>Playsinline</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolescher Wert</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><ul>
+<li>True zeigt an, dass die Medien inline abspielen sollen.<pre class="prettyprint source"><code> - False indicates that the media should not play inline.</code></pre></li>
+</ul></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+    <dt class="tag-overrides">Überschreibungen:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Tech.html#setPlaysinline">Tech #setPlaysinline</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><p><a href="https://html.spec.whatwg.org/#attr-video-playsinline">Spec</a></p></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="setPoster"><span class="type-signature"></span>setPoster (Poster)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Stellen Sie den Wert des <code>Poster</code> für das Medienelement ein. <code>Poster</code> ist die URL zu einer Bilddatei, die angezeigt werden kann/wird, wenn keine Mediendaten verfügbar sind.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameter:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Nennen</th>
+        
+
+        <th>Typ</th>
+
+        
+
+        
+
+        <th class="last">Beschreibung</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>Poster</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Die URL zu einem Bild, das als <code>Poster</code> für das Medienelement verwendet werden soll.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+    <dt class="tag-overrides">Überschreibungen:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Tech.html#setPoster">Tech #setPoster</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><p><a href="https://www.w3.org/TR/html5/embedded-content-0.html#attr-media-poster">Spec</a></p></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="setPreload"><span class="type-signature"></span>setPreload (preload)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Stellen Sie den Wert der <code>Vorspannung</code> für das Medienelement ein. <code>preload</code> gibt an, was heruntergeladen werden soll, bevor das Medium interagiert wird. Es kann folgende Werte haben:</p>
+<ul>
+<li>none: nichts sollte heruntergeladen werden</li>
+<li>Metadaten: Poster und die ersten Frames der Medien können heruntergeladen werden, um Mediendimensionen und andere Metadaten zu erhalten</li>
+<li>auto: Erlauben Sie, dass die Medien und Metadaten für die Medien vor der Interaktion heruntergeladen werden</li>
+</ul>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameter:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Nennen</th>
+        
+
+        <th>Typ</th>
+
+        
+
+        
+
+        <th class="last">Beschreibung</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>vorladen</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Der Wert von <code>Preload</code>, der für das Medienelement festgelegt werden soll. Muss „keine“, „Metadaten“ oder „auto“ sein.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><p><a href="https://www.w3.org/TR/html5/embedded-content-0.html#attr-media-preload">Spec</a></p></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="setSrc">setSrc(src)<span class="type-signature"></span></h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Stellen Sie den Wert von <code>src</code> für das Medienelement ein. <code>src</code> gibt das aktuelle <a href="Tech.html#~SourceObject">Tech~SourceObject</a> für die Medien an.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameter:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Nennen</th>
+        
+
+        <th>Typ</th>
+
+        
+
+        
+
+        <th class="last">Beschreibung</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>src</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Tech.html#~SourceObject">Tech~SourceObject</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Das Quellobjekt, das als aktuelle Quelle festgelegt werden soll.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><p><a href="https://www.w3.org/TR/html5/embedded-content-0.html#dom-media-src">Spec</a></p></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="setVolume"><span class="type-signature"></span>setVolume (PercentasDecimal)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Stellen Sie den Wert der <code>Lautstärke</code> für das Medienelement ein. <code>Lautstärke</code> gibt den aktuellen Audiopegel als Prozentsatz in Dezimalform an. Dies bedeutet, dass 1 100% ist, 0,5 50% ist und so weiter.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameter:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Nennen</th>
+        
+
+        <th>Typ</th>
+
+        
+
+        
+
+        <th class="last">Beschreibung</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>PercentasDecimal</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Zahl</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Das Volumen in Prozent als Dezimalzahl. Der gültige Bereich liegt zwischen 0 und 1.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><p>[Spec]<a href="https://www.w3.org/TR/html5/embedded-content-0.html#dom-a-volume">Spec</a></p></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="src"><span class="type-signature"></span>src ([src])</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Ein Getter/Setter für das Quellobjekt des <code>Html5</code> Tech.</p>
+<blockquote>
+<p>Hinweis: Bitte benutzen Sie Html5 #setSource</p>
+</blockquote>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameter:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Nennen</th>
+        
+
+        <th>Typ</th>
+
+        
+        <th>Argument</th>
+        
+
+        
+
+        <th class="last">Beschreibung</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>src</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Tech.html#~SourceObject">Tech~SourceObject</a></span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional&gt;<br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Das Quellobjekt, das Sie für das <code></code> HTML5-Techs-Element festlegen möchten.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+	<dt class="important tag-deprecated method-doc-label method-doc-details-label">Veraltet:</dt>
+	
+    <dd>
+        <ul class="dummy">
+            <li>Seit Version 5.</li>
+        </ul>
+    </dd>
+    
+    
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <ul>
+<li>Das aktuelle Quellobjekt, wenn eine Quelle nicht übergeben wird.<pre class="prettyprint source"><code> - undefined when setting</code></pre></li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Tech.html#~SourceObject">tech~SourceObject</a></span> | <span class="param-type">undefined</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="stopTrackingCurrentTime"><span class="type-signature"></span>StopTrackingCurrentTime ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Stoppen Sie die in <a href="Tech.html#trackCurrentTime">Tech #trackCurrentTime erstellte Intervallfunktion,</a> damit das <code></code> timeupdate-Ereignis nicht mehr ausgelöst wird.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Geerbt von:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="Tech.html#stopTrackingCurrentTime">Tech #stopTrackingCurrentTime</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/tech.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+    <h5>Hört auf Ereignisse:</h5>
+    <ul>
+        <li>{Tech#event:pause}</li>
+    </ul>
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="stopTrackingProgress"><span class="type-signature"></span>StopTrackingProgress ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Deaktivieren Sie das Polyfill für <code></code> Fortschrittereignisse, die in <a href="Tech.html#manualProgressOn">Tech #manualProgressOn erstellt wurden.</a> Stoppen Sie die manuelle Verfolgung von Fortschrittereignissen, indem Sie das in <a href="Tech.html#trackProgress">Tech festgelegte Intervall löschen #trackProgress</a>.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Geerbt von:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="Tech.html#stopTrackingProgress">Tech #stopTrackingProgress</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/tech.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="supportsFullScreen"><span class="type-signature"></span>supportsFullScreen ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Prüfen Sie, ob der Vollbildmodus auf dem aktuellen Wiedergabegerät unterstützt wird.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <ul>
+<li>True, wenn Vollbild unterstützt wird.<pre class="prettyprint source"><code> - False if fullscreen is not supported.</code></pre></li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">boolescher Wert</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="textTracks"><span class="type-signature"></span>TextTracks ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Hol dir die <code>Tech</code>s <a href="TextTrackList.html">TextTrackList</a>.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Geerbt von:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="Tech.html#textTracks">Tech #textTracks</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/tech.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <p>Die Textspurliste, die der Tech derzeit verwendet.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="TextTrackList.html">TextTrackList</a></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="trackCurrentTime"><span class="type-signature"></span>TrackCurrentTime ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Richtet eine Intervallfunktion ein, um die aktuelle Uhrzeit zu verfolgen und die <code>Zeitaktualisierung</code> alle 250 Millisekunden auszulösen.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Geerbt von:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="Tech.html#trackCurrentTime">Tech #trackCurrentTime</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/tech.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+    <h5>Hört auf Ereignisse:</h5>
+    <ul>
+        <li>Tech #Ereignis:spielen</li>
+    </ul>
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="trackProgress"><span class="type-signature"></span>TrackProgress (Ereignis)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Dies wird verwendet, um ein <code></code> Fortschrittereignis auszulösen, wenn sich der gepufferte Prozent ändert. Es legt eine Intervallfunktion fest, die alle 500 Millisekunden aufgerufen wird, um zu überprüfen, ob sich der Pufferendprozentsatz geändert hat.</p>
+<blockquote>
+<p>Diese Funktion wird von <a href="Tech.html#manualProgressOn">Tech #manualProgressOn aufgerufen</a></p>
+</blockquote>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameter:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Nennen</th>
+        
+
+        <th>Typ</th>
+
+        
+
+        
+
+        <th class="last">Beschreibung</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>Ereignis</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="EventTarget.html#~Event">eventTarget~Event</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Das <code>fertige</code> Ereignis, das dazu geführt hat, dass dies ausgeführt wurde.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Geerbt von:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="Tech.html#trackProgress">Tech #trackProgress</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/tech.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+    <h5>Brände:</h5>
+    <ul>
+        <li><a href="Tech.html#event:progress">Tech #Ereignis:Fortschritt</a></li>
+    </ul>
+    
+
+    
+    <h5>Hört auf Ereignisse:</h5>
+    <ul>
+        <li><a href="Tech.html#event:ready">Tech #Ereignis:bereit</a></li>
+    </ul>
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="videoHeight"><span class="type-signature"></span>VideoHeight ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Holen Sie sich den Wert von <code>Videohöhe</code> aus dem Videoelement. <code>VideoHöhe</code> gibt die aktuelle Höhe des Videos in CSS-Pixeln an.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><p>[Spec] <a href="https://www.w3.org/TR/html5/embedded-content-0.html#dom-video-videowidth">https://www.w3.org/TR/html5/embedded-content-0.html#dom-video-videowidth</a></p></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <p>Der Wert von <code>VideoHeight</code> aus dem Videoelement. Dies wird eine Zahl in CSS-Pixeln sein.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">Zahl</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="videoTracks"><span class="type-signature"></span>VideoTracks ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Hol dir die <code>Tech</code>s <a href="VideoTrackList.html">VideoTrackList</a>.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Geerbt von:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="Tech.html#videoTracks">Tech #videoTracks</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/tech.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <p>Die Videospurliste, die der Tech derzeit verwendet.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="VideoTrackList.html">VideoTrackList</a></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="videoWidth"><span class="type-signature"></span>videoWidth ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Holen Sie sich den Wert von <code>VideoWidth</code> aus dem Videoelement. <code>VideoWidth</code> gibt die aktuelle Breite des Videos in CSS-Pixeln an.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><p>[Spec] <a href="https://www.w3.org/TR/html5/embedded-content-0.html#dom-video-videowidth">https://www.w3.org/TR/html5/embedded-content-0.html#dom-video-videowidth</a></p></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <p>Der Wert von <code>VideoWidth</code> aus dem Videoelement. Dies wird eine Zahl in CSS-Pixeln sein.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">Zahl</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="volume"><span class="type-signature"></span>Volumen ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Holen Sie sich den Wert des <code>Volumes</code> aus dem Medienelement. <code>Lautstärke</code> gibt die aktuelle Wiedergabelautstärke von Audio für ein Medium an. <code>volume</code> wird ein Wert von 0 (stumm) bis 1 (lauteste und standardmäßige) sein.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">Siehe:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><p>[Spec]<a href="https://www.w3.org/TR/html5/embedded-content-0.html#dom-a-volume">Spec</a></p></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <p>Der Wert der <code>Lautstärke</code> aus dem Medienelement. Der Wert liegt zwischen 0 und 1.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">Zahl</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="width"><span class="type-signature"></span>Breite()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Holen Sie sich die aktuelle Breite des HTML5-Medienelements.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <p>Die Breite des HTML5-Medienelements.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">Zahl</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id=".canControlPlaybackRate"><span class="type-signature">&lt;statisch&gt; </span>canControlPlaybackRate()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Prüfen Sie, ob die Wiedergaberate in diesem Browser/Gerät geändert werden kann.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <ul>
+<li>True, wenn die Wiedergaberate gesteuert werden kann<pre class="prettyprint source"><code> - False otherwise</code></pre></li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">boolescher Wert</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id=".canControlVolume"><span class="type-signature">&lt;statisch&gt; </span>canControlVolume()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Prüfen Sie, ob die Lautstärke in diesem Browser/Gerät geändert werden kann. Die Lautstärke kann in vielen mobilen Geräten nicht geändert werden. Insbesondere kann es nicht von 1 unter iOS geändert werden.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <ul>
+<li>True wenn Lautstärke gesteuert werden kann<pre class="prettyprint source"><code> - False otherwise</code></pre></li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">boolescher Wert</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id=".isSupported"><span class="type-signature">&lt;statik&gt; </span>isSupported-Unterstützung ()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Prüfen Sie, ob HTML5-Medien von diesem Browser/Gerät unterstützt werden.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <ul>
+<li>True, wenn HTML5-Medien unterstützt werden.<pre class="prettyprint source"><code> - False if HTML5 media is not supported.</code></pre></li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">boolescher Wert</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id=".supportsNativeAudioTracks"><span class="type-signature">&lt;statisch&gt; </span>unterstützt NativeAudioTracks()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Prüfen Sie, ob native <code>AudioTrack</code>s von diesem Browser/Gerät unterstützt werden</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <ul>
+<li>True, wenn native <code>AudioTrack</code>s unterstützt werden.<pre class="prettyprint source"><code> - False otherwise</code></pre></li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">boolescher Wert</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id=".supportsNativeTextTracks"><span class="type-signature">&lt;statisch&gt; </span>unterstütztNativeTextTracks()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Prüfen Sie, ob native <code>TextTrack</code>s von diesem Browser/Gerät unterstützt werden.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <ul>
+<li>True, wenn native <code>TextTrack</code>s unterstützt werden.<pre class="prettyprint source"><code> - False otherwise</code></pre></li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">boolescher Wert</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id=".supportsNativeVideoTracks"><span class="type-signature">&lt;statisch&gt; </span>unterstütztNativeVideoTracks()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Prüfen Sie, ob native <code>VideoTrack</code>s von diesem Browser/Gerät unterstützt werden</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/html5.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Gibt zurück:</h5>
+    
+            
+<div class="param-desc">
+    <ul>
+<li>True, wenn native <code>VideoTrack</code>s unterstützt werden.<pre class="prettyprint source"><code> - False otherwise</code></pre></li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Typ
+    </dt>
+    <dd>
+        
+<span class="param-type">boolescher Wert</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        </dl>
+    
+
+    
+
+    
+        <h3 class="subsection-title">Ereignisse</h3>
+
+        <dl>
+            
+<hr>
+<dt>
+    <h4 class="name" id="event:audiotrackchange">Audiotrackchange</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Wird ausgelöst, wenn Tracks auf der Tech <a href="AudioTrackList.html">AudioTrackList hinzugefügt oder entfernt werden</a></p>
+    </div>
+    
+
+    
+
+    
+        <h5>Typ: <span class="param-type"><a href="EventTarget.html#~Event">eventTarget~Event</a></span>
+
+
+</h5>
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Geerbt von:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="Tech.html#event:audiotrackchange">Tech #Ereignis:audiotrackchange</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/tech.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="event:progress">Fortschritt</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Siehe Spieler #progress</p>
+    </div>
+    
+
+    
+
+    
+        <h5>Typ: <span class="param-type"><a href="EventTarget.html#~Event">eventTarget~Event</a></span>
+
+
+</h5>
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Geerbt von:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="Tech.html#event:progress">Tech #Ereignis:Fortschritt</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/tech.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="event:texttrackchange">texttrackchange</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Wird ausgelöst, wenn Tracks auf der Tech <a href="TextTrackList.html">TextTrackList hinzugefügt oder entfernt werden</a></p>
+    </div>
+    
+
+    
+
+    
+        <h5>Typ: <span class="param-type"><a href="EventTarget.html#~Event">eventTarget~Event</a></span>
+
+
+</h5>
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Geerbt von:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="Tech.html#event:texttrackchange">Tech #Ereignis:texttrackchange</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/tech.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="event:timeupdate">timeupdate</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Wird in einem Intervall von 250 ms ausgelöst, um anzugeben, dass die Zeit im Video vergeht.</p>
+    </div>
+    
+
+    
+
+    
+        <h5>Typ: <span class="param-type"><a href="EventTarget.html#~Event">eventTarget~Event</a></span>
+
+
+</h5>
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Geerbt von:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="Tech.html#event:timeupdate">Tech #Ereignis:timeupdate</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+    <dt class="tag-overrides">Überschreibungen:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Tech.html#event:timeupdate">Tech #Ereignis:timeupdate</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/tech.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="event:videotrackchange">Videotrackwechsel</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Wird ausgelöst, wenn Tracks auf der Tech <a href="VideoTrackList.html">VideoTrackList hinzugefügt oder entfernt werden</a></p>
+    </div>
+    
+
+    
+
+    
+        <h5>Typ: <span class="param-type"><a href="EventTarget.html#~Event">eventTarget~Event</a></span>
+
+
+</h5>
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Geerbt von:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="Tech.html#event:videotrackchange">Tech #Ereignis:Videotrackchange</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/tech.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="event:vttjsloaded">vttjsloaded</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Wird ausgelöst, wenn vtt.js geladen wird.</p>
+    </div>
+    
+
+    
+
+    
+        <h5>Typ: <span class="param-type"><a href="EventTarget.html#~Event">eventTarget~Event</a></span>
+
+
+</h5>
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Geerbt von:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="Tech.html#event:vttjsloaded">Tech #Ereignis:vttjsloaded</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+    <dt class="tag-overrides">Überschreibungen:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Tech.html#event:vttjsloaded">Tech #Ereignis:vttjsloaded</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Quelle:</dt>
+	<dd class="tag-source">
+		tech/tech.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        </dl>
+    
+</article>
+
+</section>
+
+
+
+
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+		<div class="col-md-3">
+			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
+		</div>
+	
+
+</div>
+</div>
+
+
+    <div class="modal fade" id="searchResults">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Ergebnisse der Suche</h4>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Schliessen</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+
+
+<footer>
+
+
+	<span class="copyright"> Copyright 2017 </span> <span class="jsdoc-message"> Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on 5 Jun 2017 using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>. </span>
+</footer>
+
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
+
+    <script type="text/javascript" src="scripts/fulltext-search-ui.js"></script>
+
+
+<script>
+$( Funktion () { $( "[id*='$']" ).each( function () { var $this = $( this ); $this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) ); } ); $( ".tutorial-section pre, .readme-section pre, pre.prettyprint.source" ).each( function () { var $this = $( this ); var example = $this.find( "code" ); exampleText = example.html(); var lang = /{@lang (.*?)}/.exec( beispielText ); if ( lang &amp;&amp; lang[1] ) { exampleText = exampleText.replace( lang[0], "" ); example.html( exampleText ); lang = lang[1]; } anders { var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/); lang = langClassMatch ? langClassMatch[1] : "javascript"; } wenn (lang) { $this .addClass( "sunlight-highlight-" + lang ) .addClass( "linenums" ) .html( example.html() ); } } ); Sonnenlicht.highlightAll( { lineNumbers : false, showMenu : true, enableDoclinks : true } ); $.catchAnchorLinks( { navbarOffset: 10 } ); $( "#toc" ).toc( { anchorName : function ( i, heading, prefix ) { return $( heading ).attr( "id" ) || ( prefix + i ); } , Selektoren : "#toc-Inhalt h1,#toc-Inhalt h2,#toc-Inhalt h3,#toc-Inhalt h4", showAndHide : false, smoothScrolling: true } ); $( "#main span[id^='toc']" ).addClass( "toc-shim" ); $( '.dropdown-toggle' ).Dropdown-Liste(); $( "Tabelle" ).each( Funktion () { var $this = $( this ); $this.addClass('table'); } ); } );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+<script>
+	$( Funktion () { $( '#main' ).localScroll( { offset : { top : 60 } // Versatz um die Höhe Ihres Headers (geben oder nehmen Sie ein paar px, sehen Sie, was für Sie funktioniert) } ); $( "dt.name" ).each( function () { var $this = $( this ).find("h4"); var icon = $( "<i/>" ).addClass( "icon-plus-sign" ).addClass( "pull-right" ).addClass( "icon-white" ); var dt = $(dieses); var children = dt.next( "dd" ); dt.prepend( Symbol ).css( {cursor : "pointer"} ); dt.addClass( "member-collapsed" ).addClass( "member" ); Kinder.hide(); dt.children().on( "klick", Funktion () { children = dt.next( "dd" ); children.slideToggle( "fast", function () { if ( children.is( ":visible" ) ) { icon.addClass( "icon-minus-sign" ).removeClass( "icon-plus-sign" ).removeClass( "icon-white" ); dt.addClass( "member-open" ).animate( "member-collapsed" ); } anders { icon.addClass( "icon-plus-sign" ).removeClass( "icon-minus-sign" ).addClass( "icon-white" ); dt.addClass( "member-collapsed" ).removeClass( "member-open" ); } } ); } ); } ); } );
+</script>
+
+
+<!--Google Analytics-->
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function() { SearcherDisplay.init(); });
+    </script>
+
+
+<script src="https://learning-services-media.brightcove.com/doc-assets/js/https-fix.js"></script>
+<script src="https://learning-services-media.brightcove.com/doc-assets/js/support-feedback.js"></script><script src="https://support.brightcove.com/site-assets/js/site/feedback-docs.js"></script>
+</body>
+</html>

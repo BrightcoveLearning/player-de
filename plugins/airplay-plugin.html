@@ -1,0 +1,129 @@
+---
+title: Brightcove AirPlay Plugin
+description: In diesem Thema erfahren Sie, wie Sie das Brightcove AirPlay-Plugin verwenden, um Inhalte vom Brightcove Player auf Ihr Apple TV zu streamen.
+parent: Plugins
+---
+ <h1>{{ page.title }}</h1>
+<article class="bcls-article">
+  <summary>{{ page.description }}</summary>
+
+  <section class="bcls-section">
+    <h2 id="Overview">Überblick</h2> 
+    <p>Mit dem Brightcove AirPlay-Plugin können Sie Videos von Ihrem Brightcove Player auf hochauflösende Displays mit Apple TV streamen. Tippen Sie einfach auf das AirPlay-Symbol im Brightcove Player, um Filme und Videos auf Ihrem Apple TV oder AirPlay 2-fähigen Smart TV zu teilen.</p> 
+    
+    <p>Beachten Sie, dass das AirPlay-Symbol in der Player-Steuerleiste, wie unten gezeigt, nur angezeigt wird, wenn Folgendes zutrifft:</p>
+    <ul>
+      <li>Ihr Brightcove Player befindet sich im Safari-Browser</li>
+      <li>Dieses Brightcove AirPlay-Plugin wurde deinem Spieler hinzugefügt</li>
+      <li>Das in Safari integrierte Webkit für AirPlay ist verfügbar</li>
+    </ul>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="AirPlay icon" src="/assets/images/plugins/airplay/airplay-icon.png" />
+      <figcaption class="bcls-caption--image">AirPlay-Symbol</figcaption>
+      </figure>
+
+  
+  </section>
+
+  <section class="bcls-section">
+    <h2 id="Requirements">Voraussetzungen</h2> 
+    <p>Die folgenden Anforderungen sind erforderlich, um das Brightcove AirPlay-Plugin zu verwenden:</p>
+    <ul>
+      <li>Brightcove Player v6.51.4 und neuer</li> 
+    </ul>
+  </section>
+
+  <!-- <section class="bcls-section">
+    <h2 id="Implement_using_Players_module">Implement using Players module</h2> 
+    <p>Playlist end screens can be implemented using Video Cloud Studio's <strong>Players</strong> module. For details, see the <a href="https://studio.support.brightcove.com/players/configuring-playlist-endscreen-using-plugin.html">Configuring a Playlist Endscreen Using the playlist-endscreen Plugin</a> document.</p>
+  </section> -->
+
+  <section class="bcls-section">
+    <h2 id="Implement_using_code">Implementieren mit Code</h2> 
+    <p>Um ein Plugin zu implementieren, muss der Player den Speicherort des Plugin-Codes, bei Bedarf ein Stylesheet, den Plugin-Namen und die Konfigurationsoptionen des Plugins kennen. Der Speicherort des Plugin-Codes und des Stylesheets lauten wie folgt:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>
+        <p>Fügen Sie den Plugin-Code ein:</p>
+        <pre>
+<code class="language-javascript" translate="No">https://players.brightcove.net/videojs-bc-airplay/1/videojs-bc-airplay.js</code></pre>
+      </li>
+      <li>
+        <p>Fügen Sie die Plugin-Stile ein:</p>
+        <pre>
+<code class="language-javascript" translate="No">https://players.brightcove.net/videojs-bc-airplay/1/videojs-bc-airplay.css</code></pre>
+      </li>
+      <li>Nutze den Plugin-Namen, um es in den Player zu laden: <code translate="No">bcAirplay</code></li> 
+      <!-- <li>
+        <p>An example set of options is:</p>
+        <pre class="line-numbers">
+<code class="language-html" translate="No">{
+  &quot;playlistId&quot;: &quot;4602525726001&quot;,
+  &quot;title&quot;: &quot;Watch More&quot;
+}</code></pre>
+      </li> -->
+      <li>
+        <p>Hier ist ein Beispiel, das die Advanced Embed Implementierung verwendet, um das Playlist Endscreen-Plugin mit einer einzigen Instanz eines Players zu verknüpfen.</p>
+        <pre class="line-numbers">
+<code class="language-html" translate="No">&lt;link href=&quot;https://players.brightcove.net/videojs-bc-airplay/1/videojs-bc-airplay.css&quot; rel=&quot;stylesheet&quot;&gt;
+  
+  &lt;div style=&quot;max-width: 960px;&quot;&gt;
+  &lt;video-js id=&quot;myPlayerID&quot;
+    data-account=&quot;<span class="bcls-input">your account ID</span>&quot;
+    data-player=&quot;<span class="bcls-input">your player ID</span>&quot;
+    data-embed=&quot;default&quot;
+    controls=&quot;&quot;
+    data-video-id=&quot;<span class="bcls-input">your video ID</span>&quot;
+    data-playlist-id=&quot;&quot;
+    data-application-id=&quot;&quot;
+    class=&quot;vjs-fluid&quot;&gt;
+  &lt;/video-js&gt;
+&lt;/div&gt;
+&lt;script src=&quot;https://players.brightcove.net/<span class="bcls-input">your account ID</span>/<span class="bcls-input">your player ID</span>_default/index.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- script for the Brightcove AirPlay plugin --&gt;
+&lt;script src=&quot;https://players.brightcove.net/videojs-bc-airplay/1/videojs-bc-airplay.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- custom script --&gt;
+&lt;script&gt;
+  videojs.getPlayer('myPlayerID').ready(function() {
+    var myPlayer = this;
+
+    // initialize the Brightcove AirPlay plugin
+    myPlayer.bcAirplay(); 
+  });
+&lt;/script&gt;</code></pre>
+      </li>
+    </ol>
+  </section>
+
+  <!-- <section class="bcls-section">
+    <h2 id="Options">Options</h2> 
+    <p>You may pass in an options object to the plugin upon initialization. This object may contain any of the following options:</p>
+
+    <h3>playlistId</h3>
+    <code translate="No">playlistId</code>
+    <ul>
+      <li>The string representing the playlist ID to be displayed in the end screen.</li>
+      <li>Type: <code translate="No">string</code></li>
+      <li>Default: <code translate="No">""</code></li>
+    </ul>
+
+    <h3>title</h3>
+    <code translate="No">title</code>
+    <ul>
+      <li>The string to customize the end screen title, this will also modify the button tooltip.</li>
+      <li>Type: <code translate="No">string</code></li>
+      <li>Default: <code translate="No">"Related videos"</code></li>
+    </ul>
+  </section> -->
+  
+  <!-- <section class="bcls-section">
+    <h2 id="Known_issues">Known issues</h2>
+    <ul>
+      <li></li>
+    </ul>
+  </section> -->
+  <section class="bcls-section"> 
+    <h2 id="changelog">Changelog</h2>
+    <p>Siehe die Versionshinweise für das <a href="http://players.brightcove.net/release-notes/brightcove-player-airplay/index.html">Brightcove AirPlay Plugin</a>.</p>
+  </section>
+</article>
