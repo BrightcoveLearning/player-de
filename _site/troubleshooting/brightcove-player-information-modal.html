@@ -1097,16 +1097,16 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   <section class="bcls-section">
     <h2 id="View_player_information">Spielerinformationen anzeigen</h2>
     <p>Sie zeigen die Spielerinformationen an, indem Sie mit der rechten Maustaste auf den Spieler klicken und auswählen <strong>Spielerinformationen</strong> , wie in diesem Screenshot gezeigt.</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="Wählen Sie Player-Informationen aus dem Kontextmenü" src="//learning-services-media.brightcove.com/doc-assets/player-development/playback/player-info-modal/context-menu.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Wählen Sie Player-Informationen aus dem Kontextmenü" src="/assets/images/playback/player-info-modal/context-menu.png"/></figure>
     <aside class="bcls-aside bcls-aside--information">Hinweis: Auf Mobilgeräten können Sie das Modal durch langes Drücken öffnen.</aside>
     <p>Sobald Sie auswählen <strong>Spielerinformationen</strong> Sie sehen das modale Fenster mit Informationen zum Player, wie in diesem Screenshot gezeigt.</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="Spielerinformationen in modal" src="//learning-services-media.brightcove.com/doc-assets/player-development/playback/player-info-modal/modal-with-info.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Spielerinformationen in modal" src="/assets/images/playback/player-info-modal/modal-with-info.png"/></figure>
     <aside class="bcls-aside bcls-aside--information">Hinweis: Es werden nur von Brightcove bereitgestellte Plugins angezeigt, die Teil der Konfiguration sind <strong>Plugins</strong> Sektion. Wenn Sie ein Brightcove-Plugin in das JavaScript einer HTML-Seite einfügen, wird es NICHT in der Liste angezeigt. Vom Kunden entwickelte Plugins werden NICHT angezeigt, auch wenn sie als Teil der Player-Konfiguration aufgeführt sind.</aside>
   </section>
   <section id="Close_the_modal_window" class="bcls-section">
     <h2>Schließen Sie das modale Fenster</h2>
     <p>Sie schließen das Modal entweder durch Drücken der <strong>ESC</strong> Taste oder durch Klicken auf das Schließsymbol oben links.</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="Symbol schließen" src="//learning-services-media.brightcove.com/doc-assets/player-development/playback/player-info-modal/close-modal.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Symbol schließen" src="/assets/images/playback/player-info-modal/close-modal.png"/></figure>
   </section>
   <section class="bcls-section">
     <h2 id="Alter_the_context_menu">Ändern Sie das Kontextmenü</h2>
@@ -1121,7 +1121,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <p>Wenn Sie verhindern möchten, dass das Kontextmenü mit den Spielerinformationen angezeigt wird, können Sie einen der folgenden Schritte ausführen:</p>
     <h4>Verwenden Sie den JSON-Editor</h4>
     <p>Ändern Sie die Konfiguration des Players, indem Sie die hervorgehobene Eigenschaft hinzufügen (speichern Sie die Änderung):</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="JSON Editor kein Debugger" src="//learning-services-media.brightcove.com/doc-assets/player-development/playback/player-info-modal/json-editor-no-debugger.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="JSON Editor kein Debugger" src="/assets/images/playback/player-info-modal/json-editor-no-debugger.png"/></figure>
     <h4>Verwenden Sie curl</h4>
     <pre class="line-numbers">
 <code class="language-bash" translate="No">curl \
@@ -1133,7 +1133,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   }' \
   https://players.api.brightcove.com/v2/accounts/$ACCOUNT_ID/players/$PLAYER_ID/configuration</code></pre>
     <aside class="bcls-aside bcls-aside--information">Hinweis: Immer wenn du mit curl eine Änderung an einem Spieler vornimmst, musst du den Player erneut veröffentlichen. Sie können dies in Studio tun, und Sie werden sehen, dass Ihr Spieler in der <strong>Statusspalte</strong> als veröffentlicht werden muss:
-      <figure class="bcls-figure"><img class="bcls-image" alt="Statusanzeigen müssen veröffentlicht werden" src="//learning-services-media.brightcove.com/doc-assets/player-development/playback/player-info-modal/needs-to-be-published.png"/></figure>
+      <figure class="bcls-figure"><img class="bcls-image" alt="Statusanzeigen müssen veröffentlicht werden" src="/assets/images/playback/player-info-modal/needs-to-be-published.png"/></figure>
       <p>Du kannst auch curl verwenden, um deinen Player zu veröffentlichen:</p>
       <pre class="line-numbers">
 <code class="language-bash" translate="No">curl \
@@ -1146,7 +1146,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <p>Wenn Sie das verhindern möchten <strong>Über Brightcove</strong> Wenn die Menüoption angezeigt wird, können Sie eine der folgenden Aktionen ausführen:</p>
     <h4>Verwenden Sie den JSON-Editor</h4>
     <p>Ändern Sie die Konfiguration des Players, indem Sie die hervorgehobene Eigenschaft hinzufügen (speichern Sie die Änderung):</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="JSON Editor kein Brightcove Player-Branding" src="//learning-services-media.brightcove.com/doc-assets/player-development/playback/player-info-modal/json-editor-no-bc-branding.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="JSON Editor kein Brightcove Player-Branding" src="/assets/images/playback/player-info-modal/json-editor-no-bc-branding.png"/></figure>
     <h4>Verwenden Sie curl</h4>
     <pre class="line-numbers">
 <code class="language-bash" translate="No">curl \
@@ -1158,7 +1158,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   }' \
   https://players.api.brightcove.com/v2/accounts/$ACCOUNT_ID/players/$PLAYER_ID/configuration</code></pre>
     <aside class="bcls-aside bcls-aside--information">Hinweis: Immer wenn du mit curl eine Änderung an einem Spieler vornimmst, musst du den Player erneut veröffentlichen. Sie können dies in Studio tun, und Sie werden sehen, dass Ihr Spieler in der <strong>Statusspalte</strong> als veröffentlicht werden muss:
-      <figure class="bcls-figure"><img class="bcls-image" alt="Statusanzeigen müssen veröffentlicht werden" src="//learning-services-media.brightcove.com/doc-assets/player-development/playback/player-info-modal/needs-to-be-published.png"/></figure>
+      <figure class="bcls-figure"><img class="bcls-image" alt="Statusanzeigen müssen veröffentlicht werden" src="/assets/images/playback/player-info-modal/needs-to-be-published.png"/></figure>
       <p>Du kannst auch curl verwenden, um deinen Player zu veröffentlichen:</p>
       <pre class="line-numbers">
 <code class="language-bash" translate="No">curl \

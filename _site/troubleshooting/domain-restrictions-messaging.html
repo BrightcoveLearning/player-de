@@ -1098,15 +1098,15 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <h2 id="Overview">Übersicht</h2>
     <p>Es ist möglich einzuschränken, wo ein Video über Domain-Einschränkungen angezeigt werden kann. Das <a href="https://studio.support.brightcove.com/players/configuring-player-content-restrictions.html">Konfigurieren von Einschränkungen für Player-Inhalte</a> Das Dokument zeigt Ihnen, wie Sie mit Video Cloud Domäneneinschränkungen anwenden. Das Dokument, das Sie gerade lesen, weist Sie an, wie Sie Code implementieren, um Benutzer darüber zu informieren, dass der Player Domänenbeschränkungen verwendet.</p>
     <p>Standardmäßig informiert Brightcove Player den Benutzer nicht darüber, dass sich ein Video, das er anzeigen möchte, in einem Player mit eingeschränkter Domäne befindet. Der Player zeigt einfach einen schwarzen Bildschirm an. Wenn Sie die Konsole anzeigen, wird Folgendes angezeigt.</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="Fehler bei der Domäneneinschränkungskonsole" src="//learning-services-media.brightcove.com/doc-assets/player-development/playback/troubleshooting/domain-restrictions-messaging/domain-restrictions-error-console.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Fehler bei der Domäneneinschränkungskonsole" src="/assets/images/playback/troubleshooting/domain-restrictions-messaging/domain-restrictions-error-console.png"/></figure>
     <p>Dies ist nicht besonders hilfreich, aber wenn Sie die überprüfen <strong>Netzwerk</strong> Tab und klicken Sie auf a <strong>Name</strong> Das entspricht Ihrer Video-ID. Überprüfen Sie dann die <strong>Vorschau</strong> Auf der Registerkarte wird ein leuchtenderer Fehler angezeigt.</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="Registerkarte Netzwerknetzwerk der Domänennachrichtenkonsole" src="//learning-services-media.brightcove.com/doc-assets/player-development/playback/troubleshooting/domain-restrictions-messaging/domain-restrictions-error-network.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Registerkarte Netzwerknetzwerk der Domänennachrichtenkonsole" src="/assets/images/playback/troubleshooting/domain-restrictions-messaging/domain-restrictions-error-network.png"/></figure>
     <p>In diesem Dokument wird eine Strategie implementiert, mit der der Benutzer wissen soll, dass das Video, das er ansehen möchte, domänenbeschränkt ist.</p>
   </section>
   <section class="bcls-section">
     <h2 id="errorobject">Fehlerobjekt des Spielerkatalogs</h2>
     <p>Der Schlüssel zum Erstellen einer benutzerfreundlichen Nachricht ist der <code translate="No">error</code> Objekt in Brightcove Player enthalten <code translate="No">catalog</code>. Ein Beispiel für einen Fehler bei der Domäneneinschränkung ist unten in einem Screenshot von der Browserkonsole dargestellt. Beachten Sie, dass das Objekt a enthält <code translate="No">data</code> Eigenschaft, die selbst ein Array enthält. Das Array enthält den letzten Fehler, den der Katalog beim Laden eines Videos festgestellt hat. In dem Beispiel sehen Sie, dass das Element im Array ein Problem mit Domäneneinschränkungen meldet.</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="Katalogfehlerobjekt" src="//learning-services-media.brightcove.com/doc-assets/player-development/playback/troubleshooting/domain-restrictions-messaging/domain-restrictions-catalog-error.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Katalogfehlerobjekt" src="/assets/images/playback/troubleshooting/domain-restrictions-messaging/domain-restrictions-catalog-error.png"/></figure>
   </section>
   <section class="bcls-section">
     <h2 id="bccatalogerror">Behandle bc-catalog-error</h2>
@@ -1161,7 +1161,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     });
   &lt;/script&gt;</code></pre>
     <p>Der folgende Screenshot zeigt die Meldung, die unter dem Player angezeigt wird.</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="Fehler unter Spieler" src="//learning-services-media.brightcove.com/doc-assets/player-development/playback/troubleshooting/domain-restrictions-messaging/domain-restrictions-html-message.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Fehler unter Spieler" src="/assets/images/playback/troubleshooting/domain-restrictions-messaging/domain-restrictions-html-message.png"/></figure>
   </section>
   <section class="bcls-section">
     <h2 id="errorplugin">Nachricht über Fehler-Plugin</h2>
@@ -1197,12 +1197,12 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     });
   &lt;/script&gt;</code></pre>
     <p>Der folgende Screenshot zeigt die Anzeige des Fehler-Plugins des definierten Fehlers.</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="definierter Fehler" src="//learning-services-media.brightcove.com/doc-assets/player-development/playback/troubleshooting/domain-restrictions-messaging/domain-restrictions-errors-plugin.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="definierter Fehler" src="/assets/images/playback/troubleshooting/domain-restrictions-messaging/domain-restrictions-errors-plugin.png"/></figure>
   </section>
   <section id="generalerror" class="bcls-section">
     <h2>Allgemeine Fehleranzeige</h2>
     <p>Die beiden obigen Abschnitte befassen sich speziell mit der Anzeige des Fehlers, der beim Anzeigen eines geobeschränkten Videos aus einem eingeschränkten Gebietsschema generiert wird. Einige Fehler geben nicht den Detaillierungsgrad an, den die Domänenbeschränkung bietet. Ein Beispiel für ein Fehlerobjekt dieses Typs wird hier angezeigt. Beachten Sie, dass die <strong>Daten</strong> Das Feld ist leer, während es mit dem Domäneneinschränkungsfehler wichtige Fehlerinformationen enthielt.</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="allgemeines Fehlerobjekt" src="//learning-services-media.brightcove.com/doc-assets/player-development/playback/troubleshooting/domain-restrictions-messaging/domain-restrictions-general-error.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="allgemeines Fehlerobjekt" src="/assets/images/playback/troubleshooting/domain-restrictions-messaging/domain-restrictions-general-error.png"/></figure>
     <p>Der folgende Code zeigt, wie Informationen von angezeigt werden <code translate="No">catalog.error</code> egal wie detailliert. Auf hoher Ebene führt der Code Folgendes aus:</p>
     <ul>
       <li>Überprüft, ob ein Katalogfehler aufgetreten ist.</li>
@@ -1232,7 +1232,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     });
   &lt;/script&gt;</code></pre>
     <p>Der folgende Screenshot zeigt die allgemeine Fehlermeldung, die in HTML angezeigt wird. Natürlich können Sie auch das Fehler-Plugin verwenden, um die Nachricht anzuzeigen, wie im vorherigen Abschnitt dieses Dokuments gezeigt.</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="Allgemeine Fehlermeldung unter dem Player" src="//learning-services-media.brightcove.com/doc-assets/player-development/playback/troubleshooting/domain-restrictions-messaging/domain-restrictions-general-message.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Allgemeine Fehlermeldung unter dem Player" src="/assets/images/playback/troubleshooting/domain-restrictions-messaging/domain-restrictions-general-message.png"/></figure>
   </section>
 </article>
 

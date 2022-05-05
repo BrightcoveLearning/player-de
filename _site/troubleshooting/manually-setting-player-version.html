@@ -1104,13 +1104,13 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <p>Mit diesen Schritten können Sie eine Player-Version manuell festlegen.</p>
     <ol class="bcls-tasklist">
       <li>Zunächst möchten Sie den Player so einstellen, dass er manuell aktualisiert wird. Dadurch wird verhindert, dass eine Änderung der Player-Version durch ein Player-Update überschrieben wird. Gehen Sie dazu zu Studio, <strong>SPIELER</strong> Modul und in der <strong>Spielerinformationen</strong> Abschnitt setzen die <strong>Aktualisierungsmodus</strong> zu <strong>Handbuch.</strong>
-        <figure class="bcls-figure"><img class="bcls-image" alt="Studio UI Set Handbuch" src="//learning-services-media.brightcove.com/doc-assets/player-development/troubleshooting/manually-change-player-version/studio-ui-set-manual.png"/></figure>
+        <figure class="bcls-figure"><img class="bcls-image" alt="Studio UI Set Handbuch" src="/assets/images/troubleshooting/manually-change-player-version/studio-ui-set-manual.png"/></figure>
         Speichern Sie natürlich Ihre Änderungen.</li>
       <li>Jetzt stellen Sie die Player-Version manuell mit dem ein <strong>JSON-Editor</strong> in dem <strong>SPIELER</strong> Modul. Dies ist ein Beispiel für eine Player-Konfiguration, bevor eine Versionsänderung vorgenommen wird:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Player-Konfiguration vor dem Wechsel" src="//learning-services-media.brightcove.com/doc-assets/player-development/troubleshooting/manually-change-player-version/json-editor-before.png"/></figure>
+        <figure class="bcls-figure"><img class="bcls-image" alt="Player-Konfiguration vor dem Wechsel" src="/assets/images/troubleshooting/manually-change-player-version/json-editor-before.png"/></figure>
         <aside class="bcls-aside bcls-aside--tip language-editable">Beachten Sie das <code translate="No">"locked": true</code> Attribut ist ein Ergebnis von Schritt 1.</aside>
         In dem <strong>JSON-Editor</strong> , ändern Sie die <strong>Ausführung</strong> Attribut Ihrer gewünschten Version.
-        <figure class="bcls-figure"><img class="bcls-image" alt="Spielerkonfiguration nach Änderung" src="//learning-services-media.brightcove.com/doc-assets/player-development/troubleshooting/manually-change-player-version/json-editor-after.png"/></figure>
+        <figure class="bcls-figure"><img class="bcls-image" alt="Spielerkonfiguration nach Änderung" src="/assets/images/troubleshooting/manually-change-player-version/json-editor-after.png"/></figure>
         Speichern Sie Ihre Änderungen und veröffentlichen Sie Ihren Player.</li>
     </ol>
     <p>Vergessen Sie nicht, sobald das Problem behoben ist, Ihren Player wieder so zu ändern, dass er automatisch aktualisiert wird.</p>

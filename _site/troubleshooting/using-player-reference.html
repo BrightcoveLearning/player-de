@@ -1104,7 +1104,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     </ul>
     <p>Die Player-Referenzseite befindet sich unter <a href="http://players.brightcove.net/3303963094001/player-reference-app/index.html">http://players.brightcove.net/3303963094001/player-reference-app/index.html</a>.</p>
     <aside class="bcls-aside bcls-aside--warning language-editable">Wenn Sie ein HLS-Asset mit IE11 / Win7 verwenden, MÜSSEN Sie in den Flash-Modus wechseln, indem Sie auf klicken <strong>Modus</strong> Schaltfläche in der Player-Referenz.
-      <figure class="bcls-figure"><img class="bcls-image" alt="Flash-Modus" src="//learning-services-media.brightcove.com/doc-assets/player-development/playback/troubleshooting/player-reference/flash-mode.png"/></figure>
+      <figure class="bcls-figure"><img class="bcls-image" alt="Flash-Modus" src="/assets/images/playback/troubleshooting/player-reference/flash-mode.png"/></figure>
     </aside>
   </section>
   <section id="Video_demonstration" class="bcls-section">
@@ -1117,13 +1117,13 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <p>Als erstes müssen Sie eine Videoquelle für den Player bereitstellen oder eines der bereitgestellten Standardvideos verwenden. Sie fügen die URL ein und klicken dann auf die Optionen in der Konfigurationsschaltflächenleiste, mit denen Sie testen möchten. Sie müssen die Optionen vorab auswählen und dann auf klicken <strong>Belastung</strong>.</p>
     <aside class="bcls-aside bcls-aside--warning">Das Auswählen von Optionen in der Konfigurationsschaltflächenleiste während der Wiedergabe hat keine Auswirkung. Sie müssen auf die Konfigurationsschaltflächen klicken und dann auf klicken <strong>Belastung</strong> nochmal. Außerdem müssen Sie die richtige manuell auswählen <strong>URL-Inhaltstyp</strong> für das gelieferte Video. Wenn Sie den falschen Typ auswählen, wird entweder eine Fehlermeldung angezeigt oder das Video wird nicht abgespielt.</aside>
     <p>Wenn Sie möchten, können Sie zum Testen eine Video Cloud-Quelle verwenden. Gehen Sie einfach zum <strong>MEDIEN</strong> Modul in Studio, klicken Sie auf ein Video und dann in der <strong>VIDEODATEIEN</strong> Klicken Sie mit der rechten Maustaste in den Eintrag für <strong>Format</strong> Spalte, dann wählen Sie <strong>Link Adresse kopieren</strong>. Anschließend können Sie den kopierten Link in den URL-Eingabebereich einfügen.</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="Rufen Sie die Videoquellen-URL in Studio ab" src="//learning-services-media.brightcove.com/doc-assets/player-development/playback/troubleshooting/player-reference/get-video-source-url.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Rufen Sie die Videoquellen-URL in Studio ab" src="/assets/images/playback/troubleshooting/player-reference/get-video-source-url.png"/></figure>
     <aside class="bcls-aside bcls-aside--information">Wenn Sie eine DASH-Videoquelle bereitstellen, werden Sie aufgefordert, auch die Lizenzserver-URL anzugeben. Beachten Sie, dass Sie zu diesem Zeitpunkt nicht das gesamte Formular bereitstellen können <strong>keySystemsOptions</strong> Objekt als <strong>Spieleroptionen</strong>.</aside>
   </section>
   <section id="section-name" class="bcls-section">
     <h2>Spieleroptionen bereitstellen</h2>
     <p>Eine Option in der Konfigurationsschaltflächenleiste, die einer Erläuterung bedarf, ist die <strong>Spieleroptionen</strong> Taste.</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="Player-Optionsschaltfläche" src="//learning-services-media.brightcove.com/doc-assets/player-development/playback/troubleshooting/player-reference/player-options-button.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Player-Optionsschaltfläche" src="/assets/images/playback/troubleshooting/player-reference/player-options-button.png"/></figure>
     <p>Mit dieser Schaltfläche können Sie bestimmte Konfigurationsoptionen mithilfe gültiger JSON-formatierter Daten an den Player übergeben. Das Folgende würde beispielsweise ein neues Poster bereitstellen und die Video-Schleife nach Abschluss haben:</p>
     <pre class="line-numbers">
 {"poster": "http://solutions.brightcove.com/fish_poster.png", "loop": true}</pre>
@@ -1135,15 +1135,15 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <h3>Bitrate Switching</h3>
     <p>Wenn Sie eine MP4-Videoquelle anzeigen, werden in diesem Abschnitt zunächst keine Informationen angezeigt. Bei einem MP4 wird die Videoquelle gesendet und es gibt keine weiteren Verhandlungen. Bei HLS werden Segmente regelmäßig angefordert, sodass je nach Bandbreite Segmente mit geringerer oder höherer Qualität angefordert werden können. Eine Linie, die im Diagramm bergauf verläuft (positive Steigung), würde bedeuten, dass die verfügbare Bitrate zunimmt und Segmente mit besserer Qualität angefordert werden. Umgekehrt würde eine Linie, die in der Grafik bergab (negative Steigung) verläuft, bedeuten, dass die verfügbare Bitrate abnimmt und Segmente mit schlechterer Qualität angefordert werden.</p>
     <p>Die Linien in der Grafik entsprechen den für das Video verfügbaren Wiedergaben. Wenn sich das gezeichnete Diagramm über eine Linie bewegt, fordert der Spieler Segmente mit höherer Qualität an. Das Gegenteil ist der Fall, wenn sich der geplottete Graph unter eine Linie bewegt. Beachten Sie, dass sich die Videoqualität höchstwahrscheinlich nicht sofort ändert, wenn das Plotterdiagramm eine Linie kreuzt. Die angeforderten Segmente müssten basierend auf der Anforderung gesendet und beim Empfang an die Segmente angehängt werden, die sich derzeit im Puffer befinden.</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="Bitrate-Schaltdiagramm" src="//learning-services-media.brightcove.com/doc-assets/player-development/playback/troubleshooting/player-reference/bitrate-switching.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Bitrate-Schaltdiagramm" src="/assets/images/playback/troubleshooting/player-reference/bitrate-switching.png"/></figure>
     <aside class="bcls-aside bcls-aside--information">Hinweis: Die obige Grafik zeigt eine hohe und nicht variierende verfügbare Bandbreite.</aside>
     <p>Scharfe Spitzen in der grafischen Darstellung, wie unten gezeigt, würden höchstwahrscheinlich Änderungen an der Wiedergabe auslösen.</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="Scharfe Spitzen im Diagramm" src="//learning-services-media.brightcove.com/doc-assets/player-development/playback/troubleshooting/player-reference/sharp-spikes.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Scharfe Spitzen im Diagramm" src="/assets/images/playback/troubleshooting/player-reference/sharp-spikes.png"/></figure>
     <h3>Ereigniszeitleiste</h3>
     <p>In der Ereigniszeitleiste werden nur die Ereignisse angezeigt, die ausgelöst wurden. Dieser Screenshot zeigt ein HLS-Video, bevor es abgespielt wurde, und nur das <code translate="No">progress</code> und <code translate="No">loadedmetadata</code> Ereignisse wurden versandt.</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="Ereignisse zu Beginn" src="//learning-services-media.brightcove.com/doc-assets/player-development/playback/troubleshooting/player-reference/events-at-start.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Ereignisse zu Beginn" src="/assets/images/playback/troubleshooting/player-reference/events-at-start.png"/></figure>
     <p>Der folgende Screenshot zeigt dasselbe Video, nachdem das Video abgespielt wurde, angehalten und neu gestartet wurde und eine Suche durchgeführt wurde.</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="Ereignisse nach dem Spielen" src="//learning-services-media.brightcove.com/doc-assets/player-development/playback/troubleshooting/player-reference/events-after-playing.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Ereignisse nach dem Spielen" src="/assets/images/playback/troubleshooting/player-reference/events-after-playing.png"/></figure>
   </section>
 </article>
 

@@ -1225,7 +1225,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <p>Sie können CSS verwenden, um das Erscheinungsbild Ihres Endbildschirms anzupassen. Im Folgenden finden Sie einige Beispiele dafür, was Sie tun können. Stellen Sie sicher, dass Sie Ihre Implementierungen testen, um sicherzustellen, dass sie mit Ihrem Seiteninhalt funktionieren.</p>
     <aside class="bcls-aside bcls-aside--information">Der Code in diesem Abschnitt verwendet die relative Positionierung, die in Verbindung mit einem reaktionsfähigen Spieler verwendet werden kann. Informationen zum Reagieren Ihres Players finden Sie unter <a href="/styling/responsive-sizing-brightcove-player.html">Responsive Sizing</a> dokumentieren oder verwenden Sie die <strong>Spieler</strong> Modul zum Einstellen der <strong>Dimensionierung</strong> Einstellung auf <strong>Reaktionsschnell</strong>.</aside>
     <p>So wird der Endbildschirm mit der Schaltfläche zum Neustarten des Videos und einer Schaltfläche zum Teilen von Inhalten angezeigt.</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="Standard-Endbildschirm" src="//learning-services-media.brightcove.com/doc-assets/player-development/player-customization/custom-endscreens/plugin-doc/endscreen-default.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Standard-Endbildschirm" src="/assets/images/player-customization/custom-endscreens/plugin-doc/endscreen-default.png"/></figure>
     <h3>Ändern Sie die Tastengröße</h3>
     <p>Angenommen, Sie möchten die Größe der Endbildschirmschaltflächen ändern. Diese Schaltflächenbilder sind im SVG-Format (Scalable Vector Graphics), sodass sie auf allen Plattformen schnell geladen werden können. Aus diesem Grund können Sie ihre Größe nicht mit dem ändern <code translate="No">width</code> und <code translate="No">height</code> CSS-Eigenschaften.</p>
     <p>Da es sich bei diesen Schaltflächen um XML-Textdateien handelt, können Sie ihre Größe mithilfe von ändern <code translate="No">font-size</code> CSS-Eigenschaft.</p>
@@ -1240,7 +1240,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   font-size: 50%;
 }</code></pre>
     <p>Das Ergebnis sollte so aussehen:</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="kleine Endbildschirmtasten" src="//learning-services-media.brightcove.com/doc-assets/player-development/player-customization/custom-endscreens/plugin-doc/endscreen-small-buttons.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="kleine Endbildschirmtasten" src="/assets/images/player-customization/custom-endscreens/plugin-doc/endscreen-small-buttons.png"/></figure>
     <p>Oder Sie können die Größe jeder Schaltfläche unabhängig voneinander steuern:</p>
     <pre class="line-numbers">
 <code class="language-javascript" translate="No">.vjs-restart-control {
@@ -1256,7 +1256,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   "content": "&lt;a href='https://www.brightcove.com'&gt;Visit our home page&lt;/a&gt;"
 }</code></pre>
     <p>Standardmäßig werden Ihre hinzugefügten Inhalte über den Endbildschirmschaltflächen angezeigt:</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="Inhalt über Endscreen-Schaltflächen" src="//learning-services-media.brightcove.com/doc-assets/player-development/player-customization/custom-endscreens/plugin-doc/endscreen-content-above.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Inhalt über Endscreen-Schaltflächen" src="/assets/images/player-customization/custom-endscreens/plugin-doc/endscreen-content-above.png"/></figure>
     <p>Verwenden Sie das folgende CSS, um Ihren HTML-Inhalt unter den Endbildschirmschaltflächen zu positionieren:</p>
     <ul>
       <li>Zeilen 190-193: Positionieren Sie die Tasten von oben. Diese Elemente sind für Sie bereits auf der Seite zentriert.</li>
@@ -1278,7 +1278,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   width: 100%;
 }</code></pre>
     <p>Das Ergebnis sollte so aussehen:</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="Inhalt unter den Endscreen-Schaltflächen" src="//learning-services-media.brightcove.com/doc-assets/player-development/player-customization/custom-endscreens/plugin-doc/endscreen-content-below.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Inhalt unter den Endscreen-Schaltflächen" src="/assets/images/player-customization/custom-endscreens/plugin-doc/endscreen-content-below.png"/></figure>
     <h3>Zeigen Sie vertikale Inhalte und Schaltflächen an</h3>
     <p>Sie können auch das Layout Ihres HTML-Inhalts und die Endbildschirmschaltflächen ändern. Standardmäßig werden sie horizontal angezeigt, wobei sich Ihr Inhalt über den Schaltflächen befindet. Der folgende Code verschiebt Ihren Inhalt links von den Schaltflächen und zeigt die Schaltflächen vertikal an:</p>
     <ul>
@@ -1311,13 +1311,13 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 }
 </code></pre>
     <p>Das Ergebnis sollte so aussehen:</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="Schaltflächen für vertikalen Inhalt und Endbildschirm" src="//learning-services-media.brightcove.com/doc-assets/player-development/player-customization/custom-endscreens/plugin-doc/endscreen-vertical.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Schaltflächen für vertikalen Inhalt und Endbildschirm" src="/assets/images/player-customization/custom-endscreens/plugin-doc/endscreen-vertical.png"/></figure>
     <p>Sie können kreativ sein, wie Ihr Endbildschirm aussehen wird, indem Sie die Standard-CSS-Eigenschaften überschreiben. Überprüfen Sie in Ihrem Browser die Elemente, um die Namen und Werte der Elementklassen zu ermitteln. Eine kurze Übersicht dazu finden Sie in der <a href="/styling/customizing-player-appearance.html">Passen Sie das Erscheinungsbild des Spielers an</a> Dokument.</p>
   </section>
   <section id="mailto" class="bcls-section video-cloud-only">
     <h2>Verwenden Sie mailto mit dem Videonamen</h2>
     <p>Möglicherweise möchten Sie dem Betrachter des Videos erlauben, Ihnen eine Frage oder einen Kommentar per E-Mail zu senden. Sie können dies mithilfe eines HTML-Codes tun <strong>mailto</strong> Link im benutzerdefinierten Endbildschirm, wie hier gezeigt:</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="mailto Kundenendbildschirm" src="//learning-services-media.brightcove.com/doc-assets/player-development/player-customization/custom-endscreens/plugin-doc/custom-endscreen-mailto.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="mailto Kundenendbildschirm" src="/assets/images/player-customization/custom-endscreens/plugin-doc/custom-endscreen-mailto.png"/></figure>
     <p>Durch Klicken auf den Link wird der Standard-E-Mail-Client des Kunden geöffnet. Der folgende Code zeigt, wie die Metataten des Videos, in diesem Fall der Videoname, automatisch als Betreff der E-Mail verwendet werden.</p>
     <p>Im folgenden Abschnitt wird erläutert, wie Sie diese bestimmte Aufgabe ausführen, aber darüber hinaus, sobald Sie Daten von der haben <a href="/references/video-metadata-mediainfo.html">Medieninformation</a> Eigenschaft können alle Video-Metataten im Mailto-Link verwendet werden.</p>
     <ul>
@@ -1392,7 +1392,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   });
 });</code></pre>
     <p>Dies würde zu folgendem Endbildschirm führen:</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="mit Makros" src="//learning-services-media.brightcove.com/doc-assets/player-development/player-customization/custom-endscreens/plugin-doc/using-macros.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="mit Makros" src="/assets/images/player-customization/custom-endscreens/plugin-doc/using-macros.png"/></figure>
     <p>Hier ist die vollständige Liste der verfügbaren Makros:</p>
     <table class="bcls-table">
       <thead class="bcls-table__head">

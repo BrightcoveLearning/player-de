@@ -1207,7 +1207,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <pre class="line-numbers">
 <code class="language-html" translate="No">https://players.brightcove.net/videojs-overlay/2/videojs-overlay.css</code></pre>
     <p>Fügen Sie dann die Konfigurationsinformationen wie folgt hinzu:</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="erstellen Sie einen Cue-Point in Studio" src="//learning-services-media.brightcove.com/doc-assets/player-development/player-customization/cue-points/cue-points-cta/overlay-plugin-studio.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="erstellen Sie einen Cue-Point in Studio" src="/assets/images/player-customization/cue-points/cue-points-cta/overlay-plugin-studio.png"/></figure>
     <aside class="bcls-aside bcls-aside--tip">Nein <strong>Inhalt</strong> wird in der Overlay-Konfiguration geliefert, da es dynamisch erstellt und in das Overlay eingefügt wird.</aside>
     <p>Die mit dem Player veröffentlichten Videos müssen Cue-Points enthalten, die in Studio konfiguriert wurden. Die Informationen für den CTA werden in der gespeichert <strong>Metadaten</strong> Feld. Speichern Sie in einer durch Semikolons getrennten Liste Folgendes:</p>
     <ul>
@@ -1215,7 +1215,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li>Text für das Ankertag</li>
       <li>URL für das Ankertag</li>
     </ul>
-    <figure class="bcls-figure"><img class="bcls-image" alt="erstellen Sie einen Cue-Point in Studio" src="//learning-services-media.brightcove.com/doc-assets/player-development/player-customization/cue-points/cue-points-cta/make-cp-in-studio.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="erstellen Sie einen Cue-Point in Studio" src="/assets/images/player-customization/cue-points/cue-points-cta/make-cp-in-studio.png"/></figure>
     <h3>Anderes HTML</h3>
     <p>Der Seite werden keine weiteren HTML-Elemente hinzugefügt.</p>
   </section>
@@ -1236,7 +1236,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <pre>
 <code class="language-javascript" translate="No">// ### Listen for cue change then pass data to be displayed ###</code></pre>
     <p>Nach dem Extrahieren der Cue-Point-Informationen aus dem <code translate="No">mediainfo</code> Objekt verwenden Sie JavaScript <code translate="No">oncuechange</code> Event-Handler zum Abhören von Cue-Point-Starts. Anschließend extrahieren Sie die Cue-Point-Informationen für den aktuellen Cue-Point und rufen die auf <code translate="No">displayCTA()</code> Methode. Die Informationen zu den an die benutzerdefinierte Funktion übergebenen Cue-Punkten werden wie folgt angezeigt:</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="Cue-Point-Info" src="//learning-services-media.brightcove.com/doc-assets/player-development/player-customization/cue-points/cue-points-cta/console-cp-info.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Cue-Point-Info" src="/assets/images/player-customization/cue-points/cue-points-cta/console-cp-info.png"/></figure>
     <aside class="bcls-aside bcls-aside--tip">Das <code translate="No">endTime</code> ist in dieser Anwendung nicht hilfreich, da es sich entweder um die Zeit des nächsten Cue-Punkts oder um das Ende des Videos handelt. Denken Sie daran, dass die Dauer für die Anzeige der Überlagerung in den Cue-Punkten gespeichert ist <strong>Metadaten</strong>.</aside>
     <!-- UPDATE task 2 -->
     

@@ -1144,16 +1144,16 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <p>Der Prozess ist unten dargestellt:</p>
     <ol>
       <li>Jedes Mal, wenn ein neues Segment heruntergeladen wird, wird die Download-Bitrate basierend auf der Größe des Segments und der Zeit berechnet, die zum Herunterladen benötigt wurde:
-        <figure class="bcls-figure"><img class="bcls-image" alt="HLS-Wiedergabe1" src="//learning-services-media.brightcove.com/doc-assets/player-development/playback/HLS-plugin/HLS-rendition-1.png"/></figure>
+        <figure class="bcls-figure"><img class="bcls-image" alt="HLS-Wiedergabe1" src="/assets/images/playback/HLS-plugin/HLS-rendition-1.png"/></figure>
       </li>
       <li>Alle Wiedergaben, die eine höhere Bitrate als die neue Messung haben, werden herausgefiltert:
-        <figure class="bcls-figure"><img class="bcls-image" alt="HLS-Wiedergabe2" src="//learning-services-media.brightcove.com/doc-assets/player-development/playback/HLS-plugin/HLS-rendition-2.png"/></figure>
+        <figure class="bcls-figure"><img class="bcls-image" alt="HLS-Wiedergabe2" src="/assets/images/playback/HLS-plugin/HLS-rendition-2.png"/></figure>
       </li>
       <li>Alle Wiedergaben, die größer als die Abmessungen des aktuellen Spielers sind, werden herausgefiltert:
-        <figure class="bcls-figure"><img class="bcls-image" alt="HLS-Wiedergabe3" src="//learning-services-media.brightcove.com/doc-assets/player-development/playback/HLS-plugin/HLS-rendition-3.png"/></figure>
+        <figure class="bcls-figure"><img class="bcls-image" alt="HLS-Wiedergabe3" src="/assets/images/playback/HLS-plugin/HLS-rendition-3.png"/></figure>
       </li>
       <li>Ein signifikanter Qualitätsverlust ist nicht erwünscht, nur weil Ihr Player ein Pixel zu klein ist. Daher fügen wir die nächsthöhere Auflösung hinzu. Die höchste verbleibende Bitratenwiedergabe wird verwendet:
-        <figure class="bcls-figure"><img class="bcls-image" alt="HLS-Wiedergabe4" src="//learning-services-media.brightcove.com/doc-assets/player-development/playback/HLS-plugin/HLS-rendition-4.png"/></figure>
+        <figure class="bcls-figure"><img class="bcls-image" alt="HLS-Wiedergabe4" src="/assets/images/playback/HLS-plugin/HLS-rendition-4.png"/></figure>
       </li>
     </ol>
     <p>Wenn sich herausstellt, dass aufgrund der oben beschriebenen Filterung keine Wiedergabe akzeptabel ist, wird die erste in der Master-Wiedergabeliste aufgeführte Codierung verwendet.</p>

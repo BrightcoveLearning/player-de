@@ -1118,7 +1118,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       </div>
     </div>
     <p>Neben der Richtung der Wiedergabeliste müssen Sie auch den HTML-Code festlegen, den Sie für die Implementierung verwenden möchten. <strong>Standard</strong> oder <strong>Fortgeschrittene</strong>. Das Folgende zeigt die vier resultierenden Optionen, die Sie haben:</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="Playlist aktivieren Studio" src="//learning-services-media.brightcove.com/doc-assets/player-development/playlists/general-information/using-playlists/playlists-decision-tree.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Playlist aktivieren Studio" src="/assets/images/playlists/general-information/using-playlists/playlists-decision-tree.png"/></figure>
     <aside class="bcls-aside bcls-aside--tip">Es gibt zahlreiche Optionen, mit denen Sie Wiedergabelisten ändern können, einschließlich, wie Sie bereits gesehen haben, ob die Wiedergabeliste vertikal oder horizontal angezeigt werden soll. Das <a href="/plugins/playlist-ui-plugin.html">Playlist UI Plugin</a> Dokument beschreibt alle Optionen.</aside>
   </section>
   <section class="bcls-section">
@@ -1197,11 +1197,11 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li>Klicken Sie auf <strong>Save</strong>.</li>
       <li>Klicken Sie im linken Navigationsmenü auf <strong>Styling</strong> .</li>
       <li>Wählen Sie Ihren Wunsch <strong>Typ der Wiedergabeliste</strong>::
-        <figure class="bcls-figure"><img class="bcls-image" alt="aktiviere Wiedergabeliste in Studio" src="//learning-services-media.brightcove.com/doc-assets/player-development/playlists/general-information/playlist-api/playlist-enable-in-studio.png"/></figure>
+        <figure class="bcls-figure"><img class="bcls-image" alt="aktiviere Wiedergabeliste in Studio" src="/assets/images/playlists/general-information/playlist-api/playlist-enable-in-studio.png"/></figure>
       </li>
       <li>Klicken Sie im linken Navigationsmenü auf <strong>Wiedergabe</strong> .</li>
       <li>Aktivieren Sie die Optionsfelder für die Wiedergabelistenoptionen, die Sie aktivieren möchten:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Optionen für die Wiedergabeliste des Wiedergabeabschnitts" src="//learning-services-media.brightcove.com/doc-assets/player-development/playlists/general-information/playback-playlist-options.png"/></figure>
+        <figure class="bcls-figure"><img class="bcls-image" alt="Optionen für die Wiedergabeliste des Wiedergabeabschnitts" src="/assets/images/playlists/general-information/playback-playlist-options.png"/></figure>
       </li>
       <li>Um den Player zu veröffentlichen, klicken Sie auf <strong>Veröffentlichen &amp; Einbetten von &gt; Veröffentlichungsänderungen</strong>.</li>
       <li>Um den Öffnen-Dialog zu schließen, klicken Sie auf <strong>Schließen</strong>.</li>
@@ -1211,9 +1211,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <h2 id="iframe">Standardspieler (Iframe)</h2>
     <p>Sobald Sie eine Wiedergabeliste zur Verwendung haben und Ihrem Player die Verwendung einer Wiedergabeliste ermöglicht haben, können Sie die Wiedergabeliste tatsächlich mit einem Spieler verwenden. Wie üblich stehen Ihnen die Standard- und Advanced-Player-Implementierungen zur Verfügung. In diesem Abschnitt werden Anweisungen zur Verwendung der Wiedergabeliste mit der Standardimplementierung angezeigt. Bei Verwendung der Implementierung der Standard- / vertikalen Wiedergabeliste wird die Wiedergabeliste auf der rechten Seite des Players angezeigt, wie Sie im Beispiel oben in diesem Dokument gesehen haben.</p>
     <p>Sie veröffentlichen eine Wiedergabeliste sehr ähnlich wie Sie ein Video veröffentlichen. In Studios <strong>MEDIEN</strong> Modul, wählen Sie Ihre Wiedergabeliste und klicken Sie auf <strong>Playlist veröffentlichen</strong> Taste. Stellen Sie sicher, dass Sie den richtigen Spieler auswählen.</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="Playlist aktivieren Studio" src="//learning-services-media.brightcove.com/doc-assets/player-development/playlists/general-information/using-playlists/studio-publishing.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Playlist aktivieren Studio" src="/assets/images/playlists/general-information/using-playlists/studio-publishing.png"/></figure>
     <p>Sobald Sie veröffentlicht haben, wählen Sie Ihren Code. In diesem Abschnitt wird die <strong>Standard (Iframe)</strong> Code wird demonstriert. Sie können Optionen für den Code (hervorgehoben) auswählen, die sich auf die Größe des Spielers beziehen.</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="Playlist aktivieren Studio" src="//learning-services-media.brightcove.com/doc-assets/player-development/playlists/general-information/using-playlists/studio-code.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Playlist aktivieren Studio" src="/assets/images/playlists/general-information/using-playlists/studio-code.png"/></figure>
     <p>Wenn Sie einen reaktionsschnellen Spieler haben möchten, was eine hervorragende Option ist, wird der Spielercode wie folgt angezeigt:</p>
     <pre class="line-numbers">
   <code class="language-html" translate="No">&lt;div style="position: relative; display: block; max-width: 640px;"&gt;
@@ -1265,7 +1265,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <p>Nachdem Sie eine Wiedergabeliste in Studio erstellt haben <strong>MEDIEN</strong> Modul und haben einen Playlist-Player in Studio aktiviert <strong>SPIELER</strong> Modul sind Sie bereit, die Wiedergabeliste mit einem Player zu implementieren. Mit dem <a href="#iframe">Standard-Einbettungscode</a> Das Plugin erstellt den Playlist-Container und passt ihn an <code translate="No">iframe</code> Element. Mit dem erweiterten In-Page-Einbettungscode müssen Sie den Wiedergabelistencontainer bereitstellen und CSS verwenden, um die Größe des Players und der Wiedergabeliste entsprechend zu bestimmen.</p>
     <h3>Vertikale Wiedergabeliste</h3>
     <p>Brightcove hat eine <strong>Playlist Player Container</strong> für den erweiterten Einbettungscode auf der Seite.</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="Playlist einbetten auf einer Seite" src="//learning-services-media.brightcove.com/doc-assets/player-development/playlists/general-information/using-playlists/in-page-vertical-demo.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Playlist einbetten auf einer Seite" src="/assets/images/playlists/general-information/using-playlists/in-page-vertical-demo.png"/></figure>
     <p>Um den Playlist Player Container zu verwenden, schließen Sie den erweiterten Einbettungscode folgendermaßen ein:</p>
     <pre>
 <code class="language-html" translate="No">&lt;div class="vjs-playlist-player-container"&gt;</code></pre>
@@ -1353,7 +1353,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     </ol>
     <h3>Horizontale Wiedergabeliste</h3>
     <p>Brightcove hat eine entwickelt, um eine iframe-ähnliche Erfahrung mit einer horizontalen Wiedergabeliste zu ermöglichen <strong>Playlist Player Container</strong> für den erweiterten Einbettungscode auf der Seite.</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="Playlist einbetten auf einer Seite" src="//learning-services-media.brightcove.com/doc-assets/player-development/playlists/general-information/using-playlists/in-page-horizontal-demo.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Playlist einbetten auf einer Seite" src="/assets/images/playlists/general-information/using-playlists/in-page-horizontal-demo.png"/></figure>
     <p>Um den Playlist Player Container zu verwenden, schließen Sie den erweiterten Einbettungscode folgendermaßen ein:</p>
     <pre>
 <code class="language-html" translate="No">&lt;div class="vjs-playlist-player-container"&gt;</code></pre>
@@ -1488,7 +1488,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 <aside class="bcls-aside bcls-aside--information">
 <p>The playlist is actually an HTML ordered list and is injected into the <code translate="No">div</code> element with the class <code translate="No">vjs-playlist</code>. The following screenshot shows the actual elements where the playlist is placed:</p>
 
-<figure class="bcls-figure"><img class="bcls-image" alt="ordered list inside div" src="//learning-services-media.brightcove.com/doc-assets/player-development/playlists/general-information/using-playlists/ol-inside-div.png" /></figure>
+<figure class="bcls-figure"><img class="bcls-image" alt="ordered list inside div" src="/assets/images/playlists/general-information/using-playlists/ol-inside-div.png" /></figure>
 </aside>
 
 <p>Chances are you will wish to style the player and playlist to appear the way you wish. For instance, the styles used in the screenshot of the player just above are:</p>
@@ -1572,12 +1572,12 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 <aside class="bcls-aside bcls-aside--information">
 <p>The playlist is actually an HTML ordered list and is injected into the <code translate="No">div</code> element with the class <code translate="No">vjs-playlist</code>. The following screenshot shows the actual elements where the playlist is placed:</p>
 
-<figure class="bcls-figure"><img class="bcls-image" alt="ordered list inside div" src="//learning-services-media.brightcove.com/doc-assets/player-development/playlists/general-information/using-playlists/ol-inside-div-horizontal.png" /></figure>
+<figure class="bcls-figure"><img class="bcls-image" alt="ordered list inside div" src="/assets/images/playlists/general-information/using-playlists/ol-inside-div-horizontal.png" /></figure>
 </aside>
 
 <p>In the screenshot of the player below, you can see the playlist was separated from the actual player with relevant text added between them.</p>
 
-<figure class="bcls-figure"><img class="bcls-image" alt="playlist enable studio" src="//learning-services-media.brightcove.com/doc-assets/player-development/playlists/general-information/using-playlists/advanced-horizontal.png" /></figure>
+<figure class="bcls-figure"><img class="bcls-image" alt="playlist enable studio" src="/assets/images/playlists/general-information/using-playlists/advanced-horizontal.png" /></figure>
 
 <p>An example HTML page using the Advanced implementation with a horizontal playlist is (no responsive elements are used in this case):</p>
 

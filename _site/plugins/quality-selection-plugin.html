@@ -1105,7 +1105,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   </aside>
   <section class="bcls-section">
     <h2 id="Player_example">Player-Beispiel</h2>
-    <p>Das Folgende ist ein Brightcove-Player, der das Plugin zur Qualitätsauswahl verwendet. Sobald Sie das Video abgespielt haben, sehen Sie in der Steuerleiste das folgende Symbol: <img alt="" src="//learning-services-media.brightcove.com/doc-assets/player-development/plugins/manual-rendition-selection/icon-in-controlbar.png"/></p>
+    <p>Das Folgende ist ein Brightcove-Player, der das Plugin zur Qualitätsauswahl verwendet. Sobald Sie das Video abgespielt haben, sehen Sie in der Steuerleiste das folgende Symbol: <img alt="" src="/assets/images/plugins/manual-rendition-selection/icon-in-controlbar.png"/></p>
     <p>Sobald Sie eine Auswahl getroffen haben, dreht sich das Zahnrad, bis die neue Qualität für DASH-Quellen gerendert wird oder bis die neue Qualität für HLS-Quellen geladen wird. Weitere Informationen zu den Qualitätsoptionen, die Sie für die Auswahl sehen, und zum Verhalten beim Drehen der Zahnräder finden Sie weiter unten.</p>
     <aside class="bcls-aside bcls-aside--information">Wenn Sie über eine schnelle Internetverbindung verfügen, müssen Sie möglicherweise eine Reihe von Einstellungen vornehmen, bevor Sie den Gangwechsel sehen, da Änderungen mit HLS-Wiedergaben, die in diesem Video verwendet werden, schnell erfolgen.</aside>
     <video data-video-id="5842800655001" data-account="1752604059001" data-player="B1CWQFiPZ" data-embed="default" data-application-id="" class="video-js" controls="" width="640" height="360">&nbsp;</video>
@@ -1113,9 +1113,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <section class="bcls-section">
       <h2 id="Quality_options">Qualität-Optionen</h2>
       <p>Wenn Sie auf das Zahnradsymbol klicken, werden eine Reihe von Qualitätsoptionen zur Benutzerauswahl angezeigt. Zum Beispiel ein Video mit folgenden Wiedergaben:</p>
-      <figure class="bcls-figure"><img class="bcls-image" alt="Alle Videowiedergaben" src="//learning-services-media.brightcove.com/doc-assets/player-development/plugins/manual-rendition-selection/video-renditions.png"/></figure>
+      <figure class="bcls-figure"><img class="bcls-image" alt="Alle Videowiedergaben" src="/assets/images/plugins/manual-rendition-selection/video-renditions.png"/></figure>
       <p>erstellt die folgenden Qualitätsoptionen:</p>
-      <figure class="bcls-figure"><img class="bcls-image" alt="Qualität-Optionen" src="//learning-services-media.brightcove.com/doc-assets/player-development/plugins/manual-rendition-selection/quality-options.png"/></figure>
+      <figure class="bcls-figure"><img class="bcls-image" alt="Qualität-Optionen" src="/assets/images/plugins/manual-rendition-selection/quality-options.png"/></figure>
       <p>So werden diese Optionen erstellt und dann eine bestimmte Wiedergabe ausgewählt:</p>
       <ul>
         <li>Alle Wiedergaben werden basierend auf horizontalen Auflösungslinien (z. B. 270p, 360p, 540p, 720p und 1080p im obigen Beispiel) gruppiert und als Qualitätsoptionen verwendet.</li>
@@ -1152,7 +1152,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
         <li>Klicken Sie auf den Link für den Spieler, um die Eigenschaften des Spielers zu öffnen.</li>
         <li>Klicken Sie im linken Navigationsmenü auf <strong>Steuerung</strong> .</li>
         <li>Aktivieren Sie das Kontrollkästchen vor <strong>Qualitätsauswahl</strong>.
-          <figure class="bcls-figure"><img class="bcls-image" alt="Konfiguration zeigt Qualitätsauswahl" src="//learning-services-media.brightcove.com/doc-assets/player-development/plugins/manual-rendition-selection/studio-show-quality-selector.png"/></figure>
+          <figure class="bcls-figure"><img class="bcls-image" alt="Konfiguration zeigt Qualitätsauswahl" src="/assets/images/plugins/manual-rendition-selection/studio-show-quality-selector.png"/></figure>
         </li>
         <li>Verwenden Sie ein Optionsfeld, um entweder die verschiedenen verfügbaren Auflösungen anzuzeigen, oder einfach eine <strong>HD / SD</strong> Möglichkeit.</li>
         <li>Klicken Sie auf <strong>Save</strong>.</li>
@@ -1307,7 +1307,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   "useResolutionLabels": false
 }</code></pre>
           <p>Die resultierenden Qualitätsoptionen würden wie folgt aussehen:</p>
-          <figure class="bcls-figure"><img class="bcls-image" alt="Optionen nur SD und HD" src="//learning-services-media.brightcove.com/doc-assets/player-development/plugins/manual-rendition-selection/quality-options-sd-hd-only.png"/></figure>
+          <figure class="bcls-figure"><img class="bcls-image" alt="Optionen nur SD und HD" src="/assets/images/plugins/manual-rendition-selection/quality-options-sd-hd-only.png"/></figure>
           <p>Der Spieler würde dann die optimale Wiedergabe aus der ausgewählten Gruppe auswählen. Wie in diesem Abschnitt beschrieben, <code translate="No">sdBitrateLimit</code> ist konfigurierbar, um die als klassifizierten Wiedergaben zu bestimmen <strong>SD</strong> und <strong>HD.</strong></p>
           <aside class="bcls-aside bcls-aside--tip language-editable">Widersprüchliche Einstellungen funktionieren nicht. Zum Beispiel ist keines der folgenden Elemente sinnvoll, da Sie in beiden Fällen einen unzulässigen Wert für ein Etikett angeben, das auf dem basiert <code translate="No">useResolutionLabels</code> Rahmen.
             <pre class="line-numbers">
@@ -1326,7 +1326,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
             <li>Wann <code translate="No">true</code> Das Plugin fügt Bitrateninformationen an die Auflösungsetiketten an (z. B. 720p @ 13806 kbps). Diese Option hat keine Auswirkung, wenn <code translate="No">useResolutionLabels</code> ist falsch oder wenn keine Auflösungsinformationen verfügbar sind.</li>
           </ul>
           <p>Wenn diese Konfigurationsoption eingestellt ist, wird die <code translate="No">true</code> wird der Qualitätswähler wie folgt angezeigt:</p>
-          <figure class="bcls-figure"><img class="bcls-image" alt="Alle Videoritraten" src="//learning-services-media.brightcove.com/doc-assets/player-development/plugins/manual-rendition-selection/bitrates-displayed.png"/></figure>
+          <figure class="bcls-figure"><img class="bcls-image" alt="Alle Videoritraten" src="/assets/images/plugins/manual-rendition-selection/bitrates-displayed.png"/></figure>
         </li>
       </ul>
     </section>
@@ -1375,7 +1375,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
         </tbody>
       </table>
       <p>Zum Beispiel, um Folgendes zu erreichen:</p>
-      <figure class="bcls-figure"><img class="bcls-image" alt="Alle Videoritraten" src="//learning-services-media.brightcove.com/doc-assets/player-development/plugins/manual-rendition-selection/styled-menu.png"/></figure>
+      <figure class="bcls-figure"><img class="bcls-image" alt="Alle Videoritraten" src="/assets/images/plugins/manual-rendition-selection/styled-menu.png"/></figure>
       <p>Sie würden dieses CSS verwenden:</p>
       <pre class="line-numbers">
 <code class="language-css" translate="No">/* Style the icon */

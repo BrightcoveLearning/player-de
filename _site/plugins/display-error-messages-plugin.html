@@ -1097,7 +1097,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <section id="Overview" class="bcls-section">
         <h2>Übersicht</h2>
         <p>Mit dem Plugin für Fehlermeldungen kann der Player benutzerfreundliche Meldungen anzeigen, wenn ein Fehler auftritt. Das Standard-Stylesheet zeigt Nachrichten als halbtransparente Überlagerung über dem Videoelement an. Sie können vorhandenen Nachrichtentext ändern und eigene Stile hinzufügen. Sie können sogar benutzerdefinierte Nachrichten erstellen, die ausgelöst werden, wenn Sie möchten.</p>
-        <figure class="bcls-figure"><img class="bcls-image" alt="Fehlermeldung Plugin" src="//learning-services-media.brightcove.com/doc-assets/player-development/playback/troubleshooting/errors-plugin/error-message-plugin.png"/></figure>
+        <figure class="bcls-figure"><img class="bcls-image" alt="Fehlermeldung Plugin" src="/assets/images/playback/troubleshooting/errors-plugin/error-message-plugin.png"/></figure>
         <p>Die im obigen Bild gezeigte Fehlermeldung wurde erstellt, indem der Player mit einem ungültigen aktualisiert wurde <code translate="No">src</code> Wert in der <code translate="No">sources</code> Eigentum.</p>
         <p>Das Plugin für Fehlermeldungen ist ein Standard-Plugin und wird automatisch mit dem Brightcove Player geladen. Sie können jedoch festlegen, dass es nicht geladen werden soll. Ohne dieses Plugin werden nur wenige Fehlermeldungen angezeigt, und einige Fehler werden nur in der Browserkonsole angezeigt. Einzelheiten dazu, wie Sie beim Erstellen eines Players kein Standard-Plugin laden, finden Sie in der <a href="/plugins/overview-brightcove-player-plugins.html">Player Plugin Übersicht</a> Dokument.</p>
         <aside class="bcls-aside bcls-aside--warning language-editable">Zum Anpassen einer Fehlermeldung können Sie eine der beiden in diesem Dokument gezeigten Methoden verwenden:
@@ -1183,7 +1183,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
             <li><code translate="No">type</code>:: Dies ist das <strong>Fehlercode:</strong> Text.</li>
             <li><code translate="No">message</code>:: Dies ist das <strong>Technische Details:</strong> Text.</li>
         </ul>
-        <figure class="bcls-figure"><img class="bcls-image" alt="Fehlermeldung Plugin" src="//learning-services-media.brightcove.com/doc-assets/player-development/playback/troubleshooting/errors-plugin/error-message-plugin2.png"/></figure>
+        <figure class="bcls-figure"><img class="bcls-image" alt="Fehlermeldung Plugin" src="/assets/images/playback/troubleshooting/errors-plugin/error-message-plugin2.png"/></figure>
         <!-- <p>Once your player is created, in Studio edit the <strong>Plugins</strong> section of the <strong>Players</strong> module with a JSON object to set property values.</p> -->
         <p>Das folgende Beispiel zeigt, wie der Nachrichtentext für den Standardfehler mit einem Fehlercodewert von überschrieben wird <code translate="No">4</code>. Die Eigenschaften sind wie folgt definiert:</p>
         <ul>
@@ -1313,7 +1313,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
             </li>
         </ul>
         <aside class="bcls-aside bcls-aside--information">Bei Fehlern ohne Code wird die Nachricht für den Code verwendet. Beispielsweise wird hier ein Domäneneinschränkungsfehler angezeigt:
-            <figure class="bcls-figure"><img class="bcls-image" alt="Fehlermeldung zur Domäneneinschränkung" src="//learning-services-media.brightcove.com/doc-assets/player-development/playback/troubleshooting/errors-plugin/domain-restriction-error.png"/></figure>
+            <figure class="bcls-figure"><img class="bcls-image" alt="Fehlermeldung zur Domäneneinschränkung" src="/assets/images/playback/troubleshooting/errors-plugin/domain-restriction-error.png"/></figure>
         </aside>
     </section>
     <section class="bcls-section">
@@ -1354,18 +1354,18 @@ myPlayer.on("loadstart", function () {
 });</code></pre>
         <p>Hier das <code translate="No">age_appropriate</code> Variable ist auf gesetzt <code translate="No">false</code> Sie würden jedoch Ihren eigenen Code hinzufügen, um zu bestimmen, wann Ihre benutzerdefinierten Fehlermeldungen angezeigt werden sollen.</p>
         <p>Der Fehler wird dem Benutzer wie folgt angezeigt:</p>
-        <figure class="bcls-figure"><img class="bcls-image" alt="Benutzerdefinierte Fehlermeldung" src="//learning-services-media.brightcove.com/doc-assets/player-development/playback/troubleshooting/errors-plugin/user-custom-error-message.png"/></figure>
+        <figure class="bcls-figure"><img class="bcls-image" alt="Benutzerdefinierte Fehlermeldung" src="/assets/images/playback/troubleshooting/errors-plugin/user-custom-error-message.png"/></figure>
         <aside class="bcls-aside bcls-aside--tip">Hinweis: Jeder Code zum Auslösen benutzerdefinierter Fehler muss warten, bis das Video geladen ist. Verwenden Sie die <code translate="No">loadstart</code> Ereignis, um dies zu bestimmen. Wenn Sie versuchen, Ihre Nachricht anzuzeigen, ohne zu warten, wird Ihre Nachricht nach dem Laden des Videos ausgeblendet.</aside>
     </section>
     <section class="bcls-section">
         <h2 id="Making_custom_errors_non_dismissible">Benutzerdefinierte Fehler nicht abweisbar machen</h2>
         <p>Standardmäßig kann eine benutzerdefinierte Fehlermeldung vom Video-Viewer nicht angezeigt werden. Wie der folgende Screenshot zeigt, gibt es eine <strong>in Ordnung</strong> Klicken Sie auf die Schaltfläche, um das Fenster zu schließen, sowie auf eine Schaltfläche <strong>X.</strong> in der oberen rechten Ecke.</p>
-        <figure class="bcls-figure"><img class="bcls-image" alt="abweisbare Fehlermeldung" src="//learning-services-media.brightcove.com/doc-assets/player-development/playback/troubleshooting/errors-plugin/dismissible.png"/></figure>
+        <figure class="bcls-figure"><img class="bcls-image" alt="abweisbare Fehlermeldung" src="/assets/images/playback/troubleshooting/errors-plugin/dismissible.png"/></figure>
         <p>Wenn Sie dem Videobetrachter NICHT erlauben möchten, die Fehlermeldung zu schließen, können Sie dies tun. Wenn Sie die anrufen <code translate="No">error()</code> Methode können Sie die einstellen <code translate="No">dismiss</code> Eigentum an <code translate="No">false</code>.</p>
         <pre class="line-numbers">
 <code class="language-javascript" translate="No">myPlayer.error({code:'age-gate-error', <span class="bcls-highlight">dismiss: false</span>});</code></pre>
         <p>Wenn Sie dies tun, wird die Fehlermeldung wie folgt angezeigt, ohne dass der Fehler behoben werden kann.</p>
-        <figure class="bcls-figure"><img class="bcls-image" alt="nicht abweisbare Fehlermeldung" src="//learning-services-media.brightcove.com/doc-assets/player-development/playback/troubleshooting/errors-plugin/not-dismissible.png"/></figure>
+        <figure class="bcls-figure"><img class="bcls-image" alt="nicht abweisbare Fehlermeldung" src="/assets/images/playback/troubleshooting/errors-plugin/not-dismissible.png"/></figure>
     </section>
     <section class="bcls-section">
         <h2 id="getAll_method">Methode getAll ()</h2>
@@ -1373,7 +1373,7 @@ myPlayer.on("loadstart", function () {
         <pre class="line-numbers">
 <code class="language-javascript" translate="No">console.log('myPlayer.errors.getAll()',myPlayer.errors.getAll());</code></pre>
         <p>Ein Beispiel für die Konsolenanzeige mit einigen Fehlern, die für Details erweitert wurden, ist:</p>
-        <figure class="bcls-figure"><img class="bcls-image" alt="getAll Konsolenanzeige" src="//learning-services-media.brightcove.com/doc-assets/player-development/playback/troubleshooting/errors-plugin/getAll-method.png"/></figure>
+        <figure class="bcls-figure"><img class="bcls-image" alt="getAll Konsolenanzeige" src="/assets/images/playback/troubleshooting/errors-plugin/getAll-method.png"/></figure>
     </section>
     <section id="dispatcherror" class="bcls-section">
         <h2>Versandfehler</h2>

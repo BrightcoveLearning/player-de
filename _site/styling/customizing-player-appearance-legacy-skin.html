@@ -1105,7 +1105,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <h2 id="player">Player</h2>
     <aside class="bcls-aside bcls-aside--information">Hinweis: Dieses Dokument setzt einige Kenntnisse in CSS voraus und verwendet die Entwicklungstools eines Browsers, um die Klassen von HTML-Elementen anzuzeigen und anwendbares CSS zu untersuchen. Wenn Sie nicht über die erforderlichen Grundkenntnisse verfügen, ist es am besten, wenn Sie die durcharbeiten <a href="/styling/quick-start-player-customization-legacy-skin.html">Schnellstart: Spieleranpassung - Legacy Skin</a>.</aside>
     <p>Du kannst das Aussehen des Spielers ändern, aber du musst zuerst eine Möglichkeit haben, es anzugehen. Um dies zu sehen, durchsuchen Sie eine HTML-Seite mit dem eingefügten Player embedded_in_page-Code. In dem <strong>Elemente</strong> Suchen Sie im Abschnitt der Entwicklungstools den ersten <code translate="No">&lt;div&gt;</code> und Sie werden sehen, dass es eine Klasse mit dem Wert hat <code translate="No">video-js</code> unter anderem zugewiesen.</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="anpassen-Player-Elemente" src="//learning-services-media.brightcove.com/doc-assets/player-development/player-customization/1x-customize-appearance/player-elements.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="anpassen-Player-Elemente" src="/assets/images/player-customization/1x-customize-appearance/player-elements.png"/></figure>
     <p>Sobald du das weißt, kannst du Stile verwenden, um den Spieler selbst zu verändern. Um beispielsweise die Größe des Players zu ändern, können Sie diesen Stil verwenden:</p>
     <pre class="line-numbers">
 <code class="language-css" translate="No">&lt;style&gt;
@@ -1118,7 +1118,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   <section class="bcls-section">
     <h2 id="iframeplayer">iframe-Spieler</h2>
     <p>Wenn Sie die Iframe-Implementierung des Players verwenden, ist die Situation anders. Sie sehen immer noch den Spieler mit dem <code translate="No">video-js</code> Klasse, aber es wird natürlich innerhalb des Iframes sein.</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="iframe-player-Elemente" src="//learning-services-media.brightcove.com/doc-assets/player-development/player-customization/1x-customize-appearance/iframe-elements.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="iframe-player-Elemente" src="/assets/images/player-customization/1x-customize-appearance/iframe-elements.png"/></figure>
     <p>Die von Ihnen erstellten Stile funktionieren weiterhin mit dem Player im iframe, es muss jedoch eine CSS-Datei erstellt und mit dem Player verknüpft werden, der Studio verwendet. Sie tun dies, indem Sie zum gehen <strong>Spieler</strong> Klicken Sie dann auf das Video, mit dem Sie das CSS verknüpfen möchten, und klicken Sie dann auf <strong>Plugins</strong> Abschnitt fügen Sie den Pfad Ihrer CSS-Datei hinzu.</p>
     <p>Wenn Sie den Iframe selbst anpassen möchten, können Sie dies tun, indem Sie a hinzufügen <code translate="No">class</code> Attribut auf die <code translate="No">iframe</code> Element (Zeile 27). In diesem Fall ist der Klassenwert <code translate="No">videoFrame</code>. Verwenden Sie dann ein <code translate="No">&lt;style&gt;</code> Tag, um wie gewünscht zu ändern. Im Beispiel unten die <code translate="No">width</code> und <code translate="No">height</code> geändert werden.</p>
     <pre class="line-numbers" data-start="10">
@@ -1147,9 +1147,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   <section class="bcls-section">
     <h2 id="button">Play-Button</h2>
     <p>Wenn Sie das Aussehen des Play-Buttons ändern möchten, müssen Sie zuerst wissen, wie Sie ihn ansprechen. Stellen Sie in Chrome sicher, dass die <strong>Entwicklungswerkzeuge</strong> geöffnet sind und dann mit der rechten Maustaste auf die Schaltfläche klicken. Wählen Sie aus der angezeigten Auswahl <strong>Element prüfen</strong>.</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="inspizt-Knopf" src="//learning-services-media.brightcove.com/doc-assets/player-development/player-customization/1x-customize-appearance/inspect-button-1x.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="inspizt-Knopf" src="/assets/images/player-customization/1x-customize-appearance/inspect-button-1x.png"/></figure>
     <p>In dem <strong>Elemente</strong> Im Abschnitt der Entwicklungstools wird der HTML-Code angezeigt, der dem Schaltflächenelement entspricht.</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="großer Play-Button" src="//learning-services-media.brightcove.com/doc-assets/player-development/player-customization/1x-customize-appearance/big-play-button.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="großer Play-Button" src="/assets/images/player-customization/1x-customize-appearance/big-play-button.png"/></figure>
     <p>Aus dem oben hervorgehobenen Code sehen Sie, dass die der Schaltfläche zugewiesene Klasse ist <code translate="No">vjs-big-play-button</code>. Die Farbe der Wiedergabetaste (passend zum Tiger) und die Deckkraft werden mit diesen Stilen geändert:</p>
     <pre class="line-numbers" data-start="36">
 <code class="language-css" translate="No">  &lt;style&gt;
@@ -1186,7 +1186,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     }
   &lt;/style&gt;</code></pre>
     <p>Hier ist das Ergebnis der Änderung der Schaltfläche von dunkelgrau auf orange:</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="orange-play-Button" src="//learning-services-media.brightcove.com/doc-assets/player-development/player-customization/1x-customize-appearance/orange-play-button-1x.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="orange-play-Button" src="/assets/images/player-customization/1x-customize-appearance/orange-play-button-1x.png"/></figure>
     <h3>Mittlere Wiedergabetaste</h3>
     <p>Sie können die Wiedergabetaste sowohl horizontal als auch vertikal zentrieren, indem Sie die folgenden Stile verwenden:</p>
     <pre class="line-numbers" data-start="199">
@@ -1206,10 +1206,10 @@ margin: auto;</code></pre>
   <section class="bcls-section">
     <h2 id="progressvolume">Fortschritt &amp; Volumen</h2>
     <p>Die letzte Anpassung des Erscheinungsbilds, die wir in diesem Dokument betrachten, besteht darin, die Farbe der Fortschritts- und Lautstärkeanzeigen zu ändern. Die Standardfarbe für beide ist Fuchsia, wie hier gezeigt:</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="Fortschritt und Lautstärke" src="//learning-services-media.brightcove.com/doc-assets/player-development/player-customization/1x-customize-appearance/progress-and-volume-1x.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Fortschritt und Lautstärke" src="/assets/images/player-customization/1x-customize-appearance/progress-and-volume-1x.png"/></figure>
     <p>Die Herausforderung besteht darin, die Klassennamen für die Elemente zu finden. Klicken Sie mit der gleichen Technik wie oben mit der rechten Maustaste auf ein Element, das Sie auswählen <strong>Element prüfen</strong> Wenn Sie zur gesamten Fortschrittsanzeige gelangen, sehen Sie die <code translate="No">vjs-play-progress</code> Klasse.</p>
     <p>Im Chrome <strong>Elemente</strong> Panel, Maus über die <code translate="No">div</code> Element mit dem Klassennamen <code translate="No">vjs-play-progress</code> um Folgendes im Player zu sehen:</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="Fortschrittskontrolle" src="//learning-services-media.brightcove.com/doc-assets/player-development/player-customization/1x-customize-appearance/progress-control.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Fortschrittskontrolle" src="/assets/images/player-customization/1x-customize-appearance/progress-control.png"/></figure>
     <p>Ein Tool in Chrome ist hilfreich, wenn Sie nach dem Lautstärkeelement suchen. Beachten Sie, dass Sie die Lautstärke nur sehen, wenn Sie mit der Maus über die Lautstärketaste fahren (mit der Maus darüber fahren). Führen Sie die folgenden Schritte aus, um den Lautstärkepegel bei der Überprüfung und Suche nach dem richtigen Element anzuzeigen:</p>
     <ul>
       <li>Klicken Sie mit der rechten Maustaste auf die Lautstärketaste und überprüfen Sie sie</li>
@@ -1217,7 +1217,7 @@ margin: auto;</code></pre>
       <li>Überprüf den <strong>:schweben</strong> Feld (rot hervorgehoben in der <strong>Stile</strong> Abschnitt), um die Maus zu simulieren, während Sie die Elemente untersuchen</li>
       <li>Führen Sie einen Drilldown durch, bis Sie das Lautstärkeelement finden (rot hervorgehoben in der <strong>Elemente</strong> Sektion)</li>
     </ul>
-    <figure class="bcls-figure"><img class="bcls-image" alt="Inspect-Audio-Taste" src="//learning-services-media.brightcove.com/doc-assets/player-development/player-customization/1x-customize-appearance/inspect-audio-button.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Inspect-Audio-Taste" src="/assets/images/player-customization/1x-customize-appearance/inspect-audio-button.png"/></figure>
     <p>Jetzt die <code translate="No">background-color</code> von diesen beiden Elementen muss gestylt werden. Sie möchten, dass sie dieselbe Farbe wie die Schaltfläche haben. Ändern Sie daher Ihre Stile wie hier gezeigt:</p>
     <pre class="line-numbers" data-start="94">
 <code class="language-html" translate="No">  &lt;style&gt;
@@ -1236,7 +1236,7 @@ margin: auto;</code></pre>
   &lt;/style&gt;</code></pre>
     <p>Beachten Sie, dass wir jeder Klasse die ID des Spielers voranstellen <code translate="No">div</code> Element. Dies bietet Relevanz für die Klassenänderungen hinsichtlich der CSS-Spezifität. Darüber wird im nächsten Abschnitt gesprochen.</p>
     <p>Die Ergebnisse sehen wie folgt aus:</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="Progress-Volume-Stil" src="//learning-services-media.brightcove.com/doc-assets/player-development/player-customization/1x-customize-appearance/progress-volume-styled-1x.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Progress-Volume-Stil" src="/assets/images/player-customization/1x-customize-appearance/progress-volume-styled-1x.png"/></figure>
     <p>Mit dieser Grundierung erhalten Sie einen kurzen Überblick über das Styling des Players. Wie Sie gesehen haben, besteht der Ansatz darin, den Klassennamen zu finden, der dem Element entspricht, das Sie ändern möchten, und ihn dann zu formatieren. Denken Sie daran, wie in der erwähnt <strong>iframe</strong> Wenn Sie den Iframe-Player verwenden, müssen Sie die Stile in eine Datei einfügen und dann eine Curl-Anweisung verwenden, um die Stile dem Player zuzuordnen.</p>
     <p>Denken Sie daran, dass es eine bewährte Methode ist, die Anpassungen zu Ihrer Player-Konfiguration hinzuzufügen, damit sie optimiert werden können und mit Ihrem Player überall dort eingesetzt werden können, wo er eingebettet ist.</p>
   </section>
@@ -1276,7 +1276,7 @@ margin: auto;</code></pre>
     <h2 id="specificity">CSS-Spezifität</h2>
     <p>Die CSS-Spezifität bezieht sich auf die Art und Weise, wie Browser anhand ihrer Relevanz bestimmen, welche Eigenschaftswerte auf ein Element angewendet werden. Einzelheiten zu diesem Konzept finden Sie im Artikel <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity">Specificity</a> .</p>
     <p>Untersuchen Sie in Chrome den großen Play-Button. Beachten Sie, dass die <code translate="No">background</code> Eigenschaft mit mehreren Klassen festgelegt wird. Dies bedeutet, dass wir nicht nur die eine <code translate="No">.vjs-big-play-button</code> Klasse verwenden können, um diese Eigenschaft zu überschreiben.</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="Play-Button-Klassen" src="//learning-services-media.brightcove.com/doc-assets/player-development/player-customization/1x-customize-appearance/play-button-classes.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Play-Button-Klassen" src="/assets/images/player-customization/1x-customize-appearance/play-button-classes.png"/></figure>
     <p>Hier sind drei Ansätze, um den großen Play-Button anzupassen:</p>
     <ul>
       <li>Verweise auf eine dem Spieler zugewiesene ID.</li>
@@ -1305,7 +1305,7 @@ margin: auto;</code></pre>
     }
   &lt;/style&gt;</code></pre>
     <p>Du solltest sehen, dass der große Play-Button jetzt orange ist.</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="orange-play-Button" src="//learning-services-media.brightcove.com/doc-assets/player-development/player-customization/1x-customize-appearance/orange-play-button-1x.png"/></figure>
+    <figure class="bcls-figure"><img class="bcls-image" alt="orange-play-Button" src="/assets/images/player-customization/1x-customize-appearance/orange-play-button-1x.png"/></figure>
     <h3>Verwenden mehrerer Klassen</h3>
     <p>Seit der <code translate="No">background</code> Die Eigenschaft für die große Wiedergabetaste wird mit zwei Klassen festgelegt. Sie benötigen mindestens zwei Klassen im CSS-Selektor, um diese Eigenschaft zu überschreiben.</p>
     <p>Fügen Sie die <code translate="No">.video-js</code> Klasse der <code translate="No">.vjs-big-play-button</code> Klassenauswahl hinzu. Denken Sie daran, dass die <code translate="No">.video-js</code> Klasse im Videocontainer festgelegt ist.</p>

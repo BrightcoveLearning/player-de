@@ -1113,12 +1113,12 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li>Stöbern Sie auf der neu erstellten Seite.</li>
       <li>Öffnen Sie die Entwicklungstools Ihres Browsers und durchsuchen Sie den HTML-Code, um die zu finden <code translate="No">&lt;video-js&gt;</code> Etikett. Sie werden das sehen <code translate="No">&lt;video-js&gt;</code> Tag hat eine Klasse mit dem Namen <code translate="No">video-js</code>. Das <code translate="No">&lt;video-js&gt;</code> Tag hat immer eine Klasse von <code translate="No">video-js</code>. Sie werden die nutzen <code translate="No">video-js</code> Klasse häufig beim Stylen des Players.</li>
       <li>Sehen Sie sich den Screenshot unten an, um die rot hervorgehobene Klasse zu sehen. Grün hervorgehoben ist das <code translate="No">&lt;video-js&gt;</code> Tag, das ist natürlich Brightcove Player.
-        <figure class="bcls-figure"><img class="bcls-image" alt="Spielerauswahl" src="//learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/quick-start-player-styling/player-div-with-video.png"/></figure>
+        <figure class="bcls-figure"><img class="bcls-image" alt="Spielerauswahl" src="/assets/images/player-customization/5x-player-styling/quick-start-player-styling/player-div-with-video.png"/></figure>
         <!-- <aside class="bcls-aside bcls-aside--information">
 	<p>Note: Depending on the operating system and browser being used, the Flash fallback version of the player may be displayed. If your player is using the Flash fallback version of the player, you will not see a <code translate="No">&lt;video-js&gt;</code> tag. Instead you will see the <code translate="No">&lt;div&gt;</code> surrounding an <code translate="No">&lt;object&gt;</code> tag, as highlighted below.</p>
 	</aside>
 
-	<figure class="bcls-figure"><img class="bcls-image" alt="player div with object" src="//learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/quick-start-player-styling/player-div-with-object.png" /></figure> --></li>
+	<figure class="bcls-figure"><img class="bcls-image" alt="player div with object" src="/assets/images/player-customization/5x-player-styling/quick-start-player-styling/player-div-with-object.png" /></figure> --></li>
     </ol>
   </section>
   <section id="buttonselector" class="bcls-section">
@@ -1128,7 +1128,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li>Durchsuchen Sie Ihre HTML-Seite.</li>
       <li>Klicken Sie mit der rechten Maustaste auf die Wiedergabetaste, die den Spieler überlagert, und wählen Sie <strong>Inspect Element</strong>aus</li>
       <li>Notiere dass der <code translate="No">&lt;div&gt;</code> Das markierte Tag stellt die Wiedergabetaste dar und hat eine Klasse von <code translate="No">vjs-big-play-button</code>.
-        <figure class="bcls-figure"><img class="bcls-image" alt="große Wiedergabetaste div" src="//learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/quick-start-player-styling/big-play-button-div.png"/></figure>
+        <figure class="bcls-figure"><img class="bcls-image" alt="große Wiedergabetaste div" src="/assets/images/player-customization/5x-player-styling/quick-start-player-styling/big-play-button-div.png"/></figure>
       </li>
       <li>Ändern Sie Ihre Stile so, dass sie CSS enthalten, das die Farbe und Deckkraft der Wiedergabetaste ändert.
         <pre class="line-numbers">
@@ -1140,10 +1140,10 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 &lt;/style&gt;</code></pre>
       </li>
       <li>Durchsuchen Sie Ihre Seite und Sie werden sehen, dass nicht alle Stile verwendet wurden. Der Button ist nicht rot.
-        <figure class="bcls-figure"><img class="bcls-image" alt="Taste nicht rot" src="//learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/quick-start-player-styling/button-not-red.png"/></figure>
+        <figure class="bcls-figure"><img class="bcls-image" alt="Taste nicht rot" src="/assets/images/player-customization/5x-player-styling/quick-start-player-styling/button-not-red.png"/></figure>
       </li>
       <li>Schauen Sie rechts neben Ihren Entwicklertools und Sie sehen eine Zusammenfassung Ihrer Stile. Sie können nach unten schauen und sehen, dass das Ändern des Hintergrunds in Rot überschrieben wird, indem er durchgestrichen wird.
-        <figure class="bcls-figure"><img class="bcls-image" alt="Stile Hintergrund überschrieben" src="//learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/quick-start-player-styling/styles-background-overridden.png"/></figure>
+        <figure class="bcls-figure"><img class="bcls-image" alt="Stile Hintergrund überschrieben" src="/assets/images/player-customization/5x-player-styling/quick-start-player-styling/styles-background-overridden.png"/></figure>
         <aside class="bcls-aside bcls-aside--information">Hinweis: In Safari ist der Stil möglicherweise nicht durchgestrichen, obwohl er außer Kraft gesetzt wird.</aside>
         <p>Was passiert ist, ist, dass zahlreiche Änderungen an der Hintergrundfarbe vorgenommen werden. Der von Ihnen eingestellte Stil wurde im „kaskadierenden“ Teil von CSS überschrieben. Sie können dies ändern, indem Sie die CSS-Funktionen verwenden, die <strong>Spezifität</strong>genannt werden. Die Spezifität bestimmt, welche CSS-Regel von Browsern angewendet wird, und ist eine Art Gewichtung, die sich darauf auswirkt, wie Ihre Cascading Stylesheet-Regeln (CSS) angezeigt werden. Mithilfe von Spezifität können Sie Ihren Stil wichtiger machen als andere und ihn dazu zwingen, ihn zu verwenden. Es gibt eine kurze Einführung in die CSS-Spezifität in der <a href="/styling/customizing-player-appearance.html#CSS_specificity">Passen Sie das Erscheinungsbild des Spielers an</a> doc und zahlreiche Referenzen in jeder Suche.</p>
       </li>
@@ -1157,10 +1157,10 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 &lt;/style&gt;  </code></pre>
       </li>
       <li>Durchsuchen Sie Ihre Seite und sehen Sie, dass jetzt alle Stile angewendet werden.
-        <figure class="bcls-figure"><img class="bcls-image" alt="Stile Hintergrund arbeiten" src="//learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/quick-start-player-styling/styles-background-working.png"/></figure>
+        <figure class="bcls-figure"><img class="bcls-image" alt="Stile Hintergrund arbeiten" src="/assets/images/player-customization/5x-player-styling/quick-start-player-styling/styles-background-working.png"/></figure>
       </li>
       <li>Schauen Sie noch einmal rechts von Ihren Entwicklertools und Sie sehen eine Zusammenfassung Ihrer Stile. Jetzt sehen Sie, dass Ihre Änderung der Hintergrundfarbe nicht überschrieben wird.
-        <figure class="bcls-figure"><img class="bcls-image" alt="Stile Hintergrund NICHT überschrieben" src="//learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/quick-start-player-styling/styles-background-NOT-overridden.png"/></figure>
+        <figure class="bcls-figure"><img class="bcls-image" alt="Stile Hintergrund NICHT überschrieben" src="/assets/images/player-customization/5x-player-styling/quick-start-player-styling/styles-background-NOT-overridden.png"/></figure>
       </li>
     </ol>
   </section>
@@ -1273,7 +1273,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li> <strong>Gehen Sie in Studio in das Player-Modul und bearbeiten Sie den Player, den Sie für diesen Schnellstart verwenden.</strong> </li>
       <li>Klicken Sie im linken Navigationsmenü auf <strong>Plugins</strong> .</li>
       <li>Klicken <strong>Stylesheets</strong> , dann ist die <strong>Fügen Sie ein Stylesheet hinzu</strong> Schaltfläche, und geben Sie Ihren Pfad ein:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Studio betreten CSS" src="//learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/quick-start-player-styling/studio-enter-css.png"/></figure>
+        <figure class="bcls-figure"><img class="bcls-image" alt="Studio betreten CSS" src="/assets/images/player-customization/5x-player-styling/quick-start-player-styling/studio-enter-css.png"/></figure>
       </li>
       <li>Klicken Sie auf <strong>Save</strong>, um die Änderungen zu speichern. Der Vorschau-Player auf der rechten Seite wird aktualisiert, um die auf die Schaltfläche angewendeten CSS-Stile anzuzeigen.</li>
       <li>Um den Player zu veröffentlichen, klicken Sie auf <strong>Veröffentlichen &amp; Einbetten von &gt; Veröffentlichungsänderungen</strong>.</li>
