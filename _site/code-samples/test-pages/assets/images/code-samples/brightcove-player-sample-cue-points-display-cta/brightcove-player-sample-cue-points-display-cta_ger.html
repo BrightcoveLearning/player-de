@@ -1,0 +1,16 @@
+<video-js id="myPlayerID" 
+  data-video-id="4784521906001" 
+  data-account="1752604059001" 
+  data-player="ryeOJ8f5dZ" 
+  data-embed="default"
+  data-application-id 
+  class="video-js" 
+  controls></video-js>
+<script src="https://players.brightcove.net/1752604059001/ryeOJ8f5dZ_default/index.min.js"></script>
+
+<script>
+  var MyPlayer, timeoutID, removeCtaTime; Videojs.getPlayer ('MyPlayerID') .ready (function () { var cuePointAra = [], allCuePointData; myPlayer = this; // Hide overlay initially myPlayer.addClass("hide-overlay"); // +++ Listen for cue change then pass data to be displayed +++ myPlayer.on("loadstart", function(evt) { cuePointAra = myPlayer.mediainfo.cue_points; console.log(cuePointAra); var tt = myPlayer.textTracks()[0]; // When a cue point starts, extract cue data and pass data to be displayed tt.oncuechange = function() { if (tt.activeCues[0] !== undefined) { allCuePointData = getSubArray( cuePointAra, "time", tt.activeCues[0].startTime ); displayCTA(allCuePointData[0]); }}; myPlayer.play ();});//+++ Extrahiere Datenstücke aus Cue-Point-Metadaten und Display-Overlay +++ Funktion DisplayCTA (cpData) {//Teilen Sie Metadaten in ein Array von drei Teilen basierend auf Standort von Semikolons var dataAra = cpData.Metadata.Split („;“), DurationCTA = DataAra [0], textCTA = DataAra [1], urlCTA = DataAra [2],//Baue dynamisch das Anker-Tag hrefCTA = '<a href="' +
+        urlCTA +
+        '"><span style="background-color: black; color: red;">' + textCTA +“</span></a>„, timeoutValue;//Dauer einstellen, Timeout einstellen, dynamisches HTML injizieren und Overlay anzeigen timeoutValue = Number (DurationCTA) * 1000; timeoutID = window.setTimeout (CheckTime, TimeoutValue); document.getElementsByClassName („vjs-overlay“) [0]. innerHtML = hrefCTA; myPlayer.removeClass („hide-overlay“);}//+++ Timeout löschen und Overlay entfernen +++//Diese Funktion wird aufgerufen, wenn das Timeout erreicht ist Funktion checkTime () { window.clearTimeout(timeoutID); myPlayer.addClass("hide-overlay"); }//+++ Hilfsfunktion zum Extrahieren von Cue-Point-Info +++ Funktion getSubarRay (targetArray, ObjProperty, value) { var i, totalItems = targetArray.length, objFound = false, idxArr = []; for (i = 0; i &lt; totalItems; i++) { if (targetArray[i][objProperty] === value) { objFound = true; idxArr.push(targetArray[i]); }} gibt IDxarr zurück;}});
+
+</script>
