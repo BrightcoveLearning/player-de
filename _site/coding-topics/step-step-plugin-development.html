@@ -1,0 +1,2232 @@
+﻿<!DOCTYPE html>
+<html lang="de"> 
+    <head>
+        <title>Schritt für Schritt: Plugin-Entwicklung</title>
+        
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="In diesem Thema lernen Sie anhand einer praktischen Einführung die Entwicklung und Verwendung von Plugins kennen.">
+        
+        <!-- Google Font -->
+        <link href="/assets/s-site-assets-stylesheets/fonts/poppins.css" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/s-site-assets-stylesheets/fonts/articulat-site.css">
+        <link href="/assets/s-site-assets-stylesheets/fonts/source-code-pro.css" rel="stylesheet">
+        
+        <!-- FontAwesome JS-->
+        
+        <script src="https://kit.fontawesome.com/d67c74a882.js" crossorigin="anonymous"></script>  
+        
+        <!-- Plugins CSS -->
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+        <link rel="stylesheet" href="/assets/s-site-assets-template-stylesheets/plugins/simplelightbox/simple-lightbox.min.css">
+
+        <!-- Theme CSS -->  
+        <link id="theme-style" rel="stylesheet" href="/assets/s-site-assets-template-stylesheets/css/theme.css">
+        <link rel="stylesheet" href="/assets/s-site-assets-stylesheets/prism.css">
+        <link rel="stylesheet" href="/assets/s-site-assets-template-stylesheets/custom-css/styles.css">
+
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XBJC11HF8Z"></script>
+        <script translate="no">
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-XBJC11HF8Z');
+        </script>
+        <script src="/assets/s-site-assets-scripts/sixth-sense.js"></script>
+        <script src="/assets/s-site-assets-scripts/sajari-head.js"></script>
+        <script src="/assets/s-site-assets-scripts/feather.min.js"></script>
+
+    </head> 
+
+    <body class="docs-page">
+        
+
+<header class="header fixed-top">
+  <div class="branding docs-branding">
+    <div class="container-fluid position-relative py-2">
+      <div class="docs-logo-wrapper">
+        <button id="docs-sidebar-toggler" class="docs-sidebar-toggler"
+          type="button">
+          <span></span> <span></span> <span></span>
+        </button>
+        <div class="site-logo"><a class="navbar-brand" href="https://support.brightcove.com/" style="margin-left: 15px;"> <img class="logo-icon me-2" src="/assets/s-site-assets-template-stylesheets/images/bc_logo_black_1@1x.png" alt="logo" style="margin-bottom: 9px;"/>
+            <!-- <span class="logo-text">BRIGHTCOVE</span> -->
+          </a></div>
+      </div><!--//docs-logo-wrapper-->
+
+      <div class="docs-top-utilities d-flex justify-content-end
+        align-items-center">
+        
+        <!-- Search bar -->
+        <div id="nav-search-box" class="top-search-box d-none d-lg-flex" style="margin-right: 10px ;"></div>
+
+<select id="site_select" class="form-select select-focus" style="width:
+          20%; margin-right: 10px;" translate="no">
+          <option value="">Other Brightcove Docs</option>
+          
+          
+          <option value="https://support.brightcove.com" translate="no">Documentation Home</option>
+          
+          
+          
+          <option value="https://support.brightcove.com/" translate="no">-- VIDEO CLOUD --</option>
+          
+          
+          
+          <option value="https://studio.support.brightcove.com" translate="no">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud Studio</option>
+          
+          
+          
+          <option value="https://mstudio.support.brightcove.com" translate="no">&nbsp;&nbsp;&nbsp;&nbsp;Marketing Studio</option>
+          
+          
+          
+          <option value="https://player.support.brightcove.com" translate="no">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Player Development</option>
+          
+          
+          
+          <option value="https://apis.support.brightcove.com" translate="no">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud Platform APIs</option>
+          
+          
+          
+          <option value="https://sdks.support.brightcove.com" translate="no">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud Device SDKs</option>
+          
+          
+          
+          <option value="https://integrations.support.brightcove.com" translate="no">&nbsp;&nbsp;&nbsp;&nbsp;Integrations and CMS Connectors</option>
+          
+          
+          
+          <option value="https://general.support.brightcove.com" translate="no">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud General Information</option>
+          
+          
+          
+          <option value="https://support.brightcove.com/" translate="no">-- VIDEO ESSENTIALS --</option>
+          
+          
+          
+          <option value="https://audience-insights.support.brightcove.com" translate="no">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Audience Insights</option>
+          
+          
+          
+          <option value="https://beacon-help.support.brightcove.com" translate="no">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Beacon Studio</option>
+          
+          
+          
+          <option value="https://beacon.support.brightcove.com" translate="no">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Beacon Classic</option>
+          
+          
+          
+          <option value="https://corptv.support.brightcove.com" translate="no">&nbsp;&nbsp;&nbsp;&nbsp;CorpTV</option>
+          
+          
+          
+          <option value="https://live.support.brightcove.com" translate="no">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Live</option>
+          
+          
+          
+          <option value="https://zencoder.support.brightcove.com" translate="no">&nbsp;&nbsp;&nbsp;&nbsp;Zencoder</option>
+          
+          
+          
+          <option value="https://support.brightcove.com/" translate="no">-- VIDEO CLOUD ADD-ONS --</option>
+          
+          
+          
+          <option value="https://gallery.support.brightcove.com" translate="no">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Gallery</option>
+          
+          
+          
+          <option value="https://studio.support.brightcove.com/social/index.html" translate="no">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Social</option>
+          
+          
+          
+          <option value="https://interactivity.support.brightcove.com/index.html" translate="no">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Interactivity</option>
+          
+          
+          
+          <option value="https://ssai.support.brightcove.com" translate="no">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove SSAI</option>
+          
+          
+          
+          <option value="https://campaign.support.brightcove.com" translate="no">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Campaign</option>
+          
+          
+        </select>
+
+        <select id="language_select" class="form-select select-focus" style="width: 10%;"
+          onchange="doGTranslate(this);" translate="no">
+          <!-- <option value="">Select Language</option> -->
+          <option value="en|en" translate="No">English</option>
+          <option value="en|zh-TW" translate="No">繁體中文</option>
+          <option value="en|fr" translate="No">Français</option>
+          <option value="en|de" translate="No">Deutsche</option>
+          <option value="en|ja" translate="No">日本語</option>
+          <option value="en|ko" translate="No">한국어</option>
+          <option value="en|es" translate="No">Español</option>
+        </select>
+
+        <script translate="no">
+          /* <![CDATA[ */
+          function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];var plang=location.hostname.split('.')[0];if(plang.length !=2 && plang.toLowerCase() != 'zh-cn' && plang.toLowerCase() != 'zh-tw')plang='en';location.href=location.protocol+'//'+(lang == 'en' ? '' : lang+'.')+location.hostname.replace('www.', '').replace(RegExp('^' + plang + '\\.'), '')+location.pathname+location.search;}
+          /* ]]> */
+        </script>
+      </div>
+    </div>
+  </div>
+</header><!--//header-->
+
+<div class="docs-wrapper">
+  <div id="docs-sidebar" class="docs-sidebar" style="padding-right: 15px;">
+    <div id="nav-search-box" class="top-search-box d-lg-none p-3"></div>
+    <div class="row">
+      
+        <div id="side_nav" style="margin-left: 1em; display: inline-block; border-right: 1px solid #e5e5e6; padding-right: 1em;">
+          
+          <nav class="docs-nav sidenav" aria-label="Main">
+            <ul class="site-nav" style="list-style-type: none;">
+            
+            
+            
+            <li class="nav-item section-title"><a class="nav-link" href="/index.html">Zuhause</a></li>
+            
+            
+            
+            
+            <li class="nav-item section-title"><a class="nav-link" href="/getting-started/index.html"><span class="theme-icon-holder me-2"> <i class="fa-solid fa-plus"></i></span>&nbsp;Erste Schritte</a>
+              <ul role="list" class="section-items list-unstyled nav flex-column pb-3" style="display:none;">
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/training/developer-basics-videos.html">Grundlagen der Entwickler Videos</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/getting-started/what-brightcove-player.html">Was ist der Brightcove Player?</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/getting-started/overview-brightcove-player.html">Überblick: Brightcove-Player</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/getting-started/learning-guide-video-advertising.html">Leitfaden zum Lernen: Videowerbung</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/getting-started/overview-brightcove-player-plugins.html">Überblick: Brightcove Player-Plugins</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/training/player-development-training-videos.html">Schulungsvideos zur Spielerentwicklung</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/getting-started/step-step-brightcove-player.html">Schritt für Schritt: Brightcove-Player</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/getting-started/step-step-player-customization.html">Schritt für Schritt: Anpassung der Spieler</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/training/training-demand-developing-brightcove-player.html">Schulung: Entwickeln mit dem Brightcove Player</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/getting-started/learning-guide-using-rest-apis.html">Leitfaden zum Lernen: Verwenden der REST-APIs</a></li>
+              
+              
+              
+            </ul>
+            </li>
+            
+            
+            
+            <li class="nav-item section-title"><a class="nav-link" href="/basics/index.html"><span class="theme-icon-holder me-2"> <i class="fa-solid fa-plus"></i></span>&nbsp;Erlernen Sie die Grundlagen</a>
+              <ul role="list" class="section-items list-unstyled nav flex-column pb-3" style="display:none;">
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/basics/developer-basics-advanced-player-code.html">Fortgeschrittene Spielercode</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/basics/developer-basics-autoplaying-video.html">Automatisches Abspielen eines Videos</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/basics/developer-basics-custom-plugin-converting-code.html">Benutzerdefiniertes Plugin - Konvertieren von Code</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/basics/developer-basics-custom-plugin-passing-data.html">Benutzerdefiniertes Plugin - Daten übergeben</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/basics/developer-basics-custom-plugin-using-studio.html">Benutzerdefiniertes Plugin - Verwenden von Studio</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/basics/developer-basics-custom-plugin-why-and-how.html">Benutzerdefiniertes Plugin - Warum und Wie</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/training/developer-basics-videos.html">Grundlagen der Entwickler Videos</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/basics/developer-basics-generating-player-code.html">Spielercode generieren</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/basics/developer-basics-preparing-write-code.html">Vorbereitung zum Schreiben von Code</a></li>
+              
+              
+              
+            </ul>
+            </li>
+            
+            
+            
+            <li class="nav-item section-title"><a class="nav-link" href="/references/index.html"><span class="theme-icon-holder me-2"> <i class="fa-solid fa-plus"></i></span>&nbsp;Verweise</a>
+              <ul role="list" class="section-items list-unstyled nav flex-column pb-3" style="display:none;">
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/references/bcp7-migration-guide.html">Brightcove Player 7-Migrationsanleitung</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/brightcove-player/current-release/index.html">Dokumentation der Brightcove-Player-API</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/references/brightcove-player-cookies.html">Kekse für Brightcove Spieler</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/references/brightcove-player-error-reference.html">Brightcove Player Fehlerreferenz</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/references/brightcove-player-system-requirements.html">Brightcove Player Systemvoraussetzungen</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/references/catalog-search-architecture.html">Katalog-Sucharchitektur</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="https://general.support.brightcove.com/general/known-issues-studio-brightcove-player-and-apis.html">Bekannte Probleme</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/references/player-catalog.html">Spielerkatalog</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/references/player-feature-support-browser.html">Unterstützung der Player-Funktionen per Browser</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/references/player-metadata-bcinfo.html">Spielermetadaten von bcinfo</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/brightcove-player/current-release/Player.html">Player-Methoden/Ereignisse-API</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/references/guide-playlist-api.html">Playlist API-Handbuch</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/references/video-metadata-mediainfo.html">Video-Metadaten von mediainfo</a></li>
+              
+              
+              
+            </ul>
+            </li>
+            
+            
+            
+            <li class="nav-item section-title"><a class="nav-link" href="/plugins/index.html"><span class="theme-icon-holder me-2"> <i class="fa-solid fa-plus"></i></span>&nbsp;Plug-ins</a>
+              <ul role="list" class="section-items list-unstyled nav flex-column pb-3" style="display:none;">
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/360degvr-video-plugin.html">360º Video</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/ad-intelligence-plugin.html">Ad Intelligence-Plugin</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/ad-only-plugin.html">Nur Anzeige</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/advertising-freewheel-plugin.html">Werbung mit dem FreeWheel Plugin</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/advertising-ima3-plugin.html">Werbung mit dem IMA3 Plugin</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/implementing-server-side-ads-brightcove-player.html">Werbung mit SSAI</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/open-measurement-with-ssai.html">Werbung mit SSAI und Open Measurement</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/airplay-plugin.html">Luftspiel</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/brightcove-player-plugins.html">Brightcove Player-Plugins</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item">Chromecast<a class="nav-link" href="/plugins/chromecast-plugin-brightcove-player.html"></a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/custom-endscreen-plugin.html">Benutzerdefinierter Endbildschirm</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/display-error-messages-plugin.html">Fehlermeldungen anzeigen</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/display-thumbnail-previews-plugin.html">Miniaturansichtsvorschauen anzeigen</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item">DRM<a class="nav-link" href="/plugins/configuring-brightcove-player-drm.html"></a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/google-tag-manager-plugin-brightcove-player.html">Google-Tag-Manager</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/hls-plugin.html">HLS</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/live-dvrux-plugin.html">Live DVRUX</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/display-overlay-plugin.html">Überlagerung</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/overview-brightcove-player-plugins.html">Überblick: Spieler-Plugins</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/picture-picture-plugin-aka-floating-or-pinned.html">Bild im Bild</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/playerplugin-version-testing.html">Testen der Player- / Plugin-Version</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/playlist-endscreen-plugin.html">Playlist-Endbildschirm</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/playlist-ui-plugin.html">Wiedergabelisten-Benutzeroberfläche</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/changelog/index.html">Plugin Changelog</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/plugin-registry.html">Plugin-Registrierung</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/plugin-version-reference.html">Plugin Versionsreferenz</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/quality-selection-plugin.html">Auswahl der Qualität</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/social-sharing-plugin.html">Soziale Medien</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/tealium-plugin-brightcove-player.html">Tealium Tag Manager</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/thumbnails-plugin.html">Thumbnail-Suche</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/video-seo-schema-generator-plugin.html">Video SEO Schema Generator</a></li>
+              
+              
+              
+            </ul>
+            </li>
+            
+            
+            
+            <li class="nav-item section-title"><a class="nav-link" href="/advertising/index.html"><span class="theme-icon-holder me-2"> <i class="fa-solid fa-plus"></i></span>&nbsp;Werbung</a>
+              <ul role="list" class="section-items list-unstyled nav flex-column pb-3" style="display:none;">
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/advertising/ad-events-and-ad-objects.html">Anzeigenereignisse und Anzeigenobjekte</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/ad-only-plugin.html">Nur Anzeigen-Plugin</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/advertising-freewheel-plugin.html">Werbung mit dem FreeWheel Plugin</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/advertising-ima3-plugin.html">Werbung mit dem IMA3 Plugin</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/implementing-server-side-ads-brightcove-player.html">Werbung mit Server-Side Ads (SSAI)</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/open-measurement-with-ssai.html">Werbung mit SSAI und Open Measurement</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/advertising/checking-for-ad-blockers.html">Prüfen auf Werbeblocker</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/advertising/client-side-preroll-with-live-ssai.html">Clientseitige Pre-Roll-Anzeigen mit Live-SSAI</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/advertising/displaying-ads-using-ad-cue-points.html">Anzeigen mit Ad Cue-Punkten anzeigen</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/advertising/flash-no-longer-valid-ima.html">Flash Nicht mehr gültig mit IMA</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/advertising/guide-ad-partner-integration.html">Leitfaden: Integration von Anzeigenpartnern</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/advertising/guide-contrib-ads-migration.html">Anleitung: Contrib-Ads-Migration</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/advertising/jump-start-header-bidding-ad.html">Start springen: Header Bidding Ad</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/advertising/jump-start-outstream-ad.html">Start springen: Outstream Ad</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/advertising/jump-start-pre-roll-ad.html">Start springen: Pre-Roll-Anzeige</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/advertising/known-issues-server-side-ad-insertion-ssai.html">Bekannte Probleme: Serverseitige Anzeigeneinfügung (SSAI)</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/getting-started/learning-guide-video-advertising.html">Leitfaden zum Lernen: Videowerbung</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/advertising/step-step-implementing-advertising.html">Schritt für Schritt: Werbung implementieren</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/advertising/testing-pre-release-advertising-plugins.html">Testen von Werbe-Plugins vor der Veröffentlichung</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/advertising/using-dfp-premium-brightcove-player.html">Verwenden von DFP Premium mit Brightcove Player</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/advertising/using-player-enhancements-live-ssai-brightcove-player.html">Verwenden von Player-Verbesserungen für Live-SSAI</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/advertising/video-cloud-ssai-ad-tag-validation.html">Validierung von Video Cloud SSAI-Anzeigen-Tags</a></li>
+              
+              
+              
+            </ul>
+            </li>
+            
+            
+            
+            <li class="nav-item section-title"><a class="nav-link" href="/publish/index.html"><span class="theme-icon-holder me-2"> <i class="fa-solid fa-plus"></i></span>&nbsp;Videos und Player veröffentlichen</a>
+              <ul role="list" class="section-items list-unstyled nav flex-column pb-3" style="display:none;">
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/publish/adding-application-id-player-embed-code.html">Hinzufügen einer Anwendungs-ID zum Player-Einbettungscode</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/publish/assigning-video-player-programmatically.html">Programmgesteuertes Zuweisen von Videos zum Player</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/publish/available-options-advanced-page-embed-code.html">Optionen für erweiterten (in der Seite) Einbettungscode</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/publish/available-options-standard-iframe-embed-code.html">Optionen für Standard-Einbettungscode (iframe)</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/publish/brightcove-player-loader.html">Brightcove Spielerlader</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/publish/bulk-updating-brightcove-default-player.html">Massenaktualisierung des Brightcove-Standard-Players</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/publish/choosing-correct-embed-code.html">Auswahl des richtigen Einbettungscodes</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/publish/delaying-player-instantiation.html">Verzögerung der Player-Instanziierung</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/publish/pre-release-player.html">Vorab-Player</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/publish/syndication-strategies.html">Syndikationsstrategien</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/publish/using-non-brightcove-player.html">Verwenden eines Nicht-Brightcove-Players</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="https://studio.support.brightcove.com/publish/using-multiple-players-one-page.html">Verwenden mehrerer Spieler auf einer Seite</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="https://studio.support.brightcove.com/publish/using-reference-ids.html">Referenz-IDs verwenden</a></li>
+              
+              
+              
+            </ul>
+            </li>
+            
+            
+            
+            <li class="nav-item section-title"><a class="nav-link" href="/troubleshooting/index.html"><span class="theme-icon-holder me-2"> <i class="fa-solid fa-plus"></i></span>&nbsp;Problembehebung</a>
+              <ul role="list" class="section-items list-unstyled nav flex-column pb-3" style="display:none;">
+              
+              
+
+              <li class="nav-item subsection-title">
+                
+                <a class="nav-link" href="/troubleshooting/index-ads.html"> <span class="theme-icon-holder me-2"><i class="fa-solid fa-minus"></i></span>&nbsp;Werbung</a>
+                
+
+                <ul role="list" class="section-items list-unstyled nav flex-column pb-3" style="display:none;">
+                  
+                  
+                  
+                  <li class="nav-item"><a class="nav-link" href="/troubleshooting/advertising-troubleshooting-checklist.html">Checkliste zur Fehlerbehebung in der Werbung</a></li>
+                  
+                  
+                  
+                </ul>
+              </li>
+              
+              
+              
+
+              <li class="nav-item subsection-title">
+                
+                <a class="nav-link" href="/troubleshooting/index-logs.html"> <span class="theme-icon-holder me-2"><i class="fa-solid fa-minus"></i></span>&nbsp;Logs erfassen</a>
+                
+
+                <ul role="list" class="section-items list-unstyled nav flex-column pb-3" style="display:none;">
+                  
+                  
+                  
+                  <li class="nav-item"><a class="nav-link" href="/troubleshooting/creating-charles-log.html">Erstellen eines Charles-Protokolls</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li class="nav-item"><a class="nav-link" href="/troubleshooting/creating-network-log.html">Erstellen eines Netzwerkprotokolls</a></li>
+                  
+                  
+                  
+                </ul>
+              </li>
+              
+              
+              
+
+              <li class="nav-item subsection-title">
+                
+                <a class="nav-link" href="/troubleshooting/index-debugging.html"> <span class="theme-icon-holder me-2"><i class="fa-solid fa-minus"></i></span>&nbsp;Spieler debuggen</a>
+                
+
+                <ul role="list" class="section-items list-unstyled nav flex-column pb-3" style="display:none;">
+                  
+                  
+                  
+                  <li class="nav-item"><a class="nav-link" href="/troubleshooting/brightcove-playback-technology-app.html">Brightcove Playback-Technologie App</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li class="nav-item"><a class="nav-link" href="/references/brightcove-player-error-reference.html">Brightcove Player Fehlerreferenz</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li class="nav-item"><a class="nav-link" href="/troubleshooting/brightcove-player-information-modal.html">Brightcove Spielerinformationen Modal</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li class="nav-item"><a class="nav-link" href="/troubleshooting/brightcove-player-troubleshooting-guide.html">Handbuch zur Fehlerbehebung für Brightcove Player</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li class="nav-item"><a class="nav-link" href="/troubleshooting/domain-restrictions-messaging.html">Domain Restrictions Messaging</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li class="nav-item"><a class="nav-link" href="/plugins/display-error-messages-plugin.html">Plugin für Fehlermeldungen anzeigen</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li class="nav-item"><a class="nav-link" href="/troubleshooting/manually-setting-player-version.html">Manuelles Einstellen der Player-Version</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li class="nav-item"><a class="nav-link" href="/troubleshooting/player-debug-mode.html">Debug-Modus für Spieler</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li class="nav-item"><a class="nav-link" href="/plugins/playerplugin-version-testing.html">Testen der Player- / Plugin-Version</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li class="nav-item"><a class="nav-link" href="/troubleshooting/player-informational-properties.html">Informationseigenschaften des Spielers</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li class="nav-item"><a class="nav-link" href="/code-samples/brightcove-player-sample-live-custom-error-message.html">Stichprobe: Benutzerdefinierte Live-Fehlermeldung</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li class="nav-item"><a class="nav-link" href="/troubleshooting/step-step-brightcove-player-debugger.html">Schritt für Schritt: Brightcove Player Debugger</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li class="nav-item"><a class="nav-link" href="/troubleshooting/running-network-path-trace.html">Ausführen einer Netzwerkpfadverfolgung</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li class="nav-item"><a class="nav-link" href="/troubleshooting/using-player-reference.html">Verwenden der Player-Referenz</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li class="nav-item"><a class="nav-link" href="/troubleshooting/vetting-brightcove-player-releases.html">Überprüfung der Brightcove Player-Versionen</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li class="nav-item"><a class="nav-link" href="/troubleshooting/viewing-player-configuration.html">Anzeigen der Player-Konfiguration</a></li>
+                  
+                  
+                  
+                </ul>
+              </li>
+              
+              
+            </ul>
+            </li>
+            
+            
+            
+            <li class="nav-item section-title"><a class="nav-link" href="/styling/index.html"><span class="theme-icon-holder me-2"> <i class="fa-solid fa-plus"></i></span>&nbsp;Styling und Aussehen</a>
+              <ul role="list" class="section-items list-unstyled nav flex-column pb-3" style="display:none;">
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/styling/customizing-player-appearance.html">Anpassen des Spielerauftritts</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/styling/brightcove-player-sample-player-styling-playground.html">Spieler-Styling-Spielplatz</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/getting-started/step-step-player-customization.html">Schritt für Schritt: Anpassung der Spieler</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/styling/responsive-sizing-brightcove-player.html">Responsive Sizing für den Brightcove Player</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/styling/sizing-player.html">Dimensionierung des Players</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/styling/skins-and-player-versions.html">Skins und Player-Versionen</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="https://studio.support.brightcove.com/media/styling-captions.html">Bildunterschriften stylen</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/styling/styling-playlists.html">Styling von Wiedergabelisten</a></li>
+              
+              
+              
+            </ul>
+            </li>
+            
+            
+            
+            <li class="nav-item section-title"><a class="nav-link" href="/playback/index.html"><span class="theme-icon-holder me-2"> <i class="fa-solid fa-plus"></i></span>&nbsp;Wiedergabe</a>
+              <ul role="list" class="section-items list-unstyled nav flex-column pb-3" style="display:none;">
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/playback/audio-only-player.html">Nur Audio-Player</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/playback/autoplay-considerations.html">Überlegungen zur Autoplay</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/troubleshooting/brightcove-playback-technology-app.html">Brightcove Playback-Technologie App</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/playback/bumper-videos.html">Stoßstangen-Videos</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/playback/china-delivery-with-bcp.html">China-Lieferung</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/playback/xdr-with-bcplayer.html">Geräteübergreifender Lebenslauf</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="https://studio.support.brightcove.com/publish/deep-linking.html">Deep Linking</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/playback/delivering-hls-video.html">HLS-Video liefern</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/playback/using-delivery-rules-with-bcp.html">Lieferregeln</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/playback/determining-which-rendition-will-play.html">Bestimmen, welche Wiedergabe abgespielt wird</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/playback/forensic-watermarking-with-bcp.html">Forensische Wasserzeichen</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/playback/guide-playback-technology.html">Leitfaden: Playback-Technologie</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/hls-plugin.html">HLS Plugin</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/playback/ios-and-brightcove-player.html">iOS und Brightcove Player</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/playback/playback-restrictions-with-bcp.html">Wiedergabebeschränkungen</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/playback/overview-https-support.html">Überblick: HTTPS-Unterstützung</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/quality-selection-plugin.html">Qualitätsauswahl-Plugin</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/playback/static-url-delivery.html">Statische URL-Zustellung</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/playback/streaming-playready-protected-content-dynamic-delivery.html">Streaming von PlayReady-geschützten Inhalten</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/playback/using-brightcove-player-tve.html">Verwenden des Brightcove-Players für TVE</a></li>
+              
+              
+              
+            </ul>
+            </li>
+            
+            
+            
+            <li class="nav-item section-title"><a class="nav-link" href="/content-protection/index.html"><span class="theme-icon-holder me-2"> <i class="fa-solid fa-plus"></i></span>&nbsp;DRM und Inhaltsschutz</a>
+              <ul role="list" class="section-items list-unstyled nav flex-column pb-3" style="display:none;">
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="https://studio.support.brightcove.com/players/configuring-player-content-restrictions.html">Konfigurieren von Einschränkungen für Player-Inhalte</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/content-protection/creating-dash-drm-manifest-brightcove-player.html">Erstellen eines DASH-DRM-Manifests für den Brightcove-Player</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/troubleshooting/domain-restrictions-messaging.html">Domain Restrictions Messaging</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/configuring-brightcove-player-drm.html">DRM Plugin</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/content-protection/overview-content-protection.html">Überblick: Inhaltsschutz</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/content-protection/policy-keys.html">Richtlinienschlüssel</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/content-protection/restricting-video-playback-using-ip-address.html">Einschränken der Videowiedergabe mithilfe der IP-Adresse</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/content-protection/signed-urls-and-token-auth-live-stream.html">Signierte URLs und Token-Authentifizierung mit einem Live-Stream</a></li>
+              
+              
+              
+            </ul>
+            </li>
+            
+            
+            
+            <li class="nav-item section-title"><a class="nav-link" href="/coding-topics/index.html"><span class="theme-icon-holder me-2"> <i class="fa-solid fa-plus"></i></span>&nbsp;Themen rund ums Programmieren</a>
+              <ul role="list" class="section-items list-unstyled nav flex-column pb-3" style="display:none;">
+              
+              
+
+              <li class="nav-item subsection-title">
+                
+                <a class="nav-link" href="/coding-topics/general/index.html"> <span class="theme-icon-holder me-2"><i class="fa-solid fa-minus"></i></span>&nbsp;Allgemein</a>
+                
+
+                <ul role="list" class="section-items list-unstyled nav flex-column pb-3" style="display:none;">
+                  
+                  
+                  
+                  <li class="nav-item"><a class="nav-link" href="/coding-topics/general/concepts-cors.html">CORS verstehen</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li class="nav-item"><a class="nav-link" href="/coding-topics/general/concepts-introducing-json.html">Einführung von JSON</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li class="nav-item"><a class="nav-link" href="/coding-topics/general/concepts-javascript-debugging-basics.html">Grundlagen des JavaScript-Debuggings</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li class="nav-item"><a class="nav-link" href="/coding-topics/general/concepts-javascript-module-design-pattern.html">Das JavaScript-Modul-Designmuster</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li class="nav-item"><a class="nav-link" href="/coding-topics/general/concepts-set-curl.html">cURL einrichten</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li class="nav-item"><a class="nav-link" href="/coding-topics/general/concepts-using-javascript-promises.html">JavaScript-Versprechen verwenden</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li class="nav-item"><a class="nav-link" href="/coding-topics/general/create-json-web-token.html">Erstellen eines JSON-Web-Tokens (JWT)</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li class="nav-item"><a class="nav-link" href="/coding-topics/general/debugging-mobile-devices.html">Debuggen auf Mobilgeräten</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li class="nav-item"><a class="nav-link" href="/coding-topics/general/using-mtr-to-look-at-network-traffic.html">Verwenden von MTR (mein Traceroute)</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li class="nav-item"><a class="nav-link" href="/coding-topics/general/using-wireshark-track-network-traffic-debugging.html">Verwenden von Wireshark zum Verfolgen des Netzwerkverkehrs</a></li>
+                  
+                  
+                  
+                </ul>
+              </li>
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/publish/brightcove-player-loader.html">Brightcove Spielerlader</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/references/catalog-search-architecture.html">Upgrade der Katalogsuche</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/code-samples/brightcove-player-sample-trigger-rewind-custom-event.html">Benutzerdefiniertes Ereignis</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/playback/guide-playback-technology.html">Leitfaden: Playback-Technologie</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/coding-topics/programmatically-localizing-brightcove-player.html">Brightcove-Player lokalisieren</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/coding-topics/localizing-plugins.html">Plugins lokalisieren</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/coding-topics/player-events.html">Spielerereignisse</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/coding-topics/overview-components.html">Überblick: Komponenten</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/playback/overview-https-support.html">Überblick: HTTPS-Unterstützung</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/coding-topics/overview-player-api.html">Überblick: Spieler-API</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/coding-topics/pass-data-plugin.html">Übergeben Sie Daten an das Plugin</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/coding-topics/react-player-loader.html">Reagiere auf Player Loader</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/coding-topics/reporting-brightcove-player-configurations.html">Berichterstellung zu Brightcove Player-Konfigurationen</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/coding-topics/requirejs-and-brightcove-player.html">RequireJS und Brightcove Player</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/coding-topics/retrieve-bitrate-current-rendition.html">Abrufen der Bitrate der aktuellen Wiedergabe</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/coding-topics/step-step-plugin-development.html" aria-current="page">Schritt für Schritt: Plugin-Entwicklung</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/coding-topics/step-step-videojs-plugin-generator.html">Schritt für Schritt: Video.js Plugin Generator</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/coding-topics/using-bc-and-getplayer-methods.html">Verwenden der Methoden bc () und getPlayer ()</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/troubleshooting/viewing-player-configuration.html">Anzeigen der Player-Konfiguration</a></li>
+              
+              
+              
+            </ul>
+            </li>
+            
+            
+            
+            <li class="nav-item section-title"><a class="nav-link" href="/general/index.html"><span class="theme-icon-holder me-2"> <i class="fa-solid fa-plus"></i></span>&nbsp;Allgemeine Informationen</a>
+              <ul role="list" class="section-items list-unstyled nav flex-column pb-3" style="display:none;">
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="https://studio.support.brightcove.com/publish/adding-application-id-player-embed-code.html">Hinzufügen einer Anwendungs-ID zum Player-Einbettungscode</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/general/adding-captions-videos-programmatically.html">Programmgesteuertes Hinzufügen von Untertiteln zu Videos</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="https://studio.support.brightcove.com/media/adding-chapters-video.html">Hinzufügen von Kapiteln zu einem Video</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/general/brightcove-player-accessibility.html">Barrierefreiheit für Brightcove Player</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/general/brightcove-player-viewability.html">Sichtbarkeit</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/custom-endscreen-plugin.html">Benutzerdefiniertes Endscreen Plugin</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/display-overlay-plugin.html">Overlay-Plugin anzeigen</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/general/ga-self-configure.html">Google Analytics Selbstkonfiguration</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/references/guide-playlist-api.html">Leitfaden: Playlist API</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/general/identify-and-delete-low-performing-videos.html">Identifizieren und Löschen von Videos mit geringer Leistung</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/general/implementing-cue-points-programmatically.html">Programmgesteuertes Implementieren von Cue-Points</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/general/implementing-playlists.html">Wiedergabelisten implementieren</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/general/implementing-modaldialog.html">ModalDialog implementieren</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/general/live-hls.html">Live HLS</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/general/live-stream-configuration.html">Live-Stream-Konfiguration</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/general/multiple-audio-tracks.html">Mehrere Audiospuren</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/general/player-configuration-guide.html">Anleitung zur Player-Konfiguration</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/general/playing-live-streams.html">Live-Streams abspielen</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/playlist-ui-plugin.html">Playlist UI-Plugin</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/general/rename-608-708-captions.html">Umbenennen von 608/708 Untertiteln im Player</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/content-protection/signed-urls-and-token-auth-live-stream.html">Signierte URLs und Token-Authentifizierung mit einem Live-Stream</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/plugins/social-sharing-plugin.html">Social Media Plugin</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="https://apis.support.brightcove.com/player-management/getting-started/step-step-player-management.html">Schritt für Schritt: Spieler-Management</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/styling/styling-playlists.html">Styling von Wiedergabelisten</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/general/using-screen-reader-brightcove-player.html">Verwenden eines Screen Readers mit dem Brightcove Player</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/general/volume-control.html">Lautstärkeregelung</a></li>
+              
+              
+              
+            </ul>
+            </li>
+            
+            
+            
+            <li class="nav-item section-title"><a class="nav-link" href="/code-samples/index.html"><span class="theme-icon-holder me-2"> <i class="fa-solid fa-plus"></i></span>&nbsp;Codebeispiele</a>
+              <ul role="list" class="section-items list-unstyled nav flex-column pb-3" style="display:none;">
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/code-samples/index-thumb.html">Codebeispiele nach Gruppe</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/code-samples/index.html">Code Sample Index</a></li>
+              
+              
+              
+            </ul>
+            </li>
+            
+            
+            
+            <li class="nav-item section-title"><a class="nav-link" href="/amp/index.html"><span class="theme-icon-holder me-2"> <i class="fa-solid fa-plus"></i></span>&nbsp;VERSTÄRKER</a>
+              <ul role="list" class="section-items list-unstyled nav flex-column pb-3" style="display:none;">
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/amp/amp-using-video-cloud-video.html">AMP Verwenden eines Video Cloud-Videos</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/amp/amp-using-external-video.html">AMP mit einem externen Video</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/amp/amp-and-advertising.html">AMP und Werbung</a></li>
+              
+              
+              
+            </ul>
+            </li>
+            
+            
+            
+            <li class="nav-item section-title"><a class="nav-link" href="/training/index.html"><span class="theme-icon-holder me-2"> <i class="fa-solid fa-plus"></i></span>&nbsp;Schulung</a>
+              <ul role="list" class="section-items list-unstyled nav flex-column pb-3" style="display:none;">
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/training/online-training-courses.html">Alle Online-Schulungen</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/training/developer-basics-videos.html">Grundlagen der Entwickler Videos</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/training/player-development-training-videos.html">Schulungsvideos zur Spielerentwicklung</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/training/register-training.html">Melden Sie sich für ein von einem Lehrer geleitetes Training an</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/training/training-demand-developing-brightcove-player.html">Schulung: Entwickeln mit dem Brightcove Player</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="https://apis.support.brightcove.com/player-management/getting-started/training-demand-quick-start-player-management.html">Schulung: Schnellstart zur Spielerverwaltung</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/training/brightcove-university.html">Brightcove University Schulungskurse</a></li>
+              
+              
+              
+            </ul>
+            </li>
+            
+            
+            
+            <li class="nav-item section-title"><a class="nav-link" href="/release-notes/index.html"><span class="theme-icon-holder me-2"> <i class="fa-solid fa-plus"></i></span>&nbsp;Hinweise zur Veröffentlichung</a>
+              <ul role="list" class="section-items list-unstyled nav flex-column pb-3" style="display:none;">
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/release-notes/brightcove-player-release-notes.html">Versionshinweise zu Brightcove Player</a></li>
+              
+              
+              
+            </ul>
+            </li>
+            
+            
+            
+            <li class="nav-item section-title"><a class="nav-link" href="/support/index.html"><span class="theme-icon-holder me-2"> <i class="fa-solid fa-plus"></i></span>&nbsp;Unterstützung</a>
+              <ul role="list" class="section-items list-unstyled nav flex-column pb-3" style="display:none;">
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/support/viewing-brightcove-system-status-page.html">Anzeigen der Seite „Brightcove System Status“</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/support/contact-sales.html">Kontakt zum Vertrieb</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/support/opening-case-with-brightcove-support.html">Einen Supportfall öffnen</a></li>
+              
+              
+              
+              
+              
+              <li class="nav-item"><a class="nav-link" href="/support/reset-support-portal-password.html">Passwort für das Support-Portal zurücksetzen</a></li>
+              
+              
+              
+            </ul>
+            </li>
+            
+            
+          </ul>
+          </nav>
+        </div>
+      </div>
+    </div><!--//docs-sidebar-->
+  </div>
+</div>
+
+<div style="margin-top: 20px;">
+  <div class="docs-content" style="padding-bottom: 0px;">
+    <div class="container">
+      <div class="docs-overview">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            
+            <li class="breadcrumb-item"><a class="theme-link" href="/">Zuhause</a></li>
+            
+            
+            <li class="breadcrumb-item"><a class="theme-link" href="/coding-topics/">Kodierungsthemen</a></li>
+            
+            
+            
+            <li class="breadcrumb-item active" aria-current="page">Schritt für Schritt: Plugin-Entwicklung</li>
+            
+            
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="docs-content">
+  <div class="container">
+    <div class="docs-overview py-5">
+      
+      <div class="centered-inpage-nav" id="centered_inpage_nav">
+        <nav id="centered_toc">
+          <select id="centered_in_page_toc" class="form-select select-focus"></select>
+        </nav>
+      </div>
+      <br/>
+      
+      
+<article class="bcls-article">
+  <h1>Schritt für Schritt: Plugin-Entwicklung</h1>
+  <summary>In diesem Thema lernen Sie anhand einer praktischen Einführung die Entwicklung und Verwendung von Plugins kennen.</summary>
+  <section class="bcls-section">
+    <h2 id="Development_approach">Entwicklungsansatz</h2>
+    <p>Das JavaScript und CSS, das Sie für Plugins entwickeln, müssen möglicherweise an einem über das Internet zugänglichen Ort gespeichert werden. Es wird jedoch empfohlen, dass Sie während der Entwicklung lokal erstellen und testen. Dazu führen Sie Folgendes aus:</p>
+    <ul>
+      <li>Erstellen Sie eine Datei mit Ihrem JavaScript-Plugin-Code</li>
+      <li>Erstellen Sie eine Datei mit Ihrem CSS-Plugin-Code (falls erforderlich).</li>
+      <li>Erstellen Sie eine HTML-Datei zum Testen. Verwenden Sie die <code translate="No">embed_in_page</code> Implementierung für den Spieler</li>
+      <li>Fügen Sie eine hinzu <code translate="No">id</code> zum <code translate="No">&lt;video-js&gt;</code> Etikett</li>
+      <li>Link zu den JavaScript- und CSS-Seiten</li>
+      <li>Verwenden ein <code translate="No">&lt;script&gt;</code> Tag zum Aufrufen der Funktion</li>
+      <li>Entwickeln und debuggen Sie Ihren Code</li>
+    </ul>
+    <p>Der Rest dieses Dokuments führt Sie durch diese Schritte zum Erstellen und Bereitstellen eines einfachen Plugins.</p>
+    <aside class="bcls-aside bcls-aside--information language-editable">Beachten Sie, dass die Gesamtgröße des Plugins, JavaScript und CSS, unter 5 Millionen Zeichen liegen muss.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Build_the_basics">Bauen Sie die Grundlagen auf</h2>
+    <p>Um mit dem Erstellen eines Plugins zu beginnen, müssen Sie einige der oben genannten grundlegenden Schritte auf hoher Ebene ausführen.</p>
+    <ol class="bcls-tasklist">
+      <li>Erstellen Sie einen Ordner mit dem Namen <code translate="No">plugin-dev</code> das kann mit einem tatsächlichen HTTP-Server durchsucht werden. Der Server ist für die Prüfung der iframe-Implementierung später in diesem Dokument erforderlich.</li>
+      <li>Erstellen Sie im Ordner drei Dateien mit den folgenden Namen:
+        <ul>
+          <li><strong translate="No">plugin-dev.html</strong>(Fügen Sie die Grundelemente für eine HTML-Seite in die Datei ein.)</li>
+          <li><strong translate="No">plugin-dev.js</strong></li>
+          <li><strong translate="No">plugin-dev.css</strong></li>
+        </ul>
+      </li>
+      <li>Verwenden von Studios <strong translate="No">Players</strong> Modul, erstellen Sie einen neuen Player.</li>
+      <li class="video-cloud-only">In dem <strong translate="No">Media</strong> Modul, wählen Sie ein Video aus und veröffentlichen Sie es mit dem neu erstellten Player.</li>
+      <li class="player-only">Verwendung der <strong translate="No">VIDEO CONTENT</strong> In diesem Abschnitt ordnen Sie dem Player ein Video zu, speichern und veröffentlichen Sie den Player.</li>
+      <li class="video-cloud-only">Kopiere das <strong translate="No">Advanced</strong> Code und fügen Sie in den Körper der <code translate="No">plugin-dev.html</code> Seite.</li>
+      <li class="player-only">Von dem <strong translate="No">Embed Code &amp; URL &gt; Published Player</strong> Menü, kopieren Sie die <strong translate="No">Advanced Embed Code</strong> Code und fügen Sie in den Körper der <code translate="No">plugin-dev.html</code> Seite.</li>
+      <li>Fügen Sie eine hinzu <code translate="No">id</code> Attribut auf die <code translate="No">&lt;video-js&gt;</code> Tag mit einem Wert von <code translate="No">player</code>.</li>
+      <li>Stellen Sie sicher, dass Ihre HTML-Seite wie folgt aussieht <span class="player-only">(Brightcove Player-Kunden haben keine <code translate="No">data-video-id</code> Eigentum)</span>::
+        <pre class="line-numbers">
+<code class="language-html" translate="No">&lt;!doctype html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Quick Start Plugin Dev&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+  &lt;video-js id="myPlayerID"
+    data-account="1507807800001"
+    data-player="default"
+    data-embed="default"
+    controls=""
+    data-video-id="4607746980001"
+    data-playlist-id=""
+    data-application-id=""
+    width="960" height="540"&gt;&lt;/video-js&gt;
+  &lt;script src="https://players.brightcove.net/1507807800001/default_default/index.min.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+      </li>
+      <li>Durchsuchen Sie die Seite, um sicherzustellen, dass Ihr Video abgespielt wird.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Scan_reserved_names">Reservierte Namen scannen</h2>
+    <p>Der Name eines benutzerdefinierten Plugins darf nicht mit dem Namen eines Plugins übereinstimmen, das entweder im Player selbst integriert ist oder von Brightcove bereitgestellt wird. Dies führt zu Konflikten und kann die korrekte Funktion des Players beeinträchtigen.</p>
+    <ol class="bcls-tasklist">
+      <li>
+        <p>Achten Sie beim Benennen Ihres Plugins darauf, KEINEN dieser Namen zu verwenden:</p>
+        <ul>
+          <li>ampSupport</li>
+          <li>bcAa</li>
+          <li>bcAirplay</li>
+          <li>bcAnalytics</li>
+          <li>bcGa</li>
+          <li>bcGtm</li>
+          <li>bcPlaylistUi</li>
+          <li>bcTealium</li>
+          <li>katalog</li>
+          <li>chromecastReceiver</li>
+          <li>kontextmenü</li>
+          <li>contextmenuUI</li>
+          <li>customEndscreen</li>
+          <li>Dock</li>
+          <li>eme</li>
+          <li>encryptedWatcher</li>
+          <li>endbildschirm</li>
+          <li>Fehler</li>
+          <li>FreilaufPlugin</li>
+          <li>ima3</li>
+          <li>kollektiv</li>
+          <li>perSourceBehaviors</li>
+          <li>Pip</li>
+          <li>Plugin</li>
+          <li>playerInfo</li>
+          <li>Playlist</li>
+          <li>wiedergabelisteEndbildschirm</li>
+          <li>wiedergabelisteUi</li>
+          <li>proxyTracks</li>
+          <li>qualityMenu</li>
+          <li>reloadSourceOnError</li>
+          <li>seekEvents</li>
+          <li>sozial</li>
+          <li>ssai</li>
+          <li>Miniaturansichten</li>
+          <li>touchActive</li>
+          <li>urlparams</li>
+        </ul>
+
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Create_JavaScript">Erstellen Sie JavaScript</h2>
+    <p>Als Nächstes erstellen und testen Sie den JavaScript-Code, um eine Überlagerung für das Video zu erstellen.</p>
+
+    <ol class="bcls-tasklist">
+      <li>Öffne die Datei <code translate="No">plugin-dev.js</code> und fügen Sie den folgenden JavaScript-Code ein:
+        <pre class="line-numbers">
+<code class="language-javascript" translate="No">videojs.registerPlugin('pluginDev', function() {
+  var player = this,
+  overlay = document.createElement('p');
+  overlay.className = 'vjs-overlay';
+  overlay.innerHTML = "Becoming a plugin developer";
+  player.el().appendChild(overlay);
+});</code></pre>
+        <aside class="bcls-aside bcls-aside--information">Hinweis: Für Version 5.x und frühere Player müssen Sie <code translate="No">videojs.plugin()</code> Anstatt von <code translate="No">videojs.registerPlugin()</code></aside>
+      </li>
+      <li>Überprüfen Sie Ihr Verständnis für jede eingefügte Zeile:
+        <ul>
+          <li>Die Zeilen 1 und 7 sind die Standardsyntax zum Starten und Beenden eines neuen Player-Plugins. In diesem Fall lautet der Name des Plugins <code translate="No">pluginDev</code>.</li>
+          <li>Zeile 2 ist eine Standardmethode, um den Spieler in den Griff zu bekommen. Dies ist erforderlich, um Methoden des Players aufzurufen, die Sie später ausführen werden.</li>
+          <li>Zeile 3 erstellt ein Absatzelement im Dokument und weist es dem zu <code translate="No">overlay</code> Variable.</li>
+          <li>Zeile 4 weist dem Overlay eine Klasse zu, die später in Verbindung mit CSS verwendet wird.</li>
+          <li>Zeile 5 fügt dem Absatzelement Text hinzu.</li>
+          <li>Zeile 6 verwendet die <code translate="No">el()</code> Methode des Players, um das DOM-Element des Players abzurufen, und hängt dann das neue Absatzelement an dieses DOM an.</li>
+        </ul>
+        <aside class="bcls-aside bcls-aside--information">Hinweis: Das Semikolon am Ende des JavaScript-Codes des Plugins (Zeile 7 oben) ist erforderlich.</aside>
+        <aside class="bcls-aside bcls-aside--warning">
+          <p>Plugins, die in Playern gebündelt sind, durchlaufen einen Minifizierungsprozess mit UglifyJS. Aus diesem Grund unterstützt das Playerverwaltungssystem keinen ES6+-Code in gebündelten Plugins. Jeglicher ES6+-Code, der in einem Player enthalten ist, führt dazu, dass die Veröffentlichung fehlschlägt; die Vorschauen funktionieren jedoch.</p>
+          <p>Es wird empfohlen, ES6+-Code mit einem Tool wie Babel nach ES5 zu transponieren.</p>
+        </aside>
+      </li>
+      <li>Fügen Sie in der HTML-Datei den folgenden Code direkt unter den vorhandenen <code translate="No">&lt;script&gt;</code> Tags hinzu. Dieser Code enthält die JavaScript-Datei und ruft dann die in diesem JavaScript definierte Methode auf.
+        <pre class="line-numbers">
+<code class="language-html" translate="No">&lt;script type="text/javascript" src="plugin-dev.js"&gt;&lt;/script&gt;
+&lt;script&gt;videojs.getPlayer('myPlayerID').pluginDev();&lt;/script&gt;</code></pre>
+      </li>
+      <li>Durchsuchen Sie die HTML-Seite erneut und Sie werden sehen, dass sich nichts Sichtbares geändert hat. Das Problem ist, dass das Overlay vorhanden, aber nicht sichtbar ist. Sie werden dies später ändern.</li>
+      <li>Verwenden Sie die Entwicklungstools Ihres Browsers, um zu überprüfen, ob das Overlay vorhanden ist. In dem <em>Elemente</em> Abschnitt, überprüfen Sie die des Spielers <code translate="No">&lt;div&gt;</code> Element, und Sie sehen das neu eingefügte Absatzelement, wie hier gezeigt:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Schnellstart-Overlay-in-Elemente" src="/assets/images/coding-topics/sbs-plugin-quick-start-overlay-in-elements.png"/></figure>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Style_the_plugin">Gestalte das Plugin</h2>
+    <p>Sie wissen, dass das Overlay jetzt Teil des Players ist, aber nicht sichtbar. Als Nächstes gestalten Sie das Overlay so, dass es sichtbar wird. In diesem Abschnitt des Dokuments verwenden Sie ein sehr einfaches CSS, um sicherzustellen, dass die Überlagerung sichtbar ist.</p>
+    <ol class="bcls-tasklist">
+      <li>Öffne die Datei <code translate="No">plugin-dev.css</code> und fügen Sie die folgenden Stile ein:
+        <pre class="line-numbers">
+<code class="language-javascript" translate="No">.vjs-overlay {
+    background-color: #333333;
+    color: white;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 20px;
+}</code></pre>
+      </li>
+      <li>Fügen Sie in der HTML-Datei den folgenden Code direkt unter dem vorhandenen Code hinzu <code translate="No">&lt;link&gt;</code> Etikett. Dieser Code verweist auf Ihre neu erstellte CSS-Datei.
+        <pre class="line-numbers">
+<code class="language-html" translate="No">&lt;link href="plugin-dev.css" rel="stylesheet"&gt;</code></pre>
+      </li>
+      <li>Durchsuchen Sie die HTML-Seite und Sie werden sehen, dass das Overlay jetzt sichtbar ist.
+        <figure class="bcls-figure"><img class="bcls-image" alt="Schnellstart-Overlay-Anzeige" src="/assets/images/coding-topics/sbs-plugin-quick-start-overlay-showing.png"/></figure>
+      </li>
+    </ol>
+  </section>
+  <section id="passdatatoplugin" class="bcls-section">
+    <h2 id="Pass_data_to_the_plugin">Übergeben Sie Daten an das Plugin</h2>
+    <p>Es ist häufig der Fall, dass Sie das Verhalten Ihres Plugins zur Initialisierungszeit ändern möchten. Dies ist möglich, indem Daten mit dem an das Plugin übergeben werden <code translate="No">options</code> Eigentum. In diesem Beispiel übergeben Sie den Text, der in der Überlagerung angezeigt werden soll.</p>
+    <ol class="bcls-tasklist">
+      <li>Öffnen Sie die HTML-Seite und ändern Sie die <code translate="No">&lt;script&gt;</code> Tags so eine Variable namens <code translate="No">options</code> wird erstellt und ein Objekt mit einem Schlüssel-Wert-Paar von zugewiesen <em>"overlayText": "Diese Daten werden bei der Initialisierung bereitgestellt"</em>. Übergeben Sie auch die <code translate="No">options</code> Variable als Argument beim Aufruf der <code translate="No">pluginDev()</code> Methode. Die Änderungen sollten wie folgt aussehen:
+        <pre class="line-numbers">
+<code class="language-html" translate="No">&lt;script type="text/javascript" src="plugin-dev-copy.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+  <span class="bcls-highlight">var options = {"overlayText": "This data supplied at initialization"};</span>
+&lt;/script&gt;
+<span class="bcls-highlight">&lt;script&gt;videojs.getPlayer('myPlayerID').pluginDev(options);&lt;/script&gt;</span></code></pre>
+      </li>
+      <li>Sie müssen jetzt das JavaScript des Plugins ändern, um die an die Funktion übergebenen Daten zu verwenden. Zeile 110 zeigt die Funktion, die die Daten als Parameter akzeptiert, und Zeile 114 verwendet die Daten des Objekts.
+        <pre class="line-numbers">
+<code class="language-javascript" translate="No"><span class="bcls-highlight">videojs.registerPlugin('pluginDev', function(options) {</span>
+  var player = this,
+  overlay = document.createElement('p');
+  overlay.className = 'vjs-overlay';
+  <span class="bcls-highlight">overlay.innerHTML = options.overlayText;</span>
+  player.el().appendChild(overlay);
+});</code></pre>
+      </li>
+      <li>Durchsuchen Sie die HTML-Seite und Sie sehen den neuen Text, der verwendet wird.
+        <figure class="bcls-figure"><img class="bcls-image" alt="Schnellstart-Optionen anzeigen" src="/assets/images/coding-topics/sbs-plugin-quick-start-options-showing.png"/></figure>
+      </li>
+    </ol>
+    <aside class="bcls-aside bcls-aside--warning">Hinweis: Der in diesem Abschnitt des Dokuments gezeigte Prozess, einschließlich und Aufrufen des Plugins über JavaScript, dient Entwicklungszwecken und ist für die Erstkonfiguration und das Testen nützlich, wird jedoch nicht als bewährte Methode angesehen. Die beste Vorgehensweise besteht darin, das Plugin als Teil Ihres Player-Konfigurationsstudios einzuschließen (wie im folgenden Abschnitt gezeigt), auch wenn Sie die embed_in_page-Implementierung verwenden.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Deploy_the_plugin">Stellen Sie das Plugin bereit</h2>
+    <p>Sobald das Plugin, CSS und der Player ordnungsgemäß funktionieren, müssen Sie die Assets für die ordnungsgemäße Verwendung bereitstellen. Hier ist eine Übersicht über die für die Bereitstellung erforderlichen Schritte:</p>
+    <ul>
+      <li>Kopieren / verschieben Sie die JavaScript- und CSS-Dateien an Ihren Remotestandort</li>
+      <li>Verwenden Sie Studio, um die Plugin-Konfiguration zum Player hinzuzufügen.</li>
+      <li>Erstellen Sie eine HTML-Datei zum Testen und verwenden Sie die Iframe-Implementierung für den Player</li>
+      <li>Test auf Anomalien</li>
+    </ul>
+    <p>Sie werden nun durch diese Schritte geführt.</p>
+    <ol class="bcls-tasklist">
+      <li>Verschieben Sie die JavaScript- und CSS-Dateien Ihres Plugins an einen über das Internet zugänglichen Speicherort Ihrer Wahl.
+        <aside class="bcls-aside bcls-aside--information">Wenn Sie möchten, können Sie die Dateien an dem unten im Beispiel gezeigten Speicherort verwenden. Sie könnten auch die <a href="https://apis.support.brightcove.com/delivery-system/">Liefersystem-API</a> um die Dateien in Ihrem eigenen Repository zu speichern.</aside>
+      </li>
+      <li>Erstellen Sie in dem Ordner, in dem Sie arbeiten, eine weitere Datei mit dem Namen <code translate="No">plugin-dev-iframe.html</code>.</li>
+      <li>Verwenden Sie Studios <strong translate="No">Players</strong> Modul zum Bearbeiten des zuvor erstellten Players.</li>
+      <li>Klicken <strong>Plugins</strong> im linken Navigationsmenü.</li>
+      <li>Nächster Klick <strong>Plugin hinzufügen&gt; Benutzerdefiniertes Plugin</strong>.</li>
+      <li>Geben Sie für den <strong></strong> Plugin-Namen ein <code translate="No">pluginDev</code>. Dieser Name MUSS mit dem Namen Ihres Plugins übereinstimmen.</li>
+      <li>Für die <strong>JavaScript</strong> URL, geben Sie (oder Ihre URL) ein:
+        <pre>
+ <code class="language-json" translate="No">https://solutions.brightcove.com/bcls/brightcove-player/plugins/plugin-dev.js</code></pre>
+      </li>
+      <li>Für die <strong>CSS</strong> URL, geben Sie (oder Ihre URL) ein:
+        <pre>
+ <code class="language-json" translate="No">https://solutions.brightcove.com/bcls/brightcove-player/plugins/plugin-dev.css</code></pre>
+      </li>
+      <li>Geben Sie die Konfigurationsoptionen im <strong>Optionen (JSON)</strong> Textfeld.
+        <pre class="line-numbers">
+ <code class="language-json" translate="No">{"overlayText": "This data is supplied at initialization"}</code></pre>
+      </li>
+      <li>Ihr Konfigurationsdialog sollte wie folgt aussehen:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Plugins-Dialog" src="/assets/images/coding-topics/sbs-plugin-plugins-dialog.png"/></figure>
+      </li>
+      <li>Klicken Sie auf <strong>Speichern</strong>.</li>
+      <li>Um den Player zu veröffentlichen, klicken Sie auf <strong>Veröffentlichen &amp; Einbetten &gt; Änderungen veröffentlichen</strong>.</li>
+      <li>Um das Dialogfeld „Öffnen“ zu schließen, klicken Sie auf <strong>Schließen</strong>.</li>
+      <li class="video-cloud-only">In dem <strong translate="No">Media</strong> Modul, wählen Sie ein Video aus und veröffentlichen Sie es mit dem neu aktualisierten und veröffentlichten Player.</li>
+      <li class="video-cloud-only">Kopiere das <strong translate="No">Standard</strong> Code und fügen Sie in den Körper der <code translate="No">plugin-dev-iframe.html</code> Seite. Ihre Seite sollte wie folgt aussehen:</li>
+      <li class="player-only">Von dem <strong translate="No">Embed Code &amp; URL &gt; Published Player</strong> Menü, kopieren Sie die <strong translate="No">Standard Embed Code</strong> Code und fügen Sie in den Körper der <code translate="No">plugin-dev-iframe.html</code> Seite. Ihre Seite sollte wie folgt aussehen:
+        <pre class="line-numbers">
+<code class="language-html" translate="No">&lt;!doctype html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Quick Start Plugin Dev - iframe&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;iframe src='https://players.brightcove.net/1507807800001/Bk6LLayNQ_default/index.html' allowfullscreen allow='encrypted-media'&gt;&lt;/iframe&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+      </li>
+      <li>Durchsuchen Sie die HTML-Seite und Sie sollten sehen, dass das Plugin mit dem Iframe korrekt funktioniert.</li>
+    </ol>
+  </section>
+
+  <section class="bcls-section">
+    <h2 id="Plugins_with_multiple_players_on_one_page">Plugins mit mehreren Playern auf einer Seite</h2>
+    <p>Wenn verschiedene Player auf einer Seite verwendet werden und beide Player zufällig ein Plugin mit demselben Namen verwenden, aber eigentlich unterschiedliche Plugins sind, wird nur das Plugin des zuerst geladenen Players verwendet. Der Grund dafür ist, dass <code>videojs</code> eine globale Variable ist. Die beiden Player scheinen dieselbe Version zu sein, da die Plugin-Namen dieselben sind, sie dieselben <code>Videojs</code> verwenden und der Player aus Gründen der Effizienz nur eine Version lädt. Das bedeutet, dass gleichnamige Plugins, die mit <code>videojs.registerPlugin()</code> registriert wurden, von allen Playern der gleichen Version gemeinsam genutzt werden.</p>
+    <p>Für dieses Problem gibt es mehrere Lösungen. Sie sind:</p>
+    <ul>
+      <li>Verändern Sie die Namen der Plugins.</li>
+      <li>Implementieren Sie die Funktionalität nicht als Video.js-Plugin, sondern als allgemeines Skript.</li>
+    </ul>
+  </section>
+
+  <section class="bcls-section">
+    <h2 id="3rd_party_libraries"><span translate="no">3rd party</span> bibliotheken</h2>
+    <p>Wenn Ihr Plugin Abhängigkeiten von Bibliotheken von Drittanbietern aufweist, z. B. jQuery, müssen Sie diese auf eine der beiden folgenden Arten einschließen:</p>
+    <ul>
+      <li>Fügen Sie die Bibliothek als weitere JavaScript-Datei in die <strong translate="No">Plugins</strong> Abschnitt von <strong translate="No">Players</strong> Modul in <span class="video-cloud-only">Video Cloud</span> Studio.</li>
+      <li>Fügen Sie mehrere Einträge in die <strong translate="No">scripts</strong> Abschnitt der Player-Konfiguration in einer Curl-Anweisung.</li>
+    </ul>
+    <p>Stellen Sie sicher, dass Sie die Bibliotheken, von denen Ihr Plugin abhängig ist, in beiden oben aufgeführten Szenarien vor dem JavaScript-Eintrag Ihres Plugins platzieren. Die Reihenfolge der Einreise ist wichtig.</p>
+  </section>
+</article>
+<!-- <div class="col-sm-2 right-side-bar" style="display: inline-block;max-width: 20%;"> -->
+  
+  <nav class="right-side-nav" id="right_side_nav">
+    <h6 class="toc">Inhalt der Seite</h6>
+    <ul id="in_page_nav" class="list-none"></ul>
+  </nav>
+  
+<!-- </div> -->
+</div>
+</div>
+</div>
+<div class="page-content" style="background-color: rgb(1, 5, 14);">
+  <div class="container" style="width: 50%;">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-6 col-md">
+          <h5 class="h5-text">Brightcove-Unterstützung</h5>
+          <ul class="list-unstyled text-small" style="color: white ;">
+            <li><a class="a-text" href="https://status.brightcove.com">Systemstatus</a></li>
+            <li><a class="a-text" href="https://supportportal.brightcove.com">Kontaktieren Sie den Support</a></li>
+            <li><a class="a-text" href="https://support.brightcove.com/search.html">Suche in der gesamten Dokumentation</a></li>
+          </ul>
+        </div>
+      
+        <div class="col-6 col-md">
+          <h5 class="h5-text">Ausbildung</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="a-text" href="https://studio.support.brightcove.com/get-started/training/online-training-courses.html">Online-Kurse</a></li>
+            <li><a class="a-text" href="https://studio.support.brightcove.com/get-started/training/register-training.html">Für einen Kurs anmelden</a></li>
+            <li><a class="a-text" href="https://academy.brightcove.com/">Brightcove-Akademie</a></li>
+          </ul>
+        </div>
+      
+        <div class="col-6 col-md">
+          <h5 class="h5-text">Brightcove</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="a-text" href="https://www.brightcove.com">BrightCove.com</a></li>
+            <li><a class="a-text" href="https://community.brightcove.com/s/">Bright Spot Community Forum</a></li>
+            <li><a class="a-text" href="https://support.brightcove.com/product-updates.html">Hinweise zur Produktfreigabe</a></li>
+            <li><a class="a-text" href="https://support.brightcove.com/doc-updates.html">Aktualisierte Dokumentation</a></li>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p>© Brightcove Inc. Alle Rechte vorbehalten.</p>
+      <a class="a-text" href="https://www.brightcove.com/en/legal/privacy">Datenschutz</a> <a class="a-text" href="https://www.brightcove.com/en/terms-and-conditions">Bedingungen &amp; Bedingungen</a>
+
+      <ul class="list-unstyled d-flex">
+        <li class="ms-3"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" target="_blank" class="gf-social-linkedin" style="margin-right: 1rem;"><i data-feather="linkedin" style="color:#8E9093;height: 1.25rem;"></i></a></li>
+
+        <li class="ms-3"><a href="https://twitter.com/brightcove" title="Twitter" target="_blank" class="gf-social-twitter" style="margin-right: 1rem;"><i data-feather="twitter" style="color:#8E9093;height: 1.25rem;"></i></a></li>
+
+        <li class="ms-3"><a href="https://www.facebook.com/Brightcove" title="Facebook" target="_blank" class="gf-social-facebook"><i data-feather="facebook" style="color:#8E9093;height: 1.25rem;"></i></a></li>
+      </ul>
+      </div>
+    </footer>
+  </div>
+</div>
+
+
+<script translate="no">
+  var searchBox = sajari.init({
+    mode: "search-box",
+    project: "1588255093746585379", // Set this to your project.
+    collection: "brightcove-documentation", // Set this to your collection.
+    instantPipeline: "autocomplete", // Pipeline used as you type
+    inputPlaceholder: "Search", // Input element placeholder,
+    styling: {
+      components: {
+        
+        input: {
+          container: {
+          backgroundColor: 'white',
+          }
+        
+        }
+      }
+    },
+    maxSuggestions: 5, // Maximum number of suggestions to show
+      attachSearchBox: document.getElementById("nav-search-box") // DOM element to attach to
+  });
+
+  
+
+
+    searchBox("sub", "pipeline.search-sent", function (_, query) {
+    window.location = "/search.html?q=" + encodeURIComponent(query.q);
+    });
+  
+  </script>
+  
+  <!-- Javascript -->          
+  <script src="/assets/s-site-assets-template-stylesheets/plugins/popper.min.js"></script>
+  <script src="/assets/s-site-assets-template-stylesheets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+
+
+  <!-- Page Specific JS -->
+  <script src="/assets/s-site-assets-template-stylesheets/plugins/smoothscroll.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script> -->
+  <!-- <script src="/assets/s-site-assets-template-stylesheets/js/highlight-custom.js"></script>  -->
+  <script src="/assets/s-site-assets-template-stylesheets/plugins/simplelightbox/simple-lightbox.min.js"></script>      
+  <script src="/assets/s-site-assets-template-stylesheets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
+  <script src="/assets/s-site-assets-template-stylesheets/js/docs.js"></script> 
+
+  <!-- original footer components -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+  <script src="/assets/s-site-assets-scripts/https-fix.js"></script>
+  <script src="/assets/s-site-assets-scripts/setDate.js"></script>
+  <script src="/assets/s-site-assets-scripts/selector.js"></script>
+  
+  <script src="/assets/s-site-assets-scripts/prism.js"></script>
+  <script src="/assets/s-site-assets-scripts/prism-normalize.js"></script>
+  
+  <script src="/assets/s-site-assets-scripts/site.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/learning-paths/learning-paths.js"></script>
+  <!-- <script src="/assets/s-site-assets-scripts/site.js"></script> -->
+  <script src="/assets/s-site-assets-scripts/tabs.js"></script>
+  
+  <script src="/assets/s-site-assets-scripts/toc-new-template.js"></script>
+  
+  <script src="/assets/js/sites_nav.js"></script>
+  <script src="/assets/s-site-assets-scripts/bcls-utils.js"></script>
+  <script src="/assets/s-site-assets-scripts/local-link-fix.js"></script>
+  <script src="/assets/s-site-assets-scripts/sajari-reindex.js"></script>
+  <script src="/assets/js/feedback.js"></script>
+  
+  <script src="/assets/s-site-assets-scripts/sajari-search-foot.js"></script>
+  
+  <script translate="no">
+    feather.replace()
+  </script>
+  <!-- <script src="/assets/js/sajari-index.js"></script> -->
+  <script src="/assets/s-site-assets-scripts/in-app.js"></script>
+  <style translate="no">
+    a.sj-paginator__page-number.sj-paginator__page-number--current.css-so0ov7 {
+      background-color: lightblue;
+    }
+    div.sj-tabs__tab {
+      margin-top: 3rem;
+      margin-left: .3rem;
+      border-top-left-radius: .4rem;
+      border-top-right-radius: .4rem;
+      background-color:#e8e8e8;
+    }
+
+    div.sj-tabs__tab.sj-tabs__tab--selected {
+      border-bottom-color: crimson;
+      background-color: #f8f8f8;
+    }
+
+    p.sj-results__result__description.css-p9jvyt {
+      font-size: 1rem;
+    }
+
+    .sj-result__text.css-31l7gp h3 {
+      color: navy;
+      font-size: 1.4rem;
+    }
+    </style>
+
+  </body>
+</html> 
